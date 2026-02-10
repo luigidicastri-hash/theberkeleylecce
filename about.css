@@ -1,0 +1,213 @@
+/* =========================================
+   ABOUT.CSS
+   Specific styling for About Us section and subpages
+   ========================================= */
+
+/* =========================================
+   ABOUT SECTION MAIN STYLING
+   ========================================= */
+.about-main {
+    /*background-color: rgb(174, 208, 217);*/ /* Blue background */
+    font-family: 'Georgia', serif;
+    font-size: 16px;  /* Change from 18px or 14px, 18px - adjust as needed */
+    color: black;
+}
+
+.about-main h1 {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    font-size: 30px; /* Was 32px, so experiment with other sizes */
+    font-weight: bold;
+    color: #040a10;
+    margin-top: 10;
+    margin-bottom: -0.5rem; /* Change from 0.5rem to 0.2rem or 0.1rem */
+    line-height: 1.2;
+    position: relative;
+    z-index: 1;
+}
+
+.about-main p {
+    text-align: justify;
+}
+
+/* =================================================
+   SUB-PAGES STYLING (Our Story, Committee, Locations)
+   ================================================= */
+.about-main .subpage-heading {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #040404;
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+    line-height: 1.2;
+}
+
+main p {
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    text-align: justify;
+}
+
+/* =================================================
+   PAGE-SPECIFIC BACKGROUND COLORS
+   ================================================= */
+.about-us-page .about-main {
+    background-color: rgb(155, 229, 177); /* Blue - same as current */
+}
+
+.our-story-page .about-main {
+    background-color: #e4ba7a; /* orange */
+}
+
+.committee-page .about-main {
+    background-color: #b5f5c4; /* Light green */
+}
+
+/* =================================================
+   IMAGE + TEXT SECTIONS (side by side)
+   ================================================= */
+.story-row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.story-row.reverse {
+    flex-direction: row-reverse; /* Reverses order for the second section */
+}
+
+.story-text {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Ensures proper alignment of the first paragraph */
+.story-text p {
+    margin-top: 0; /* removes the extra space above the first paragraph in each section */
+}
+
+.story-text p:last-child {
+    margin-bottom: 0;
+}
+
+.story-text p:first-of-type {
+    margin-top: 0;
+}
+
+.author-signature {
+    text-align: right !important;  /* Override the justify */
+    padding-right: 3rem;
+    margin-top: 1rem;  /* Add some space above */
+    font-size: 16px;  /* or 14px, 18px - adjust as needed */
+}
+/* =================================================
+   CAROUSEL STYLES
+   ================================================= */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: visible;
+    min-height: 400px;
+    z-index: 1;  /* Add this */
+}
+ 
+.carousel-slide {
+    display: none;
+    width: 100%;
+    animation: fadeIn 0.5s;
+    padding: 0 30px; /* Add padding to each slide instead */
+}
+
+.carousel-slide.active {
+    display: block;
+}
+
+.carousel-slide > p {
+    font-size: 18px;  /* Makes standalone paragraphs match story-text size */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.story-image {
+    flex: 0 0 40%;  /* Default image width: 35% of row (for slides without specific rules) */
+}
+
+.story-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-slide:first-child .story-image {
+    flex: 0 0 40%;  /* First slide images (about1.jpg, about2.jpg): 35% width */
+}
+
+.carousel-slide:nth-child(2) .story-image {
+    flex: 0 0 25%;  /* Second slide image (about3.jpg): 35% width */ /* Reduce from 35% to 25% or 28% */
+}
+
+.carousel-slide .story-row {
+    margin-bottom: 0;
+}
+
+/* Navigation Arrows */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent; /* Remove shading */
+    color: black; /* Make them darker */
+    border: none;
+    font-size: 4rem; /* Make them bigger (was 3rem) */
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 10;
+    transition: color 0.3s;
+}
+
+.carousel-arrow:hover {
+    color: #333; /* Slightly lighter on hover */
+}
+
+.carousel-arrow.left {
+    left: -25px; /* Inside the box */
+}
+
+.carousel-arrow.right {
+    right: -25px; /* Inside the box */
+}
+
+/* Navigation Dots */
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black but semi-transparent */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+}
+
+.dot.active {
+    background-color: black; /* Solid black for active dot */
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: -25px; /* Closer to edge - was 20px */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}

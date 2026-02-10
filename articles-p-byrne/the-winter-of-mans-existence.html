@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The winter of man's existence</title> <!-- The Page title goes here. It's the title on the browser tab not the actual page -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="stylesheet" href="../p-byrne-articles.css">
+</head>
+
+<!-- P. Byrne heading repeated on Index and every article -->
+<body class="P_Byrne">
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+    <article>
+        
+        <!--Article Title, Image and Accreditation for image if it needs one-->
+        <h1 class="article-title">The winter of man's existence</h1> <!-- Change Article Title -->
+
+        <div class="image-and-quotes">
+            <img src="../images/samuel-beckett.jpg" alt="Samuel Beckett" class="indented">
+            <div class="quotes">
+                <blockquote class="article-quote">
+                <i>Why is it that even in old age, in the winter of a man’s existence &mdash; the winter of his 
+                    discontent &mdash; a  man who no longer  aspires to anything but a little peace, is confronted, 
+                    in spite of himself, with so much stupidity? I mean how  is it that an old man &mdash; as soon as 
+                    he is forced to associate with a cohort he did everything to avoid up until now [….] - becomes a 
+                    pet in front of which people start gabbing? In that respect he is not so different from a poodle, 
+                    the old man entrusted with people’s unimportant views on things. He becomes a receptacle for the 
+                    dregs of language and thought, a victim of everyone’s nonsense.</i>
+                </blockquote>
+
+            </div>
+        </div>
+
+<!-- Article Content goes here -->
+<p>Maylis Besserie attributes those words to Samuel Beckett in her reconstruction of his last days, ‘<i>Le tiers temps</i>’, Editions Gallimard, Paris, 2020. A translation has been made by Cliona Ni Rordain who teaches  Irish Lit. and translation  studies at the Sorbonne.  The title is not simply  ‘The third age’, but - for commercial reasons? - ‘Yell , Sam, if you still can’, 2022, Lilliput Press, Dublin.</p>
+<p>The fraudulent mutilation of 'tiers temps' in translation is typical hypocrisy of the cohort. The poodle hasn't a chance. He's sick and only capable of being fodder for limp, self-serving fantasising. It amost convinces one that Beckett's main conviction is not that far-fetched&mdash;it would be better not to be born since that event takes place on the edge of the grave and preludes to a lot of suffering laced with nonsense.</p>
+
+    </article>
+
+    <!-- Footer details go here -->
+    <footer>
+        <p>Author: Peter Byrne, <em>Published: 25 July 2025, &copy; 2025 Circolo Berkeley Lecce</p>
+    </footer>
+
+    <script>
+        // Load header only
+        fetch('header-p-byrne.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
+
+</body>
+</html>

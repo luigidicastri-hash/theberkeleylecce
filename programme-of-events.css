@@ -1,0 +1,326 @@
+/* programme-of-events.css */
+
+/* Main container */
+main {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 40px 20px;
+}
+
+/* Programme title */
+.programme-title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: -30px;
+    margin-bottom: 05px;
+    color: #0b0000;
+    font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+}
+
+/* Events container */
+.events-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5;
+}
+
+/* Individual event card (horizontal row) */
+.event-card {
+    display: grid;
+    grid-template-columns: 1fr 2.0fr .75fr; /*controls the width of the three columns*/
+    gap: 15px;
+    align-items: stretch;
+    padding: 1px;
+    background: #78c6e0;
+    border: 2px solid #1a1919;
+    border-radius: 8px;
+    margin: -1px; /* Prevents double borders */
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+    position: relative;
+}
+
+.event-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Next Event Badge */
+.next-event .event-details::before {
+    content: 'NEXT EVENT';
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #2a046f;
+    color: white;
+    padding: 4px 12px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+/* Left column - Event details */
+.event-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-right: 1px solid #1a1919;
+    padding-right: 15px;
+    padding-left: 10px; 
+    position: relative;  
+}
+
+.event-date {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #0b0000;
+    margin: 0;
+    font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+}
+
+.event-time {
+    font-size: 1.0rem;
+    color: #0a0303;
+    margin: 3px 0;
+}
+
+/* Event location container */
+.event-location {
+    display: inline-flex;       /* keeps text and links on the same line */
+    align-items: center;        /* vertically aligns links and text */
+    flex-wrap: wrap;            /* allows wrapping on small screens */
+    gap: 10px;                  /* spacing between text and links */
+    font-size: 1rem;
+    color: #0b0a0a;             /* general text color */
+    line-height: 1.6;
+}
+
+/* Map link styling */
+.location-map-link {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-decoration: none;
+    color: #2a046f;             /* keeps map link blue */
+}
+
+.location-map-link:hover {
+    text-decoration: underline;
+    color: #1a0356;
+}
+
+/* Review link styling */
+.read-review-link {
+    display: inline-block;
+    font-size: 0.9rem;          /* match map link size */
+    font-weight: 600;            /* match map link weight */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;           /* same vertical alignment */
+    text-decoration: none;
+    color: #d35400;             /* orange for review link */
+}
+
+.read-review-link:hover {
+    text-decoration: underline;
+}
+
+
+.booking-link {
+    display: inline-block;
+    padding: 6px 15px;
+    background-color: #4a4848;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: 0;
+    transition: background-color 0.3s ease;
+    margin-top: 8px;
+    text-align: center;
+    max-width: 140px;
+}
+
+.booking-link:hover {
+    background-color: #1c3f57;
+}
+
+/* Link to review if it exists */
+/* Read review link for past events */
+.read-review-link {
+    color: #d35400;          /* orange color */
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;       /* same as .location-map-link */
+}
+.read-review-link:hover {
+    text-decoration: underline;
+    color: #a04000;          /* darker orange on hover */
+}
+/* Middle column - Event title and speaker */
+.event-title-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid #1a1919;
+    padding-right: 15px;
+}
+
+.event-title-section h2 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin: 0 0 6px 0;
+    color: #000000;
+    line-height: 1.5;
+    font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+}
+
+.event-note {
+    font-size: 1.0rem;
+    font-weight: 500;
+    color: #200356;
+    margin: 3px 0;
+    font-style: italic;
+}
+
+.event-speaker-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #2a046f;
+    margin: 12px 0 3px 0;  
+    line-height: 1.5;
+}
+
+.event-speaker-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2a046f;
+    margin: 6px 0 3px 0;  
+    line-height: 1.5;
+}
+/* Right column - Event image */
+.event-image {
+    width: 175px;
+    flex-shrink: 0;
+    padding-left: 15px;
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 2px;
+    transition: transform 0.3s ease;
+}
+
+/*.event-card:hover .event-image img {
+    transform: scale(1.05);
+}*/
+
+/* Responsive design for tablets, mobile, and extra small screens */
+
+/* Tablets (≤992px) */
+@media screen and (max-width: 992px) {
+    .event-card {
+        grid-template-columns: 1fr 1.2fr;
+        gap: 25px;
+        padding: 25px;
+    }
+
+    .event-image {
+        grid-column: 1 / -1;
+        order: -1;
+    }
+
+    .event-title-section h2 {
+        font-size: 1.7em;
+    }
+
+    .programme-title {
+        font-size: 2em;
+        margin-bottom: 40px;
+    }
+}
+
+/* Mobile (≤768px) */
+@media screen and (max-width: 768px) {
+    main {
+        padding: 30px 15px;
+    }
+
+    .events-container {
+        gap: 30px;
+    }
+
+    .event-card {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .event-image {
+        order: -1;
+    }
+
+    .programme-title {
+        font-size: 1.8em;
+        margin-bottom: 30px;
+    }
+
+    .event-title-section h2 {
+        font-size: 1.5em;
+    }
+
+    .event-speaker {
+        font-size: 1em;
+    }
+
+    .event-date,
+    .event-time {
+        font-size: 0.95em;
+    }
+
+    .booking-link {
+        max-width: 100%;
+        padding: 12px 20px;
+    }
+}
+
+/* Extra small screens (≤480px) */
+@media screen and (max-width: 480px) {
+    .programme-title {
+        font-size: 1.5em;
+    }
+
+    .event-title-section h2 {
+        font-size: 1.3em;
+    }
+
+    .event-card {
+        padding: 15px;
+    }
+
+    /* Stack location and review links vertically */
+    .event-location {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    /* Ensure review link aligns nicely in stacked layout */
+    .event-location .read-review-link {
+        display: inline-block;
+        margin-left: 0;
+    }
+}
+
+/* Hide booking links on past events */
+.event-card.past-event .booking-link {
+    display: none;
+}

@@ -1,0 +1,334 @@
+/* =========================================
+   BASIC RESET
+   ========================================= */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   GLOBAL STYLES
+   ========================================= */
+  html, body {
+    height: 100%;
+}
+ 
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('images/sky-background.jpg');
+    background-size: cover;  /* Always cover the viewport */
+    background-repeat: repeat-y;  /* Repeat vertically */
+    background-position: center 0%;
+    background-attachment: scroll;
+    animation: sky-move 150s linear infinite;
+    /* color: #040404; */
+    color:#00050e; /* the default colour for page textual content */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    filter: brightness(1.0);  /* Adjust between 1.0 - 1.5 */   
+}
+
+@keyframes sky-move {
+    0% {
+        background-position: center 100%;
+    }
+    100% {
+        background-position: center 0%;
+    }
+}
+h1, h2, h3, h4 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+#centered-title {
+    text-align: center;
+}
+
+/* =========================================
+   HEADER (GENERAL)
+   ========================================= */
+/* Default header image in case no page-specific header */
+header {
+    background-image: url('images/santa-croce-header.jpg'); /* Default background image */
+    background-size: cover;                                 /* Scales image to cover entire header */
+    background-position: center 80%;                        /* Positions image (smaller % moves up) */
+    color: white;                                           /* Text color for header content */
+    filter: brightness(1.05);                               /* Slightly brightens the header */
+    background-color: rgba(0, 0, 0, 0.25);                 /* Semi-transparent black background */
+    text-align: center;                                     /* Centers text horizontally */
+    padding: 10px 20px;                                     /* Spacing inside header */
+    position: relative;                                     /* Allows absolute positioning of child elements */
+    z-index: 5000;                                          /* Ensures header (and dropdown) appears above main content */
+}
+
+/* Dark overlay on all headers */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* semi-transparent black overlay */
+    z-index: 1;
+}
+/* =========================================
+   FOOTER
+   ========================================= */
+footer {
+    background-color: #1a3d8a;                 
+    color: #fff;                             /* White text */
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2); /* subtle depth */
+    display: flex;                  /* makes it a flex container */    
+    align-items: center;            /* vertical centering */
+    justify-content: center;        /* horizontal centering */
+    padding: 0;
+    margin: 0;
+    min-height: 60px;
+    text-align: center;
+}
+footer p {
+    margin: 0;
+}
+
+/* =========================================
+   LOGO (APPEARS ON ALL PAGES) via CSS
+   ========================================= */
+header::after {
+    content: "";
+    width: 100px;                                   /* same size as before */
+    height: 100px;
+    background: url('images/berkeley-logo.png') center / cover no-repeat;  /* updated logo */
+    border-radius: 50%;                             /* circular shape */
+    position: absolute;
+    top: 20px;                                      /* distance from top of header */
+    left: 20px;                                     /* distance from left of header */
+    z-index: 10;                                    /* above overlay and background */
+}
+
+/* Ensure header content stays above overlay */
+header * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Page-specific header images */
+.home-header {
+    background-image: url('images/santa-croce-header.jpg'); /* Home page header */
+}
+.about-header {
+    background-image: url('images/about-header.jpg');
+}
+.events-header {
+    background-image: url('images/events-header.jpg');
+}
+
+/* Title styling */
+header h1 {
+    position: relative;
+    z-index: 2; /* ensures title is above the overlay */
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+/* =========================================
+   LOGO (APPEARS ON ALL PAGES)
+   ========================================= */
+.logo {
+    width: 100px;          /* Choose your size */
+    height: 100px;         /* Must match width for perfect circle */
+    object-fit: cover;     /* Ensures the image fills the circle */
+    border-radius: 50%;    /* Makes it circular */
+    position: absolute;    /* Position relative to the header */
+    top: 20px;             /* Distance from top of header */
+    left: 20px;            /* Distance from left of header */
+    z-index: 10;           /* Ensures it sits above the header image */ 
+    }
+
+/* ========================================= 
+   NAVIGATION
+   ========================================= */
+nav {
+    margin-top: 15px;
+    position: relative;
+    z-index: 2001;
+}
+
+/* Links styling (your original style) */
+nav a {
+    color: white;               
+    text-decoration: none;      
+    padding: 10px 20px;         
+    font-size: 1rem;            
+    margin: 0 10px;             
+    border-radius: 5px;         
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #9acbcf;  
+    color: #000;                 
+}
+
+/* Dropdown styling */
+nav .has-dropdown {
+    position: relative;
+    z-index: 2001;
+}
+
+nav .has-dropdown .dropdown {
+    display: none;               /* hide dropdown initially */
+    position: absolute;          
+    top: 100%;                   
+    left: 0;
+    background-color: #333;      
+    border-radius: 5px;
+    padding: 5px 0;
+    white-space: nowrap;
+    z-index: 3000;            /* above other nav items */
+}
+
+nav .has-dropdown:hover .dropdown {
+    display: block;              /* show on hover */
+}
+
+nav .has-dropdown .dropdown a {
+    display: block;    
+    font-size: 0.9rem;  /* slightly smaller than main nav links */          
+    margin: 0;
+    padding: 2px 20px;
+    color: white;   
+    margin: 0;
+}
+
+nav .has-dropdown .dropdown a:hover {   
+    background-color: #9acbcf;  
+    color: #000;
+}
+
+/* =========================================
+   IMAGE AND QUOTES OR CITATIONS SECTION
+   ========================================= */
+.image-and-quotes {
+    display: flex;
+    align-items: center;   /*align-items: flex-start; would place the text at the top*/
+    gap: 0.5rem; /* Adjust spacing as needed */
+    flex-wrap: wrap;        /* allows items to wrap on small screens */
+}
+.image-and-quotes img {
+    flex-shrink: 0;
+    width: 40%;              /* default width as percentage of container */
+    max-width: 300px;       /* never exceed this width */
+    height: auto;
+    margin-left: 0;        /* remove any extra left margin */
+}
+
+.quotes {
+    flex: 1;
+}
+
+.image-and-quotes img.indented {
+    margin-left: 20px; /* Adjust value for desired indentation */
+    width: 300px;
+    height: auto;
+}
+
+/* =========================================
+   MAIN CONTENT AREA
+   ========================================= */
+main {
+    max-width: 1100px;   /* gives a more spacious layout */
+    margin: 10px auto;    /* 10px top/bottom spacing, auto centers horizontally */
+    background: rgb(185, 237, 237); /*BASE BACKGROUND FOR ALL PAGES EXCEPT ARTICLES*/
+    padding: 10px 30px 30px 30px;  /* top, right, bottom, left */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1;  /* Makes main grow to push footer down */
+}
+
+/* === Article Page Styles === */
+
+/* General article styles */
+article {
+    font-family:'Georgia', serif;       /* Set font family */
+    font-size: 18px;                    /* Set font size */
+    font-weight: 500;
+    line-height: 1.6;                   /* Set line height for better readability */
+    color: black;                        /* Set text color */
+    margin: 10px auto;                  /* Add margin around the article */
+    max-width: 1100px;                   /* Set a max-width for readability */
+    background-color: rgb(171, 175, 203); /* Article page background colour */
+    padding: 10px 30px 30px 30px;        /* top, right, bottom, left */
+    box-shadow: 0 0 10px rgba(0, 0, .0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Style for images inside articles */
+article img {
+    max-width: 75%;  /* Adjust the size of the image */
+    height: auto;    /* Maintain aspect ratio */
+    display: block;  /* Makes it behave like a block element */
+    margin: 20px auto;  /* Centers image and adds space above and below */
+}
+
+main { outline: 2px solid red; }
+article { outline: 2px solid blue; }
+
+/* =========================================
+   ACCREDITATION (image/photo credits)
+   ========================================= */
+.accreditation {
+    font-size: 0.9rem;
+    color: #424141;
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* =========================================
+   Centralised Asterisk
+   ========================================= */
+
+.asterisk {
+    text-align: center;
+    margin: 5px 0;   /* space before and after */
+    font-size: 1.2em; /* optional */
+}
+/* ====================================================================================
+   To align all article paragraphs justified and remove top margin from first paragraph
+   ==================================================================================== */
+article p {
+    text-align: justify;
+}
+
+/* =======================================================
+   Article Title format for all articles
+   ===================================================== */
+.article-title {
+    font-family: 'Georgia', serif;   /* serif font for article title */
+    font-size: 32px;                 /* large, readable size */
+    font-weight: bold;               /* bold heading */
+    color: #040a10;                  /* dark color */
+    text-align: center;              /* center the text */
+    margin-top: 10px;                   /* space above the main article heading */
+    margin-bottom: 1.0rem;           /* space below the heading */
+    line-height: 1.2;                /* tighter line spacing for a neat look */
+}

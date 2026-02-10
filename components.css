@@ -1,0 +1,42 @@
+/* =========================================
+   COMPONENTS.CSS
+   Specific styling for banners, boxes, grids, and layout components
+   ========================================= */
+
+/* =========================================
+   HERO BANNER
+   ========================================= */
+.hero-banner {
+    /*background-color: #FFD700;*/ /* Darker Yellow background */
+    background-color: #FFE54D; /* Yellow background */
+    border: 5px solid #DC143C; /* Thick red border */
+    max-width: 600px; /* Adjust size as needed */
+    margin: 10px auto 5px auto;  /* top, right/left, bottom, right/left */
+    padding: 5px 25px; /* Space inside the box. The first number controls top and bottom space.*/
+                            /*The second number controls left and right space.*/
+    text-align: center;
+    border-radius: 8px; /* Optional: slight rounding of corners */
+}
+
+.hero-text p {
+    margin: 0.5rem 0;
+    font-size: 2rem;
+    color: #1b1a1a;
+    font-weight: 600;
+}
+
+.hero-text p:last-child {
+    font-size: 1.6rem;
+    font-style: italic;
+    margin-top: -0.5rem;  /* Removes space above */
+}
+
+.home-main {
+    margin-top: 5px; /* Reduces space between banner and main content */
+}
+.blue-background {
+    background-color: rgb(174, 208, 217) !important;  /* Light blue background for main content and articles */
+}
+/* =========================================
+   END OF COMPONENTS.CSS
+   ========================================= */ 

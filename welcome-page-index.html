@@ -1,0 +1,57 @@
+<!-- THIS IS THE WELCOME PAGE FOR THE BERKELEY LECCE -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Circolo Berkeley Lecce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="components.css">
+</head>
+
+<body>
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+    <!-- BERKELEY LECCE TALKS AND MORE. Formatting in components.css -->
+    <div class="hero-banner">
+        <div class="hero-text">
+            <p>The Berkeley Lecce</p>
+            <p>Talks and more</p>
+        </div>
+    </div>
+
+    <main class="home-main"><!-- Main content area -->
+        <!-- <h2>THIS SHOULD BE MY HOME PAGE TEXT</h2> -->
+        <p>Welcome to Circolo Berkeley, a cultural non-profit organisation in Lecce. Our mission is to promote arts, 
+            literature, cinema and discussion through events, visits and articles.</p>
+        <p>If you want further information/want to become a member of the Circolo Berkeley, please, 
+            send us an email: <a href="mailto:claudiamazzei1@gmail.com">claudiamazzei1@gmail.com</a>.</p>
+        <p>You can also come along to any meeting. The first meeting is free, and you can ask about 
+            membership at the meeting.</p>
+        <p>Places are limited. Please book your place using the link provided in the programme.</p>
+        <p>See here for our <a href="programme-of-events.html"><b>NEXT EVENT</b></a>.</p>
+        <!-- Add more homepage content as needed -->
+    </main>
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

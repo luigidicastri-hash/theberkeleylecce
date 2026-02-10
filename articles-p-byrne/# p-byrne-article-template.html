@@ -1,0 +1,59 @@
+<!-- THIS IS THE TEMPLATE FOR ADDING A PETER BYRNE ARTICLE -->
+
+<!-- START OF FIXED SECTION - DO NOT CHANGE -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT'S THE BROWSER TAB TITLE</title> <!-- YOU MUST CHANGE THIS -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="stylesheet" href="../p-byrne-articles.css">
+</head>
+
+<!-- P. Byrne heading repeated on Index and every article -->
+<body class="P_Byrne">
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+<!-- END OF FIXED SECTION -->
+
+<!-- START OF ARTICLE SECTION - YOU MUST CHANGE THIS SECTION -->
+    <article>
+        
+        <!--Article Title, Image and Accreditation for image if it needs one-->
+        <h1 class="article-title">Article Title</h1> <!-- Change Article Title -->
+        <img src="../images/IMAGE-NAME.jpg" alt="Image Name longhand"> <!-- Image if there is one -->
+        <p class="accreditation">accreditation text</p>
+
+        <!-- Article Content goes here -->
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <p>Paragraph 4</p>
+        
+<!-- END OF ARTICLE SECTION - YOU MUST HAVE CHANGED THIS SECTION --> 
+    </article>
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header
+        fetch('p-byrne-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('../global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    
+</body>
+</html>

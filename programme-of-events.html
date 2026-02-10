@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circolo Berkeley Programme of Events</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="stylesheet" href="../programme-of-events.css">
+</head>
+<body>
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+<main>
+    <h1 class="programme-title">Programme 2026</h1>
+
+<!-- 
+========================
+ HOW TO ADD A NEW EVENT:
+========================
+IMPORTANT: Events are automatically sorted! Future events appear first, then past events.
+The "NEXT EVENT" badge automatically appears on the next upcoming event.
+
+1. Copy an entire event card block (from <div class="event-card" to its closing </div>)
+
+2. Paste it ANYWHERE within the events-container
+   - Don't worry about the order - JavaScript will automatically sort events by date
+   - Future events will appear at the top (sorted earliest to latest)
+   - Past events will appear at the bottom (sorted earliest to latest)
+
+3. Update the data-date attribute:
+   - Format: data-date="YYYY-MM-DD" (e.g., "2026-04-15" for April 15, 2026)
+   - This is used by JavaScript to automatically sort events and determine which is next
+   - It must be in this exact format (YYYY-MM-DD) to work properly
+
+4. Update the visible event details:
+   - event-date: The human-readable date (e.g., "Friday April 15th")
+   - event-time: The start time (e.g., "18:15")
+   - event-location: The venue details (use <br> tags for line breaks)
+   - LOCATION MAP LINK: Add a link to the location page using the location ID
+     Example: <a href="locations.html#castromediano" class="location-map-link">View map →</a>
+     Use #castromediano for Museo "S. Castromediano"
+     Use #mediateca for Mediateca
+     Or use the appropriate ID for any other location
+
+5. Add or remove the booking link:
+   - If the event requires booking, include: <a href="YOUR_BOOKING_URL" class="booking-link" target="_blank">Please book here</a>
+   - If no booking required (like members-only events), omit this line entirely
+
+6. Update the event title and speaker information:
+   - For events with speakers:
+     <h2>Event Title Here</h2>
+     <p class="event-speaker-name">Speaker Name</p>
+     <p class="event-speaker-title">Speaker's Title/Credentials</p>
+   
+   - For events without speakers (like the Berkeley Election):
+     <h2>Event Title Here</h2>
+     <p class="event-note">(members only)</p>
+
+7. Update the event image:
+   - Replace the src path: src="images-for-programme-of-events/your-image.jpg"
+   - Replace the alt text: alt="Brief Description of Event"
+   - Images should be placed in the images-for-programme-of-events folder
+
+8. Save the file and refresh your browser
+   - Events will automatically reorder with future events first
+   - The "NEXT EVENT" badge will automatically appear on the next upcoming event
+
+EXAMPLE OF A COMPLETE NEW EVENT:
+--------------------------------
+<div class="event-card" data-date="2026-04-15">
+    <div class="event-details">
+        <p class="event-date">Friday April 15th</p>
+        <p class="event-time">18:15</p>
+        <p class="event-location">at Museo "S. Castromediano"<br>
+        co-working area, 1st floor<br>
+        viale Gallipoli, 31<br>
+        Lecce<br>
+        <a href="locations.html#castromediano" class="location-map-link">View map →</a></p>
+        <a href="https://forms.gle/YOUR_FORM_ID" class="booking-link" target="_blank">Please book here</a>
+    </div>
+    <div class="event-title-section">
+        <h2>Your Event Title</h2>
+        <p class="event-speaker-name">Speaker Name</p>
+        <p class="event-speaker-title">Speaker's Professional Title</p>
+    </div>
+    <div class="event-image">
+        <img src="images-for-programme-of-events/your-image.jpg" alt="Your Event">
+    </div>
+</div>  -->
+<!-- END OF INSTRUCTIONS ========================================================-->
+
+        <div class="events-container">
+            <!-- Event: Berkeley Election -->
+            <div class="event-card" data-date="2026-01-23">
+                <div class="event-details">
+                    <p class="event-date">Friday January 23rd</p>
+                    <p class="event-time">18:00</p>
+                    <p class="event-location">at Museo "S. Castromediano"<br>
+                    co-working area, 1st floor<br>
+                    viale Gallipoli, 31<br>
+                    Lecce<br>
+                    <a href="locations.html#castromediano" class="location-map-link">View map →</a></p>
+                </div>
+                <div class="event-title-section">
+                    <h2>Berkeley Election</h2>
+                    <p class="event-note">(members only)</p>
+                </div>
+                <div class="event-image">
+                    <img src="images-for-programme-of-events/vote.jpg" alt="Berkeley Election">
+                </div>
+            </div>
+
+            <!-- Event: Byzantine Terra d'Otranto -->
+            <div class="event-card" data-date="2026-01-23">
+                <div class="event-details">
+                    <p class="event-date">Friday January 23rd</p>
+                    <p class="event-time">18:15</p>
+                    <p class="event-location">at Museo "S. Castromediano"<br>
+                    co-working area, 1st floor<br>
+                    viale Gallipoli, 31<br>
+                    Lecce<br>
+                    <a href="locations.html#castromediano" class="location-map-link">View map →</a></p>
+                    <a href="https://forms.gle/xEfwckTve32SQaGeA" class="booking-link" target="_blank">Please book here</a>
+                </div>
+                <div class="event-title-section">
+                    <h2>Byzantine Terra d'Otranto Unveiled</h2>
+                    <p class="event-speaker-name">Paul Arthur</p>
+                    <p class="event-speaker-title">Professor of Medieval Archaeology at the University of Salento</p>
+                </div>
+                <div class="event-image">
+                    <img src="images-for-programme-of-events/bizantino.jpg" alt="Byzantine Terra d'Otranto">
+                </div>
+            </div>
+
+            <!-- Event: The Toddler Brain -->
+            <div class="event-card" data-date="2026-02-06">
+                <div class="event-details">
+                    <p class="event-date">Friday February 6th</p>
+                    <p class="event-time">18:15</p>
+                    <p class="event-location">at Museo "S. Castromediano"<br>
+                    co-working area, 1st floor<br>
+                    viale Gallipoli, 31<br>
+                    Lecce<br>
+                    <a href="locations.html#castromediano" class="location-map-link">View map →</a></p>
+                    <a href="https://forms.gle/2n4aooX3p1FgrpHM7" class="booking-link" target="_blank">Please book here</a>
+                </div>
+                <div class="event-title-section">
+                    <h2>The Toddler Brain</h2>
+                    <p class="event-speaker-name">Julia Wilcox</p>
+                    <p class="event-speaker-title">Montessori Educator and Parent Coach</p>
+                </div>
+                <div class="event-image">
+                    <img src="images-for-programme-of-events/toddler.jpg" alt="The Toddler Brain">
+                </div>
+            </div>
+
+            <!-- Event: Mysteries of the Lab -->
+            <div class="event-card" data-date="2026-03-20">
+                <div class="event-details">
+                    <p class="event-date">Friday March 20th</p>
+                    <p class="event-time">18:15</p>
+                    <p class="event-location">at Museo "S. Castromediano"<br>
+                    co-working area, 1st floor<br>
+                    viale Gallipoli, 31<br>
+                    Lecce<br>
+                    <a href="locations.html#castromediano" class="location-map-link">View map →</a></p>
+                </div>
+                <div class="event-title-section">
+                    <h2>Mysteries of the Lab</h2>
+                    <p class="event-speaker-name">Mary Coppola</p>
+                    <p class="event-speaker-title">Head of the Restoration Laboratory at Museo Castromediano</p>
+                </div>
+                <div class="event-image">
+                    <img src="images-for-programme-of-events/particolare-delle-porte-dipinte-di-rudia.jpg" alt="Mysteries of the Lab">
+                </div>
+            </div>
+        
+            <!-- Australia: from biking to surfing with some literature inbetween -->
+            <div class="event-card" data-date="2026-04-17">
+                <div class="event-details">
+                    <p class="event-date">Friday April 17th</p>
+                    <p class="event-time">18:15</p>
+                    <p class="event-location">at Museo "S. Castromediano"<br>
+                    co-working area, 1st floor<br>
+                    viale Gallipoli, 31<br>
+                    Lecce<br>
+                    <a href="locations.html#castromediano" class="location-map-link">View map →</a></p>
+                </div>
+                <div class="event-title-section">
+                    <h2>Australia: from biking to surfing with some literature inbetween</h2>
+                    <p class="event-speaker-name">Caterina Colomba</p>
+                    <p class="event-speaker-title">University of Salento: English Literature</p>
+                </div>
+                <div class="event-image">
+                    <img src="images-for-programme-of-events/australia-bike-surf.jpg" alt="Australia: biking and surfing">
+                </div>
+            </div>
+
+            <!-- Event: Brains, the mind and AI -->
+            <div class="event-card" data-date="2026-11-13">
+                <div class="event-details">
+                    <p class="event-date">Friday November 13th</p>
+                    <p class="event-time">18:15</p>
+                    <p class="event-location">at Museo "S. Castromediano"<br>
+                    co-working area, 1st floor<br>
+                    viale Gallipoli, 31<br>
+                    Lecce<br>
+                    <a href="locations.html#castromediano" class="location-map-link">View map →</a></p>
+                </div>
+                <div class="event-title-section">
+                    <h2>Brains, the mind and AI</h2>
+                    <p class="event-speaker-name">Richard Lonsdale</p>
+                    <p class="event-speaker-title">Author of the book: Knowing Your Mind</p>
+                </div>
+                <div class="event-image">
+                    <img src="images-for-programme-of-events/lonsdale-knowing-your-mind.jpg" alt="Knowing Your Mind">
+                </div>
+            </div>
+        
+        <!-- Close the Events Container -->
+        </div>
+
+    </main>
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+
+// JAVASCRIPT TO REORDER EVENTS AND PUT THE NEXT EVENT FIRST
+function organizeEvents() {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0); // Reset to midnight for date comparison
+    
+    const eventsContainer = document.querySelector('.events-container');
+    const eventCards = Array.from(document.querySelectorAll('.event-card'));
+    
+    // Sort events: future events first (by date), then past events (by date)
+    eventCards.sort((a, b) => {
+        const dateA = new Date(a.dataset.date);
+        const dateB = new Date(b.dataset.date);
+        
+        const aIsFuture = dateA >= today;
+        const bIsFuture = dateB >= today;
+        
+        // If both are future or both are past, sort by date
+        if (aIsFuture === bIsFuture) {
+            return dateA - dateB;
+        }
+        
+        // Future events come before past events
+        return bIsFuture ? 1 : -1;
+    });
+    
+    // Reorder the DOM and mark past events
+    eventCards.forEach(card => {
+        eventsContainer.appendChild(card);
+        
+        const eventDate = new Date(card.dataset.date);
+        // Add past-event class to events that have already happened
+        if (eventDate < today) {
+            card.classList.add('past-event');
+        }
+    });
+    
+    // Find and highlight the next upcoming event
+    let nextEvent = null;
+    let closestDate = null;
+    
+    eventCards.forEach(card => {
+        const eventDate = new Date(card.dataset.date);
+        
+        // Only consider future events
+        if (eventDate >= today) {
+            if (!closestDate || eventDate < closestDate) {
+                closestDate = eventDate;
+                nextEvent = card;
+            }
+        }
+    });
+    
+    // Add next-event class to the closest upcoming event
+    if (nextEvent) {
+        nextEvent.classList.add('next-event');
+    }
+}
+// Run when page loads
+organizeEvents();
+    </script>
+
+<script>
+// ADD "READ REVIEW →" LINK FOR PAST EVENTS
+function addReviewLinks() {
+    const pastEvents = document.querySelectorAll('.event-card.past-event');
+
+    pastEvents.forEach(card => {
+        const img = card.querySelector('.event-image img');
+        if (!img) return;
+
+        // Extract the filename without extension
+        const srcParts = img.src.split('/');
+        const filenameWithExt = srcParts[srcParts.length - 1];
+        const filename = filenameWithExt.split('.')[0];
+
+        // Build the review URL (adjust extension if needed)
+        const reviewUrl = `event-reviews/${filename}.html`;
+
+        // Check if the file exists
+        fetch(reviewUrl, { method: 'HEAD' })
+            .then(res => {
+                if (res.ok) {
+                    // Only add link if it doesn't already exist
+                    if (!card.querySelector('.read-review-link')) {
+                        const reviewLink = document.createElement('a');
+                        reviewLink.href = reviewUrl;
+                        reviewLink.textContent = 'Read review →';
+                        reviewLink.className = 'read-review-link';
+
+                        // Insert after location/map links
+                        const locationEl = card.querySelector('.event-location');
+                        if (locationEl) {
+                            const br = document.createElement('br'); // line break
+                            locationEl.appendChild(br);
+                            locationEl.appendChild(reviewLink);
+                        }
+                    }
+                }
+            })
+            .catch(() => {
+                console.warn(`Review not found: ${reviewUrl}`);
+            });
+    });
+}
+
+// Run after events are organized
+organizeEvents();
+addReviewLinks();
+</script>
+
+</body>
+</html>

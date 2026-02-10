@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Circolo Berkeley</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS -->  
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body class="committee-page">
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+    <main class="about-main">
+        <h1 class="subpage-heading">The Committee</h1>
+        <p>Our team consists of dedicated members who organize events, 
+            publish articles, manage the community and this website</p>
+        <h2>Committee Members</h2>
+        <ul class="committee-list"> 
+            <li><strong>David Katan</strong> - President</li>
+            <li><strong>Nicky James</strong> - Vice President</li>
+            <li><strong>Claudia Mazzei</strong> - Treasurer</li>
+            <li><strong>Patrizia Sanguedolce</strong></li>
+            <li><strong>Luigi Di Castri</strong></li>
+        </ul>
+    </main> <!-- Close main -->
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

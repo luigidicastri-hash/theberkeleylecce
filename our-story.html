@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Circolo Berkeley</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS -->
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body class="our-story-page">
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+    <main class="about-main">
+        <h1 class="subpage-heading">Our Story</h1>
+        <p>Founded in [Year], b;ah blah Circolo Berkeley has been a hub for cultural activities in Lecce, bringing together enthusiasts and experts alike.</p>
+    </main>
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

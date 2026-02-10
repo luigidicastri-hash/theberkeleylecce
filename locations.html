@@ -1,0 +1,148 @@
+<!--
+    LOCATIONS PAGE - The Berkeley Lecce
+    
+    TO ADD A NEW LOCATION:
+    1. Copy the entire <div class="location-item"> block (lines ~44-120)
+    2. Paste it before the final comment in the locations-container
+    3. Add a unique ID to the location-item div:
+       - Format: id="descriptive-name" (lowercase, use hyphens not spaces)
+       - Example: id="castromediano" or id="teatro-apollo"
+       - This ID is used for linking from the programme page and other pages
+    4. Update the following:
+       - <h2> tag: New location name
+       - <p> tag after h2: Location subtitle/description
+       - Address lines: Replace each <p> in the address-info section
+       - Map iframe src: Update the URL with new address
+    
+    MAP URL FORMAT:
+    https://maps.google.com/maps?q=YOUR+ADDRESS+HERE&output=embed
+    - Replace spaces with + signs
+    - Example: Via+Gallipoli+31+Lecce+Italy
+    
+    LINKING FROM OTHER PAGES:
+    To link to a specific location from the programme or other pages:
+    <a href="locations.html#your-location-id">View map</a>
+    
+    STYLING:
+    All formatting is controlled in locations.css
+    - Colors, fonts, spacing can all be adjusted there
+    - No inline styles in this HTML file
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations - Circolo Berkeley</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="locations.css">
+</head>
+
+<body class="locations-page">
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+    <main class="about-main">
+        <h1 class="subpage-heading">Locations</h1>
+        
+        <div class="locations-container">
+            <!-- Location 1: Co-working Area -->
+            <div class="location-item" id="castromediano">
+                <div class="location-header">
+                    <h2>Co-working Area</h2>
+                    <p>Museo "S. Castromediano"</p>
+                </div>
+                
+                <div class="location-content">
+                    <div class="location-details">
+                        <h3>Address</h3>
+                        <div class="address-info">
+                            <p>1st floor, Museo "S. Castromediano"</p>
+                            <p>Viale Gallipoli, 31</p>
+                            <p>Lecce 73100</p>
+                            <p>Italy</p>
+                        </div>
+                    </div>
+                    
+                    <div class="map-container">
+                        <iframe
+                            src="https://maps.google.com/maps?q=Museo+Sigismondo+Castromediano+Viale+Gallipoli+31+Lecce+73100+Italy&output=embed"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location 2: Mediateca -->
+            <div class="location-item" id="mediateca">
+                <div class="location-header">
+                    <h2>Mediateca</h2>
+                    <p>Complesso Studium 2000, Università del Salento</p>
+                </div>
+                
+                <div class="location-content">
+                    <div class="location-details">
+                        <h3>Address</h3>
+                        <div class="address-info">
+                            <p>Palazzo Palladiano (next to the Museo Papirologico)</p>
+                            <p>Complesso Studium 2000</p>
+                            <p>Università del Salento</p>
+                            <p>Via di Valesio</p>
+                            <p>Lecce 73100</p>
+                            <p>Italy</p>
+                        </div>
+                    </div>
+                    
+                    <div class="map-container">
+                        <iframe
+                            src="https://maps.google.com/maps?q=Mediateca+Studium+2000+Via+di+Valesio+Lecce+73100+Italy&output=embed"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 
+            TO ADD A NEW LOCATION:
+            Copy the entire "location-item" div block above and paste it here.
+            Then update:
+            1. Add a unique ID to the location-item div (e.g., id="new-venue-name")
+            2. The h2 title
+            3. The subtitle paragraph
+            4. The address details in the address-info section
+            5. The iframe src URL with the new address
+            
+            Example iframe URL format:
+            https://maps.google.com/maps?q=YOUR+ADDRESS+HERE&output=embed
+            (Replace spaces with + signs in the address)
+            -->
+
+        </div>
+    </main>
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

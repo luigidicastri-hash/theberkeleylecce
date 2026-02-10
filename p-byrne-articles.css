@@ -1,0 +1,205 @@
+/* =========================================
+   P-BYRNE-ARTICLES.CSS
+   Self-contained version with copied main/article styles
+   ========================================= */
+
+/* --- 0. COPIED FROM GLOBAL STYLE.CSS --- */
+
+/* Main content box for Byrne pages */
+main {
+    max-width: 1100px;      /* narrower for better readability */
+    margin: 10px auto;     /* centers and adds vertical spacing */
+    background: rgb(185, 237, 237);
+    padding: 10px 30px 30px 30px;  /* more comfortable inner spacing */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1;
+}
+/* Byrne article styling */
+article {
+    font-family:'Georgia', serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: black;
+    margin: 20px auto;          /* match main spacing */
+    max-width: 1100px;            /* match main width */
+    width: 90%;                  /* responsive */
+    background-color: rgb(171, 175, 203);
+    padding: 20px 25px 25px 25px;  /* match main padding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Article images */
+article img {
+    max-width: 75%;  
+    height: auto;    
+    display: block;  
+    margin: 20px auto;  
+}
+
+/* Article paragraphs */
+article p {
+    text-align: justify;
+}
+
+/* Article title */
+.article-title {
+    font-family: 'Georgia', serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #040a10;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 1.0rem;
+    line-height: 1.2;
+}
+
+/* Accreditation / captions */
+.accreditation {
+    font-size: 0.9rem;
+    color: #424141;
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* =========================================
+   ORIGINAL P-BYRNE STYLES
+   ========================================= */
+
+/* --- 1. HEADER SETUP --- */
+.P_Byrne header::after {
+  display: none;
+}
+
+.P_Byrne header {
+  background-image: url('images/lecce-night.jpg');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: repeat;
+  filter: brightness(1.2);
+}
+
+/* --- 2. THE GRID LAYOUT --- */
+body.P_Byrne .articles-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin: 10px 0 0 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* --- 3. ARTICLE CARD STYLING --- */
+.P_Byrne .article-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  padding: 12px;
+  background-color: #92d298;
+  border: 2px solid #3c3b3b;
+  margin: -1px; /* Prevents double borders */
+  box-sizing: border-box;
+}
+
+/* --- 4. IMAGE SIZING & CROP --- */
+.P_Byrne .article-image {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.P_Byrne .article-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 20%; /* Standard crop for most photos */
+  border-radius: 2px;
+  display: block;
+}
+
+/* --- 5. THE BECKETT FACE FIX --- */
+body.P_Byrne .article-card.beckett-fix .article-image img {
+  object-position: 50% 85%;
+}
+
+.section-divider {
+    text-align: center; /* Center the divider asterisks */
+}
+
+/* --- 6. TEXT & LINK FORMATTING --- */
+.P_Byrne .article-info h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.3rem;
+}
+
+.P_Byrne .article-info p {
+  margin: 3px 0;
+  font-size: 0.9rem;
+  color: #161616;
+}
+
+.P_Byrne .article-info a {
+  text-decoration: none;
+  color: #0f141a;
+}
+
+.P_Byrne .article-info a:hover {
+  text-decoration: underline;
+}
+
+/* --- 7. ARTICLE QUOTE INDENTATION --- */
+.article-quote {
+    margin-left: 20px;
+    margin-right: 80px;  
+    text-align: justify;
+}
+
+/* Only dialogue-style articles */
+body.P_Byrne article.dialogue > p {
+    margin: 0.15em 0;
+    line-height: 1.35;
+}
+article.dialogue p.accreditation {
+    text-align: left;
+}
+
+/* Dedication */
+.dedication {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.90em;
+    color: #1a1919;
+    margin-bottom: 0.5em;
+}
+
+/* Make superscripts in first paragraph of "small-first" article smaller */
+article.small-first > p:first-of-type sup {
+    font-size: 1.0em; 
+}
+
+/* Remove focus outline from footnote links for mouse users */
+article sup a:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* Lower all superscripts closer to the baseline and make them slightly bigger */
+article sup {
+    vertical-align: baseline;
+    position: relative;
+    top: 0.2em;   
+    font-size: 1.0em; 
+}
+
+/* --- ADD ANIMATED SKY TO ARTICLES PAGE --- */
+body.P_Byrne {
+    background-image: url('images/sky-background.jpg');
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center 0%;
+    animation: sky-move 150s linear infinite;
+    min-height: 100vh;
+    filter: brightness(1.1);
+}

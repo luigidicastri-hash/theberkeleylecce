@@ -1,0 +1,179 @@
+/* =========================================
+   RESPONSIVE STYLES
+   =========================================
+   This CSS file contains all media queries 
+   and responsive adjustments for the website.
+   
+   Purpose:
+   - Ensure the site layout adapts to different 
+     screen sizes: desktop, tablet, and mobile.
+   - Make text, images, headers, navigation, 
+     and article boxes readable and visually balanced
+     on smaller screens.
+   - Improve user experience on devices ranging 
+     from large monitors to small smartphones.
+
+   Features:
+   - Adjusts logos, header titles, and navigation links
+     for tablets and mobile screens.
+   - Stacks content like story rows and image/quote sections
+     vertically on narrow screens.
+   - Provides general responsiveness for all main and
+     article elements, including padding, width, and
+     max-width adjustments.
+   - Tweaks article titles and paragraph spacing for 
+     readability on smaller devices.
+   - Handles responsive video embeds for proper scaling.
+   
+   Notes:
+   - Media query breakpoints: 768px (tablet) and 480px (mobile).
+   - Changes apply to all pages and all articles, including
+     specialized sections like Byrne articles.
+   - No site-specific or page-specific selectors are used
+     for general responsiveness, ensuring consistency. */
+/* =========================================
+   TABLET AND BELOW (768px)
+   ========================================= */
+
+/* Carousel dots positioning for smaller screens */
+@media (max-width: 768px) {
+    .carousel-dots {
+        bottom: 10px;
+    }
+}
+
+/* Story row - stack vertically on mobile */
+@media (max-width: 768px) {
+    .story-row,
+    .story-row.reverse {
+        flex-direction: column;
+    }
+}
+
+/* General responsive adjustments for tablets */
+@media (max-width: 768px) {
+    .logo {
+        width: 80px;
+        height: 80px;
+        top: 15px;
+        left: 15px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+        margin-top: 50px;
+    }
+
+    nav a {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+
+    main {
+        margin: 20px;
+        padding: 15px;
+    }
+}
+
+/* Image and quotes section - stack on tablets */
+@media (max-width: 768px) {
+    .image-and-quotes {
+        flex-direction: column;  /* stack image and text vertically */
+        align-items: center;     /* center everything horizontally */
+        gap: 1rem;               /* spacing between image and quote */
+    }
+
+    .image-and-quotes img {
+        width: 80%;  /* image fills most of container */
+        max-width: 300px; /* never exceeds original size */
+        margin-left: 0; /* reset in case */
+    }
+
+    .quotes {
+        text-align: center;  /* optional: center quote on small screens */
+    }
+}
+
+/* =========================================
+   GENERAL ARTICLE RESPONSIVENESS
+   Applies to all main and article elements
+   ========================================= */
+
+/* Tablets and below (768px) */
+@media (max-width: 768px) {
+    main, article {
+        max-width: 95%;      /* almost full width of the screen */
+        width: 100%;         /* ensures it scales down */
+        margin: 15px auto;   /* centered with vertical spacing */
+        padding: 15px 20px;  /* reduce padding slightly */
+    }
+
+    /* Article title adjustments for smaller screens */
+    .article-title {
+        font-size: 2rem;       /* slightly smaller than desktop */
+        margin-top: 10px;
+        margin-bottom: 0.8rem;
+        line-height: 1.25;     
+    }
+
+    /* Paragraph spacing */
+    article p {
+        margin-bottom: 1rem;  /* slightly smaller spacing for readability */
+    }
+}
+
+/* =========================================
+   MOBILE PHONES (480px and below)
+   ========================================= */
+@media (max-width: 480px) {
+    /* Header title */
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Navigation links */
+    nav a {
+        padding: 4px 8px;
+        font-size: 0.8rem;
+    }
+
+    /* Main content */
+    main {
+        margin: 15px;
+        padding: 10px;
+    }
+
+    /* Article content adjustments for mobile */
+    main, article {
+        max-width: 98%;      /* almost fills small screens */
+        width: 100%;
+        margin: 10px auto;
+        padding: 10px 15px;  /* smaller padding for compact layout */
+    }
+
+    /* Article title adjustments for small mobile */
+    .article-title {
+        font-size: 1.8rem;
+        margin-top: 8px;
+        margin-bottom: 0.7rem;
+        line-height: 1.2;
+    }
+
+    /* Paragraph spacing */
+    article p {
+        margin-bottom: 0.9rem;
+    }
+}
+
+/* Responsive video embeds */
+.video-container {
+    margin: 2rem 0;
+    max-width: 100%;
+}
+
+.video-container iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
