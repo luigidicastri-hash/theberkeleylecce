@@ -54,11 +54,11 @@ main p {
    PAGE-SPECIFIC BACKGROUND COLORS
    ================================================= */
 .about-us-page .about-main {
-    background-color: rgb(155, 229, 177); /* Blue - same as current */
+    background-color: rgb(155, 229, 177); 
 }
 
 .our-story-page .about-main {
-    background-color: #e4ba7a; /* orange */
+    background-color: rgb(155, 229, 177); 
 }
 
 .committee-page .about-main {
