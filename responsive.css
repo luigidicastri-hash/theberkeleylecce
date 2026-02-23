@@ -133,8 +133,9 @@
 
     /* Navigation links */
     nav a {
-        padding: 4px 8px;
-        font-size: 0.8rem;
+        padding: 4px 6px;
+        font-size: 0.75rem;
+        margin: 0;        
     }
 
     /* Main content */

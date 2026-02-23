@@ -31,7 +31,7 @@ main {
 /* Individual event card (horizontal row) */
 .event-card {
     display: grid;
-    grid-template-columns: 1fr 2.0fr .75fr; /*controls the width of the three columns*/
+    grid-template-columns: 260px 2.0fr .75fr; /*controls the width of the three columns*/
     gap: 15px;
     align-items: stretch;
     padding: 1px;
@@ -211,10 +211,12 @@ main {
 /* Right column - Event image */
 .event-image {
     width: 175px;
+    height: 100%;
     flex-shrink: 0;
     padding-left: 15px;
-    max-height: 200px;  /* adjust this value to taste */
+    /*max-height: 200px;  /* adjust this value to taste */
     overflow: hidden;
+    align-self: center;  /* add this */
 }
 
 .event-image img {
@@ -334,4 +336,27 @@ main {
 
 .event-details .event-location {
     margin-bottom: 0;
+}
+
+.event-card.past-event {
+    opacity: 0.7;
+    background: #a8c5cc;
+}
+
+.event-card.past-event .event-title-section {
+    justify-content: flex-start;
+    padding-top: 10px;
+}
+
+.event-card.past-event .event-title-section::before {
+    content: 'PAST EVENT';
+    display: inline-block;
+    background-color: #ffb726;
+    color: rgb(16, 15, 15);
+    padding: 4px 12px;
+    font-weight: 800;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    align-self: flex-start;
 }
