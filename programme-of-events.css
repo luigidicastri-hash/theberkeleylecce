@@ -2,20 +2,24 @@
 
 /* Main container */
 main {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 10px auto;
     padding: 40px 20px;
+    background: rgb(185, 237, 237);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 /* Programme title */
 .programme-title {
     text-align: center;
+    font-family: 'Georgia', serif;
     font-size: 2em;
-    font-weight: 600;
-    margin-top: -30px;
-    margin-bottom: 05px;
+    font-weight: bold;
+    margin-top: -25px;
+    margin-bottom: 10px;
     color: #0b0000;
-    font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    /*font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;*/
 }
 
 /* Events container */
@@ -49,7 +53,7 @@ main {
 .next-event .event-details::before {
     content: 'NEXT EVENT';
     position: absolute;
-    top: 8px;
+    top: 36px;
     right: 8px;
     background-color: #2a046f;
     color: white;
@@ -64,7 +68,7 @@ main {
 .event-details {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 2px;
     border-right: 1px solid #1a1919;
     padding-right: 15px;
     padding-left: 10px; 
@@ -129,7 +133,6 @@ main {
     text-decoration: underline;
 }
 
-
 .booking-link {
     display: inline-block;
     padding: 6px 15px;
@@ -140,9 +143,12 @@ main {
     font-weight: 500;
     border-radius: 0;
     transition: background-color 0.3s ease;
-    margin-top: 8px;
+    margin-top: -18px;
     text-align: center;
     max-width: 140px;
+    margin-left: auto; /* pushes the button to the right */
+    margin-right: -8px;
+    margin-bottom: 4px;
 }
 
 .booking-link:hover {
@@ -166,6 +172,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 0px;  /* adjust this value to taste */
     border-right: 1px solid #1a1919;
     padding-right: 15px;
 }
@@ -207,6 +214,8 @@ main {
     width: 175px;
     flex-shrink: 0;
     padding-left: 15px;
+    max-height: 200px;  /* adjust this value to taste */
+    overflow: hidden;
 }
 
 .event-image img {
@@ -319,8 +328,11 @@ main {
         margin-left: 0;
     }
 }
-
 /* Hide booking links on past events */
 .event-card.past-event .booking-link {
     display: none;
+}
+
+.event-details .event-location {
+    margin-bottom: 0;
 }
