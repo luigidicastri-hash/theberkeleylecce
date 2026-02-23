@@ -232,6 +232,37 @@ main {
     transform: scale(1.05);
 }*/
 
+/* Hide booking links on past events */
+.event-card.past-event .booking-link {
+    display: none;
+}
+
+.event-details .event-location {
+    margin-bottom: 0;
+}
+
+.event-card.past-event {
+    opacity: 0.7;
+    background: #a8c5cc;
+}
+
+.event-card.past-event .event-title-section {
+    justify-content: flex-start;
+    padding-top: 10px;
+}
+
+.event-card.past-event .event-title-section::before {
+    content: 'PAST EVENT';
+    display: inline-block;
+    background-color: #ffb726;
+    color: rgb(16, 15, 15);
+    padding: 4px 12px;
+    font-weight: 800;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    align-self: flex-start;
+}
 /* Responsive design for tablets, mobile, and extra small screens */
 
 /* Tablets (≤992px) */
@@ -299,6 +330,11 @@ main {
         max-width: 100%;
         padding: 12px 20px;
     }
+
+    .event-card.past-event .event-image {
+        overflow: visible;
+        height: auto;
+    }
 }
 
 /* Extra small screens (≤480px) */
@@ -328,35 +364,4 @@ main {
         display: inline-block;
         margin-left: 0;
     }
-}
-/* Hide booking links on past events */
-.event-card.past-event .booking-link {
-    display: none;
-}
-
-.event-details .event-location {
-    margin-bottom: 0;
-}
-
-.event-card.past-event {
-    opacity: 0.7;
-    background: #a8c5cc;
-}
-
-.event-card.past-event .event-title-section {
-    justify-content: flex-start;
-    padding-top: 10px;
-}
-
-.event-card.past-event .event-title-section::before {
-    content: 'PAST EVENT';
-    display: inline-block;
-    background-color: #ffb726;
-    color: rgb(16, 15, 15);
-    padding: 4px 12px;
-    font-weight: 800;
-    font-size: 0.85rem;
-    border-radius: 4px;
-    margin-bottom: 8px;
-    align-self: flex-start;
 }
