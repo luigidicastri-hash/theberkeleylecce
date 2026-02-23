@@ -335,6 +335,22 @@ main {
         overflow: visible;
         height: auto;
     }
+    .event-card.past-event .event-title-section::before {
+        display: none;
+    }
+
+    .event-card.past-event .event-image::before {
+        content: 'PAST EVENT';
+        display: block;
+        background-color: #ffb726;
+        color: rgb(16, 15, 15);
+        padding: 4px 12px;
+        font-weight: 800;
+        font-size: 0.85rem;
+        border-radius: 4px;
+        margin-bottom: 8px;
+        text-align: center;
+    }
 }
 
 /* Extra small screens (≤480px) */
