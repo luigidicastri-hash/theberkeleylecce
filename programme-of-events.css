@@ -135,7 +135,7 @@ main {
 .booking-link {
     display: inline-block;
     padding: 6px 15px;
-    background-color: #4a4848;
+    background-color: #282727;
     color: #ffffff;
     text-decoration: none;
     font-size: 0.85rem;
@@ -228,9 +228,19 @@ main {
     transition: transform 0.3s ease;
 }
 
-/*.event-card:hover .event-image img {
-    transform: scale(1.05);
-}*/
+/* Past and future events separator bar */
+.event-separator {
+    align-self: flex-start;          /* stops flex from stretching it */
+    display: inline-block;           /* small box */
+    background-color: #ffb726;       
+    color: rgb(16, 15, 15);          
+    padding: 4px 12px;               
+    font-weight: 800;                
+    font-size: 0.85rem;              
+    border-radius: 4px;              
+    margin: 7px 0 8px 0;            /* margin: TOP  RIGHT  BOTTOM  LEFT */
+    text-transform: uppercase;       /* PAST EVENTS */
+}
 
 /* Hide booking links on past events */
 .event-card.past-event .booking-link {

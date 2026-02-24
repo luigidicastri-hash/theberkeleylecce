@@ -26,11 +26,14 @@
    - Handles responsive video embeds for proper scaling.
    
    Notes:
-   - Media query breakpoints: 768px (tablet) and 480px (mobile).
+   - Media query breakpoints: 768px (tablet), 600px (phones),
+     and 480px (small phones).
    - Changes apply to all pages and all articles, including
      specialized sections like Byrne articles.
    - No site-specific or page-specific selectors are used
      for general responsiveness, ensuring consistency. */
+
+
 /* =========================================
    TABLET AND BELOW (768px)
    ========================================= */
@@ -78,19 +81,19 @@
 /* Image and quotes section - stack on tablets */
 @media (max-width: 768px) {
     .image-and-quotes {
-        flex-direction: column;  /* stack image and text vertically */
-        align-items: center;     /* center everything horizontally */
-        gap: 1rem;               /* spacing between image and quote */
+        flex-direction: column;  
+        align-items: center;     
+        gap: 1rem;               
     }
 
     .image-and-quotes img {
-        width: 80%;  /* image fills most of container */
-        max-width: 300px; /* never exceeds original size */
-        margin-left: 0; /* reset in case */
+        width: 80%;  
+        max-width: 300px; 
+        margin-left: 0; 
     }
 
     .quotes {
-        text-align: center;  /* optional: center quote on small screens */
+        text-align: center;
     }
 }
 
@@ -99,35 +102,74 @@
    Applies to all main and article elements
    ========================================= */
 
-/* Tablets and below (768px) */
 @media (max-width: 768px) {
     main, article {
-        max-width: 95%;      /* almost full width of the screen */
-        width: 100%;         /* ensures it scales down */
-        margin: 15px auto;   /* centered with vertical spacing */
-        padding: 15px 20px;  /* reduce padding slightly */
+        max-width: 95%;      
+        width: 100%;         
+        margin: 15px auto;   
+        padding: 15px 20px;  
     }
 
-    /* Article title adjustments for smaller screens */
     .article-title {
-        font-size: 2rem;       /* slightly smaller than desktop */
+        font-size: 2rem;       
         margin-top: 10px;
         margin-bottom: 0.8rem;
         line-height: 1.25;     
     }
 
-    /* Paragraph spacing */
     article p {
-        margin-bottom: 1rem;  /* slightly smaller spacing for readability */
+        margin-bottom: 1rem;
     }
 }
+
+
+/* =========================================
+   PHONES (600px and below)
+   ========================================= */
+@media (max-width: 600px) {
+
+    /* shrink the round logo */
+    .logo {
+        width: 80px;
+        height: 80px;
+        top: 15px;
+        left: 15px;
+    }
+
+    /* push the title down so it clears the logo */
+    header h1 {
+        margin-top: 100px;
+        font-size: 1.7rem;
+    }
+
+    nav a {
+        padding: 5px 8px;
+        font-size: 0.85rem;
+    }
+
+    main {
+        margin: 18px;
+        padding: 12px;
+    }
+}
+
 
 /* =========================================
    MOBILE PHONES (480px and below)
    ========================================= */
 @media (max-width: 480px) {
-    /* Header title */
+
+    /* shrink logo even more */
+    .logo {
+        width: 70px;
+        height: 70px;
+        top: 10px;
+        left: 10px;
+    }
+
+    /* adjust title again */
     header h1 {
+        margin-top: 90px;
         font-size: 1.5rem;
     }
 
@@ -146,10 +188,10 @@
 
     /* Article content adjustments for mobile */
     main, article {
-        max-width: 98%;      /* almost fills small screens */
+        max-width: 98%;      
         width: 100%;
         margin: 10px auto;
-        padding: 10px 15px;  /* smaller padding for compact layout */
+        padding: 10px 15px;  
     }
 
     /* Article title adjustments for small mobile */
@@ -165,6 +207,7 @@
         margin-bottom: 0.9rem;
     }
 }
+
 
 /* Responsive video embeds */
 .video-container {

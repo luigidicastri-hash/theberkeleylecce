@@ -150,9 +150,9 @@ header h1 {
     color: white;
 }
 
-/* =========================================
-   LOGO (APPEARS ON ALL PAGES)
-   ========================================= */
+/* ===========================================================================
+   LOGO (APPEARS ON ALL PAGES) and also used for Byrne Article Page (via HTML)
+   =========================================================================== */
 .logo {
     width: 100px;          /* Choose your size */
     height: 100px;         /* Must match width for perfect circle */
