@@ -109,21 +109,6 @@ footer p {
     margin: 0;
 }
 
-/* =========================================
-   LOGO (APPEARS ON ALL PAGES) via CSS
-   ========================================= */
-header::after {
-    content: "";
-    width: 100px;                                   /* same size as before */
-    height: 100px;
-    background: url('images/berkeley-logo.png') center / cover no-repeat;  /* updated logo */
-    border-radius: 50%;                             /* circular shape */
-    position: absolute;
-    top: 20px;                                      /* distance from top of header */
-    left: 20px;                                     /* distance from left of header */
-    z-index: 10;                                    /* above overlay and background */
-}
-
 /* Ensure header content stays above overlay */
 header * {
     position: relative;
@@ -150,9 +135,9 @@ header h1 {
     color: white;
 }
 
-/* ===========================================================================
-   LOGO (APPEARS ON ALL PAGES) and also used for Byrne Article Page (via HTML)
-   =========================================================================== */
+/* =================================================================================
+   LOGO CLASS (APPEARS ON ALL PAGES) and also used for Byrne Article Page (via HTML)
+   ================================================================================= */
 .logo {
     width: 100px;          /* Choose your size */
     height: 100px;         /* Must match width for perfect circle */
