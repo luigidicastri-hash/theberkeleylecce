@@ -74,11 +74,8 @@ article p {
 }
 
 .P_Byrne header {
-  background-image: url('images/lecce-night.jpg');
-  background-size: contain;
-  background-position: center center;
-  background-repeat: repeat;
-  filter: brightness(1.2);
+    background: url('images/lecce-night.jpg') center/contain no-repeat;
+    filter: brightness(1.2);
 }
 
 /* --- 2. THE GRID LAYOUT --- */

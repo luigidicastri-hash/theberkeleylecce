@@ -194,7 +194,7 @@ EXAMPLE OF A COMPLETE NEW EVENT:
             <a href="locations.html#castromediano" class="location-map-link">View map →</a></p>
         </div>
         <div class="event-title-section">
-            <h2>Australia: from biking to surfing with some literature inbetween</h2>
+            <h2>Australia: from biking to surfing with some literature in between</h2>
             <p class="event-speaker-name">Caterina Colomba</p>
             <p class="event-speaker-title">University of Salento: English Literature</p>
         </div>
@@ -249,7 +249,7 @@ fetch('global-footer.html')
         document.getElementById('footer-placeholder').innerHTML = data;
     });
 
-// UPDATED: reorder events, reverse past events, add separator bar
+// Reorder events, reverse past events, add separator bar
 function organizeEvents() {
     const today = new Date();
     today.setHours(0, 0, 0, 0);
@@ -310,11 +310,51 @@ function organizeEvents() {
         nextEvent.classList.add('next-event');
     }
 }
+// ADD "READ REVIEW →" LINK FOR PAST EVENTS
+function addReviewLinks() {
+    const pastEvents = document.querySelectorAll('.event-card.past-event');
 
-// Run once, in correct order
+    pastEvents.forEach(card => {
+        const img = card.querySelector('.event-image img');
+        if (!img) return;
+
+        // Extract the filename without extension
+        const srcParts = img.src.split('/');
+        const filenameWithExt = srcParts[srcParts.length - 1];
+        const filename = filenameWithExt.split('.')[0];
+
+        // Build the review URL (adjust extension if needed)
+        const reviewUrl = `event-reviews/${filename}.html`;
+
+        // Check if the file exists
+        fetch(reviewUrl, { method: 'HEAD' })
+            .then(res => {
+                if (res.ok) {
+                    // Only add link if it doesn't already exist
+                    if (!card.querySelector('.read-review-link')) {
+                        const reviewLink = document.createElement('a');
+                        reviewLink.href = reviewUrl;
+                        reviewLink.textContent = 'Read review →';
+                        reviewLink.className = 'read-review-link';
+
+                        // Insert after location/map links
+                        const locationEl = card.querySelector('.event-location');
+                        if (locationEl) {
+                            locationEl.insertAdjacentHTML('beforeend', '<br>');
+                            locationEl.appendChild(reviewLink);
+                        }
+                    }
+                }
+            })
+            .catch(() => {
+                console.warn(`Review not found: ${reviewUrl}`);
+            });
+    });
+}
+
+// Run after events are organized
 organizeEvents();
 addReviewLinks();
 </script>
-
 </body>
 </html>
