@@ -208,7 +208,6 @@
     }
 }
 
-
 /* Responsive video embeds */
 .video-container {
     margin: 2rem 0;
@@ -220,4 +219,91 @@
     margin: 0 auto;
     max-width: 100%;
     height: auto;
+}
+/* =========================================
+   P-BYRNE ARTICLES – FULL RESPONSIVE FIX
+   ========================================= */
+
+/* ----- Tablet: ≤768px ----- */
+@media (max-width: 768px) {
+
+    /* Articles grid becomes single column */
+    body.P_Byrne .articles-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+        width: 100% !important;
+    }
+
+    /* Each article card stacks vertically */
+    body.P_Byrne .article-card {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        width: 100% !important;
+        padding: 10px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Article images take full width */
+    body.P_Byrne .article-image {
+        width: 100% !important;
+        margin-bottom: 10px !important;
+    }
+
+    body.P_Byrne .article-image img {
+        width: 100% !important;
+        height: auto !important;
+        object-fit: cover !important;
+        object-position: 50% 20% !important;
+    }
+
+    /* Text adjustments */
+    body.P_Byrne .article-info h3 {
+        font-size: 1.3rem !important;
+        margin-bottom: 6px !important;
+    }
+
+    body.P_Byrne .article-info p {
+        font-size: 0.9rem !important;
+        margin: 3px 0 !important;
+    }
+}
+
+/* ----- Phones: ≤600px ----- */
+@media (max-width: 600px) {
+    body.P_Byrne .article-card {
+        padding: 8px !important;
+    }
+
+    body.P_Byrne .article-info h3 {
+        font-size: 1.25rem !important;
+    }
+
+    body.P_Byrne .article-info p {
+        font-size: 0.88rem !important;
+    }
+
+    body.P_Byrne .article-image img {
+        object-position: 50% 25% !important;
+    }
+}
+
+/* ----- Small phones: ≤480px ----- */
+@media (max-width: 480px) {
+    body.P_Byrne .article-card {
+        padding: 6px !important;
+    }
+
+    body.P_Byrne .article-info h3 {
+        font-size: 1.15rem !important;
+    }
+
+    body.P_Byrne .article-info p {
+        font-size: 0.85rem !important;
+    }
+
+    body.P_Byrne .article-image img {
+        object-position: 50% 30% !important;
+    }
 }
