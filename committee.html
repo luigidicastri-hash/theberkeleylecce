@@ -30,12 +30,14 @@
     <!-- Footer loaded from shared file -->
     <div id="footer-placeholder"></div>
 
+    <script src="menu-toggle.js"></script>
     <script>
         // Load header
         fetch('global-header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header-placeholder').innerHTML = data;
+                initHamburgerMenu();  // Initialize hamburger menu after header loads
             });
 
         // Load footer

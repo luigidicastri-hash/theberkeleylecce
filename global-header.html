@@ -2,8 +2,15 @@
     <img src="images/berkeley-logo.png" alt="Circolo Berkeley Logo" class="logo">
     <h1>Circolo Berkeley Lecce</h1>
 
-    <!-- Static nav with dropdown -->
-    <nav>
+    <!-- MOBILE RESPONSIVE: Hamburger menu button (hidden on desktop, shows on mobile) -->
+    <button class="hamburger-menu" id="hamburger-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Static nav with dropdown (toggleable on mobile via hamburger menu) -->
+    <nav id="main-nav">
         <a href="index.html">Home</a> |
 
         <span class="has-dropdown">

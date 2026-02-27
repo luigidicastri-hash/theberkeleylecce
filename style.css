@@ -156,6 +156,54 @@ nav {
     margin-top: 15px;
     position: relative;
     z-index: 2001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* ========================================= 
+   HAMBURGER MENU (MOBILE RESPONSIVE)
+   Added for improved mobile navigation
+   Desktop: hidden | Mobile: visible when clicked
+   ========================================= */
+
+/* Hamburger menu button - only visible on mobile screens via media query in responsive.css */
+.hamburger-menu {
+    display: none;  /* Hidden on desktop - shown at 768px breakpoint */
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 3000;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Three horizontal lines of hamburger icon */
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 2px;
+    transition: 0.3s;  /* Smooth animation when menu opens */
+}
+
+/* Transform lines to X shape when menu is active */
+.hamburger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger-menu.active span:nth-child(2) {
+    opacity: 0;  /* Hide middle line */
+}
+
+.hamburger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
 }
 
 /* Links styling (your original style) */

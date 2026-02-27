@@ -67,9 +67,48 @@
         margin-top: 50px;
     }
 
+    /* ========================================= 
+       HAMBURGER MENU - MOBILE RESPONSIVE
+       Display hamburger button at 768px breakpoint and below
+       ========================================= */
+    
+    /* Show hamburger menu button on tablets and mobile */
+    .hamburger-menu {
+        display: flex;
+    }
+
+    /* Hide nav by default on mobile, shown when .active class is applied via JavaScript */
+    nav#main-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 15px 0;
+        border-radius: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 2000;
+    }
+
+    /* Show nav when active */
+    nav#main-nav.active {
+        display: flex;
+    }
+
     nav a {
-        padding: 6px 12px;
-        font-size: 0.9rem;
+        padding: 12px 20px;
+        font-size: 0.95rem;
+        display: block;
+        color: white;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Hide pipe separators on mobile */
+    nav a::after {
+        content: none;
     }
 
     main {
@@ -142,9 +181,41 @@
         font-size: 1.7rem;
     }
 
+    /* MOBILE HAMBURGER MENU: Stack nav vertically with proper touch targets */
+    
+    /* Organize nav menu for mobile - dropdown from header when active */
+    nav#main-nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+    }
+
+    /* Larger touch targets for mobile nav links (48px min recommended) */
     nav a {
-        padding: 5px 8px;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Dropdown styling on mobile - click to expand instead of hover */
+    nav .has-dropdown .dropdown {
+        position: static;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Indent dropdown items to show hierarchy */
+    nav .has-dropdown .dropdown a {
+        padding-left: 40px;
         font-size: 0.85rem;
+    }
+
+    /* Disable hover dropdown on mobile (touchscreens don't have hover) */
+    nav .has-dropdown:hover .dropdown {
+        display: none;
     }
 
     main {
@@ -173,11 +244,22 @@
         font-size: 1.5rem;
     }
 
-    /* Navigation links */
+    /* MOBILE HAMBURGER MENU: Further optimization for very small screens */
+    
+    /* Navigation links - ensure good touch targets on small phones */
     nav a {
-        padding: 4px 6px;
-        font-size: 0.75rem;
-        margin: 0;        
+        padding: 12px 20px;
+        font-size: 0.85rem;
+        margin: 0;
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Dropdown items for small screens */
+    nav .has-dropdown .dropdown a {
+        padding-left: 40px;
+        font-size: 0.8rem;
     }
 
     /* Main content */
