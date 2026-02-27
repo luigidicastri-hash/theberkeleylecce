@@ -200,10 +200,10 @@
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    /* Dropdown styling on mobile - click to expand instead of hover */
+    /* Dropdown styling on mobile - ALWAYS VISIBLE (not hover-dependent) */
     nav .has-dropdown .dropdown {
         position: static;
-        display: none;
+        display: block;  /* Always show dropdown items on mobile */
         background-color: rgba(0, 0, 0, 0.8);
     }
 
@@ -215,7 +215,7 @@
 
     /* Disable hover dropdown on mobile (touchscreens don't have hover) */
     nav .has-dropdown:hover .dropdown {
-        display: none;
+        display: block;  /* Always visible, not collapsed on hover */
     }
 
     main {
