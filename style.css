@@ -179,8 +179,8 @@ nav {
     z-index: 3000;
     position: absolute;
     right: 20px;
-    top: 50%;
-    transform: translateY(-55%);
+    top: 40%;
+    transform: translateY(-50%);
 }
 
 /* Three horizontal lines of hamburger icon */
