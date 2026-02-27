@@ -231,26 +231,29 @@ EXAMPLE OF A COMPLETE NEW EVENT:
     </main>
 
     <!-- Footer loaded from shared file -->
-    <div id="footer-placeholder"></div>
+    <div id="footer-placeholder"></div> 
 
 <!-- ===========================================
      JAVASCRIPT TO LOAD GLOBAL HEADER AND FOOTER
      ===========================================-->
-<script>
-// Load global header
-fetch('global-header.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('header-placeholder').innerHTML = data;
-    });
+<script src="menu-toggle.js"></script>
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                initHamburgerMenu();  // Initialize hamburger menu after header loads
+            });
 
-// Load global footer
-fetch('global-footer.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-    });
-
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    
 // Reorder events, reverse past events, add separator bar
 function organizeEvents() {
     const today = new Date();
