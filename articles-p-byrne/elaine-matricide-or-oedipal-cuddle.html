@@ -15,7 +15,7 @@
 </style>
 </head>
 
-<body class="P_Byrne">
+<body class="P_Byrne"> 
     <!-- Header loaded from shared file -->
     <div id="header-placeholder"></div>
 
@@ -297,12 +297,14 @@ Finney in 'Will Self's Transgressive Fictions'. <a href="#ref1">↩</a></p>
         <p>Author: Peter Byrne, <em>Published: 1st November 2024, &copy; Circolo Berkeley Lecce</em></p>
     </footer>
 
+    <script src="../menu-toggle.js"></script>
     <script>
         // Load header only 
         fetch('header-p-byrne.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header-placeholder').innerHTML = data;
+                initHamburgerMenu();
             });
     </script>
 
