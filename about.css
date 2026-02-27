@@ -79,6 +79,21 @@ main p {
     flex-direction: row-reverse; /* Reverses order for the second section */
 }
 
+/* -----------------------------------------------------------------
+   MOBILE OVERRIDE
+   responsive.css sets .story-row.reverse to column, but since about.css
+   is loaded later the plain rule above wins.  Add a dedicated media query
+   here to re-apply stacking on narrow screens and ensure both variants
+   behave the same on phones/tablets.  Use !important to beat the earlier
+   declaration if necessary.
+   ----------------------------------------------------------------- */
+@media (max-width: 768px) {
+    .story-row,
+    .story-row.reverse {
+        flex-direction: column !important;
+    }
+}
+
 .story-text {
     flex: 1;
     font-size: 18px;
