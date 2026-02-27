@@ -89,11 +89,13 @@
     <p>Author: Peter Byrne, <em>Published: 11th May 2025, &copy; Circolo Berkeley Lecce</em></p>
 </footer>
 
+<script src="../menu-toggle.js"></script>
 <script>
     fetch('header-p-byrne.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('header-placeholder').innerHTML = data;
+            initHamburgerMenu();
         });
 </script>
 
