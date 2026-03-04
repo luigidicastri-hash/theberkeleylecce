@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTICLE TITLE GOES HERE - IT'S THE BROWSER TAB NAME</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="stylesheet" href="../p-byrne-articles.css">
+</head>
+
+<body class="P_Byrne">
+    <!-- Shared header is injected from a single file -->
+    <div id="header-placeholder"></div>
+
+    <article>
+        <!-- ARTICLE METADATA (EDIT THESE) -->
+        <h1 class="article-title">ARTICLE TITLE HERE</h1>
+        <p class="accreditation">Image credit / subtitle (optional)</p>
+
+        <!-- ===================================================== -->
+        <!-- ARTICLE BODY SECTION: Put your article text below here -->
+        <!-- ===================================================== -->
+
+        <p>First paragraph of your article.</p>
+        <p>Second paragraph of your article.</p>
+
+        <!-- ===================================================== -->
+        <!-- END ARTICLE BODY SECTION                               -->
+        <!-- ===================================================== -->
+    </article>
+ 
+    <footer>
+        <p>Author: Peter Byrne, <em>Published: DD Month YYYY, &copy; Circolo Berkeley Lecce</em></p>
+    </footer>
+
+    <!-- Shared JS for mobile navigation -->
+    <script src="../menu-toggle.js"></script>
+    <script>
+        // Load shared header fragment and initialize hamburger menu
+        fetch('header-p-byrne.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                initHamburgerMenu();
+            });
+
+    </script>
+</body>
+</html>
