@@ -129,6 +129,8 @@ header * {
 /* Title styling */
 header h1 {
     position: relative;
+    margin-top: 15px;
+    margin-bottom: 0px;
     z-index: 2; /* ensures title is above the overlay */
     font-size: 2.5rem;
     font-weight: 700;
@@ -153,7 +155,7 @@ header h1 {
    NAVIGATION
    ========================================= */
 nav {
-    margin-top: 15px;
+    margin-top: 0px;
     position: relative;
     z-index: 2001;
     display: flex;
