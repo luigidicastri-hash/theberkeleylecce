@@ -3,11 +3,29 @@
 /* Main container */
 main {
     max-width: 1000px;
-    margin: 10px auto;
+    margin: 3px auto 10px auto;
     padding: 40px 20px;
     background: rgb(185, 237, 237);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    main {
+        margin: 3px auto 15px auto;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        margin: 3px 18px 18px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        margin: 3px auto 10px auto;
+    }
 }
 
 /* Programme title */
@@ -16,7 +34,7 @@ main {
     font-family: 'Georgia', serif;
     font-size: 2em;
     font-weight: bold;
-    margin-top: -25px;
+    margin-top: -35px;
     margin-bottom: 10px;
     color: #0b0000;
 }
@@ -125,7 +143,7 @@ main {
     padding: 0;
     line-height: 1.6;           /* same vertical alignment */
     text-decoration: none;
-    color: #d35400;             /* orange for review link */
+    color: #e96209;            /* orange for review link */
 }
 
 .read-review-link:hover {
@@ -157,7 +175,7 @@ main {
 /* Link to review if it exists */
 /* Read review link for past events */
 .read-review-link {
-    color: #d35400;          /* orange color */
+    color: #e96209;          /* orange color */
     font-weight: 600;
     text-decoration: none;
     font-size: 0.9rem;       /* same as .location-map-link */

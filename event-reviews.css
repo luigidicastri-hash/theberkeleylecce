@@ -3,7 +3,7 @@
 /* Main container */
 main {
     max-width: 1000px;
-    margin: 10px auto;
+    margin: 3px auto 10px auto;
     padding: 40px 20px;
     background: rgb(185, 237, 237);
     border-radius: 8px;
@@ -69,6 +69,7 @@ main p {
 /* Mobile (≤768px) */
 @media screen and (max-width: 768px) {
     main {
+        margin: 3px auto 15px auto;
         padding: 20px 15px;
     }
 
@@ -81,8 +82,18 @@ main p {
     }
 }
 
+@media screen and (max-width: 600px) {
+    main {
+        margin: 3px 18px 18px 18px;
+    }
+}
+
 /* Extra small screens (≤480px) */
 @media screen and (max-width: 480px) {
+    main {
+        margin: 3px auto 10px auto;
+    }
+
     .review-title {
         font-size: 1.3em;
     }

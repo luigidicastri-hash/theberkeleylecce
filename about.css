@@ -11,16 +11,36 @@
     font-family: 'Georgia', serif;
     font-size: 16px;  /* Change from 18px or 14px, 18px - adjust as needed */
     color: black;
+    margin: 3px auto 10px auto;
 }
 
-.about-main h1 {
+@media (max-width: 768px) {
+    .about-main {
+        margin: 3px auto 15px auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-main {
+        margin: 3px 18px 18px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-main {
+        margin: 3px auto 10px auto;
+    }
+}
+
+.about-main .article-title,
+.about-main .subpage-heading {
     text-align: center;
     font-family: 'Georgia', serif;
     font-size: 30px; /* Was 32px, so experiment with other sizes */
     font-weight: bold;
     color: #040a10;
-    margin-top: 10;
-    margin-bottom: -0.5rem; /* Change from 0.5rem to 0.2rem or 0.1rem */
+    margin-top: 0;
+    margin-bottom: 0.3rem;
     line-height: 1.2;
     position: relative;
     z-index: 1;
@@ -31,18 +51,8 @@
 }
 
 /* =================================================
-   SUB-PAGES STYLING (Our Story, Committee, Locations)
-   ================================================= */
-.about-main .subpage-heading {
-    text-align: center;
-    font-family: 'Georgia', serif;
-    font-size: 30px;
-    font-weight: bold;
-    color: #040404;
-    margin-top: 0;
-    margin-bottom: 0.3rem;
-    line-height: 1.2;
-}
+    SUB-PAGES STYLING (Our Story, Committee, Locations)
+    ================================================= */
 
 main p {
     font-family: 'Georgia', serif;
@@ -73,6 +83,10 @@ main p {
     align-items: center;
     gap: 2rem;
     margin: 1rem 0;
+}
+
+.about-main .article-title + .story-row {
+    margin-top: 0;
 }
 
 .story-row.reverse {
