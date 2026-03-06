@@ -190,6 +190,87 @@ article.dialogue p.accreditation {
     text-align: left;
 }
 
+/* Keep Atwood 3 to the left of the paragraph beginning "The intent..." */
+.intent-with-image {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin: 20px 0;
+}
+
+.intent-with-image .atwood3-intent-image {
+  max-width: 42%;
+  margin: 0;
+  transform: translateY(35px);
+}
+
+.intent-with-image .intent-text {
+  flex: 1;
+}
+
+.intent-with-image .intent-paragraph {
+  margin: 0;
+}
+
+.intent-with-image .intent-text p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Keep the Atwood image alongside the closing poem on larger screens. */
+.poem-with-image {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+  margin: 20px 0;
+}
+
+.poem-with-image .atwood4-poem-image {
+  max-width: 45%;
+  margin: 0;
+}
+
+.poem-with-image .atwood-poem {
+  flex: 1;
+  max-width: 460px;
+  text-align: left;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .intent-with-image {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intent-with-image .atwood3-intent-image {
+    max-width: 80%;
+    transform: none;
+  }
+
+  .intent-with-image .intent-paragraph {
+    max-width: 100%;
+  }
+
+  .intent-with-image .intent-text {
+    max-width: 100%;
+  }
+
+  .poem-with-image {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .poem-with-image .atwood4-poem-image {
+    max-width: 80%;
+  }
+
+  .poem-with-image .atwood-poem {
+    max-width: 100%;
+  }
+}
+
 /* Dedication */
 .dedication {
     text-align: center;
