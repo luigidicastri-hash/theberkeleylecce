@@ -99,12 +99,6 @@ article p {
     filter: brightness(1.2);
 }
 
-/* --- 1b. MOBILE HAMBURGER POSITION (BYRNE PAGES ONLY) --- */
-/* Moves hamburger higher on P_Byrne pages without affecting the rest of the site */
-.P_Byrne .hamburger-menu {
-  top: 28%;
-}
-
 /* --- 2. THE GRID LAYOUT --- */
 body.P_Byrne .articles-grid {
   display: grid;
