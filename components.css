@@ -38,8 +38,8 @@
 /* Mobile-only hero tuning (desktop remains unchanged) */
 @media (max-width: 600px) {
     .hero-banner {
-        width: calc(100% - 60px); /* Banner Width */
-        max-width: 320px;
+        width: calc(100% - 70px); /* Banner Width */
+        max-width: 300px;
         margin: 0 auto;
         padding: 3px 10px;
         border-width: 3px;
@@ -58,8 +58,8 @@
 
 @media (max-width: 480px) {
     .hero-banner {
-        width: calc(100% - 70px);
-        max-width: 260px;
+        width: calc(100% - 75px);
+        max-width: 250px;
         margin: 0 auto;
         padding: 2px 8px;
         border-width: 2px;
