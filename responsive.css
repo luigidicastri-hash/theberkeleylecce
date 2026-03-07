@@ -55,6 +55,12 @@
 
 /* General responsive adjustments for tablets */
 @media (max-width: 768px) {
+    header {
+        padding-top: 86px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
     .logo {
         width: 80px;
         height: 80px;
@@ -78,11 +84,10 @@
     header h1 {
         font-size: 1.8rem;
         margin: 0;
-        padding-top: 62px;
-        padding-left: 95px;
-        padding-right: 95px;
+        padding: 0;
         line-height: 1.2;
         text-align: center;
+        text-wrap: balance;
     }
 
     /* Hide nav by default on mobile, shown when .active class is applied via JavaScript */
@@ -182,6 +187,12 @@
    PHONES (600px and below)
    ========================================= */
 @media (max-width: 600px) {
+    header {
+        padding-top: 82px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
 
     .hero-banner {
         margin: 0 auto;
@@ -208,10 +219,13 @@
     header h1 {
         font-size: 1.6rem;
         margin: 0;
-        padding-top: 58px;
-        padding-left: 92px;
-        padding-right: 92px;
+        padding: 0;
         line-height: 1.2;
+        text-wrap: balance;
+    }
+
+    body.P_Byrne header h1 {
+        font-size: 1.35rem;
     }
 
     /* MOBILE HAMBURGER MENU: Stack nav vertically with proper touch targets */
@@ -262,6 +276,12 @@
    MOBILE PHONES (480px and below)
    ========================================= */
 @media (max-width: 480px) {
+    header {
+        padding-top: 76px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
 
     .hero-banner {
         margin: 0 auto;
@@ -286,12 +306,15 @@
     }
 
     header h1 {
-        font-size: 1.45rem;
+        font-size: 1.35rem;
         margin: 0;
-        padding-top: 52px;
-        padding-left: 82px;
-        padding-right: 82px;
+        padding: 0;
         line-height: 1.2;
+        text-wrap: balance;
+    }
+
+    body.P_Byrne header h1 {
+        font-size: 1.12rem;
     }
 
     /* MOBILE HAMBURGER MENU: Further optimization for very small screens */
