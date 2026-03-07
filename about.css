@@ -27,7 +27,7 @@
 
     .about-main .article-title,
     .about-main .subpage-heading {
-        font-size: 2rem !important;
+        font-size: r1.8em !important;
     }
 }
 
@@ -38,7 +38,7 @@
 
     .about-main .article-title,
     .about-main .subpage-heading {
-        font-size: 1.7rem !important;
+        font-size: 1.5rem !important;
     }
 }
 
