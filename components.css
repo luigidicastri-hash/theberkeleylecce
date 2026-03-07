@@ -34,6 +34,48 @@
 .home-main {
         margin-top: 0; /* no gap between banner and main content */
 }
+
+/* Mobile-only hero tuning (desktop remains unchanged) */
+@media (max-width: 600px) {
+    .hero-banner {
+        width: calc(100% - 40px);
+        max-width: 360px;
+        margin: 0 auto;
+        padding: 3px 10px;
+        border-width: 3px;
+    }
+
+    .hero-text p {
+        font-size: 1.45rem;
+        margin: 0.35rem 0;
+    }
+
+    .hero-text p:last-child {
+        font-size: 1.2rem;
+        margin-top: -0.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-banner {
+        width: calc(100% - 48px);
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 2px 8px;
+        border-width: 2px;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+        margin: 0.3rem 0;
+    }
+
+    .hero-text p:last-child {
+        font-size: 1rem;
+        margin-top: -0.15rem;
+    }
+}
+
 .blue-background {
     background-color: rgb(174, 208, 217) !important;  /* Light blue background for main content and articles */
 }
