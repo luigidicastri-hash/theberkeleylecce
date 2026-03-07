@@ -338,8 +338,8 @@ main {
 
     .programme-title {
         font-size: 1.8em;
-        margin-top: 0;
-        margin-bottom: 22px;
+        margin-top: -10px;
+        margin-bottom: 10px;
     }
 
     .event-title-section h2 {
@@ -386,8 +386,8 @@ main {
 @media screen and (max-width: 480px) {
     .programme-title {
         font-size: 1.5em;
-        margin-top: 0;
-        margin-bottom: 18px;
+        margin-top: -10px;
+        margin-bottom: 10px;
     }
 
     .event-title-section h2 {
