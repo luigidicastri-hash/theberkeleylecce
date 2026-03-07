@@ -39,10 +39,10 @@
 @media (max-width: 600px) {
     .hero-banner {
         width: calc(100% - 70px); /* Banner Width */
-        max-width: 300px;
+        max-width: 240px;
         margin: 0 auto;
         padding: 3px 10px;
-        border-width: 3px;
+        border-width: 4px;
     }
 
     .hero-text p {
@@ -58,11 +58,11 @@
 
 @media (max-width: 480px) {
     .hero-banner {
-        width: calc(100% - 80px);
-        max-width: 240px;
+        width: calc(100% - 70px);
+        max-width: 210px;
         margin: 0 auto;
         padding: 2px 8px;
-        border-width: 2px;
+        border-width: 3px;
     }
 
     .hero-text p {

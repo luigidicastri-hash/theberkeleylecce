@@ -26,11 +26,85 @@ main {
   body.P_Byrne main {
     margin: 3px 18px 18px 18px;
   }
+
+  body.P_Byrne article {
+    font-size: 17px;
+    padding: 12px 18px 20px 18px;
+  }
+
+  body.P_Byrne .article-title {
+    font-size: 1.35rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  body.P_Byrne article > img {
+    margin: 12px auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body.P_Byrne .image-and-quotes img {
+    margin: 6px auto 2px auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body.P_Byrne .image-and-quotes {
+    gap: 0.35rem;
+  }
+
+  body.P_Byrne .image-and-quotes .quotes {
+    margin-top: 0;
+  }
+
+  body.P_Byrne .image-and-quotes .article-quote {
+    font-size: 0.95rem;
+    line-height: 1.35;
+    margin: 0;
+  }
 }
 
 @media (max-width: 480px) {
   body.P_Byrne main {
     margin: 3px auto 10px auto;
+  }
+
+  body.P_Byrne article {
+    font-size: 16px;
+    padding: 10px 14px 16px 14px;
+  }
+
+  body.P_Byrne .article-title {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  body.P_Byrne article > img {
+    margin: 10px auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body.P_Byrne .image-and-quotes img {
+    margin: 4px auto 1px auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body.P_Byrne .image-and-quotes {
+    gap: 0.25rem;
+  }
+
+  body.P_Byrne .image-and-quotes .quotes {
+    margin-top: 0;
+  }
+
+  body.P_Byrne .image-and-quotes .article-quote {
+    font-size: 0.85rem;
+    line-height: 1.3;
+    margin: 0;
   }
 }
 /* Byrne article styling */
@@ -64,7 +138,7 @@ article p {
 /* Article title */
 .article-title {
     font-family: 'Georgia', serif;
-    font-size: 32px;
+    font-size: 25px;
     font-weight: bold;
     color: #040a10;
     text-align: center;

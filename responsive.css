@@ -193,7 +193,6 @@
         padding-right: 10px;
     }
 
-
     .hero-banner {
         margin: 0 auto;
     }
@@ -217,7 +216,7 @@
     }
 
     header h1 {
-        font-size: 1.6rem;
+        font-size: 1.75rem;
         margin: 0;
         padding: 0;
         line-height: 1.2;
@@ -225,7 +224,7 @@
     }
 
     body.P_Byrne header h1 {
-        font-size: 1.35rem;
+        font-size: 1.55rem;
     }
 
     /* MOBILE HAMBURGER MENU: Stack nav vertically with proper touch targets */
@@ -306,7 +305,7 @@
     }
 
     header h1 {
-        font-size: 1.35rem;
+        font-size: 1.75em;
         margin: 0;
         padding: 0;
         line-height: 1.2;
@@ -314,7 +313,7 @@
     }
 
     body.P_Byrne header h1 {
-        font-size: 1.12rem;
+        font-size: 1.45rem;
     }
 
     /* MOBILE HAMBURGER MENU: Further optimization for very small screens */
