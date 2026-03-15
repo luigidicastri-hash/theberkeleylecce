@@ -125,7 +125,7 @@ article {
 /* Article images */
 .article-image {
   width: auto;
-  flex-shrink: 0;
+  flex-shrink: 0; 
 }
 .article-image img {
   width: 600px !important;
@@ -137,7 +137,7 @@ article {
 }
 /* Article title */
 .article-title {
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', serif; 
     font-size: 1.75rem;
     font-weight: bold;
     color: #040a10;
