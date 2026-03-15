@@ -123,18 +123,18 @@ article {
 }
 
 /* Article images */
-article img {
-    max-width: 75%;  
-    height: auto;    
-    display: block;  
-    margin: 20px auto;  
+.article-image {
+  width: auto;
+  flex-shrink: 0;
 }
-
-/* Article paragraphs */
-article p {
-    text-align: justify;
+.article-image img {
+  width: 600px !important;
+  height: auto;
+  display: block;
 }
-
+.article-text {
+  width: 30%;
+}
 /* Article title */
 .article-title {
     font-family: 'Georgia', serif;
@@ -375,6 +375,49 @@ body.P_Byrne {
     animation: sky-move 150s linear infinite;
     min-height: 100vh;
     filter: brightness(1.1);
+}
+
+/* Custom image size for the-death-of-an-extremist.html */
+.custom-size {
+  max-width: 140%;
+  height: 300px !important;
+  object-fit: cover;
+}
+.custom-size2 {
+  max-width: 130%;
+  height: 225px !important;
+  object-fit: cover;
+}
+
+/* Article image and text side by side */
+.article-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin: 20px 0;
+}
+.article-image {
+  width: 600px;
+  flex-shrink: 0;
+}
+.article-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.article-text {
+  width: 70%;
+  margin-left: auto;
+  text-align: right;
+}
+@media (max-width: 768px) {
+  .article-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .article-image img {
+    max-width: 80%;
+  }
 }
 
 @media (min-width: 769px) {
