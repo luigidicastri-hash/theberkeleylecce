@@ -442,6 +442,25 @@
     body.P_Byrne .article-image img {
         object-position: 50% 25% !important;
     }
+
+    /* Make article cards horizontal: image and info side-by-side */
+    body.P_Byrne .article-card {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        padding: 8px !important;
+    }
+    body.P_Byrne .article-card-image {
+        margin-right: 12px !important;
+    }
+    body.P_Byrne .article-info {
+        flex: 1 !important;
+    }
+    body.P_Byrne .article-info h3 {
+        margin-top: 0 !important;
+        margin-bottom: 4px !important;
+        font-size: 1.1rem !important;
+    }
 }
 
 /* ----- Small phones: ≤480px ----- */
