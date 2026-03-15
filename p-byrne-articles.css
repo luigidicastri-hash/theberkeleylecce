@@ -380,12 +380,12 @@ body.P_Byrne {
 /* Custom image size for the-death-of-an-extremist.html */
 .custom-size {
   max-width: 140%;
-  height: 300px !important;
+  height: 305px !important;
   object-fit: cover;
 }
 .custom-size2 {
   max-width: 130%;
-  height: 225px !important;
+  height: 200px !important;
   object-fit: cover;
 }
 
