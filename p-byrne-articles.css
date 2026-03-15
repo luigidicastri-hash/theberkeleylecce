@@ -138,12 +138,12 @@ article p {
 /* Article title */
 .article-title {
     font-family: 'Georgia', serif;
-    font-size: 25px;
+    font-size: 1.75rem;
     font-weight: bold;
     color: #040a10;
     text-align: center;
     margin-top: -10px;
-    margin-bottom: 0.1rem;
+    margin-bottom: 1.0rem;
     line-height: 1.2;
 }
 
@@ -375,4 +375,10 @@ body.P_Byrne {
     animation: sky-move 150s linear infinite;
     min-height: 100vh;
     filter: brightness(1.1);
+}
+
+@media (min-width: 769px) {
+  body.P_Byrne .image-and-quotes {
+    margin-top: 0.5rem;
+  }
 }
