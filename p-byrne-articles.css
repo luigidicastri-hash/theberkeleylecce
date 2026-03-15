@@ -1,11 +1,11 @@
 /* Article card image styling for index */
 .article-card-image {
-  width: 200px;
+  width: 120px;
   flex-shrink: 0;
 }
 .article-card-image img {
-  width: 200px;
-  height: 200px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   object-position: 50% 20%;
   border-radius: 2px;
