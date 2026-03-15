@@ -418,6 +418,15 @@ body.P_Byrne {
   margin-left: auto;
   text-align: right;
 }
+
+@media (max-width: 768px) {
+  /* Undo justified alignment for article-row .article-text on mobile */
+}
+
+@media (min-width: 769px) {
+  /* Undo left alignment for article-row .article-text on desktop */
+}
+}
 @media (max-width: 768px) {
   .article-row {
     flex-direction: column;
