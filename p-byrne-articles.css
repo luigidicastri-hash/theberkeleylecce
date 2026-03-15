@@ -1,4 +1,15 @@
-/* Article card image styling for index */
+.article-card-image {
+  width: 120px;
+  flex-shrink: 0;
+}
+.article-card-image img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  object-position: 50% 20%;
+  border-radius: 2px;
+  display: block;
+}
 .article-card-image {
   width: 120px;
   flex-shrink: 0;
@@ -426,7 +437,7 @@ body.P_Byrne {
 @media (min-width: 769px) {
   /* Undo left alignment for article-row .article-text on desktop */
 }
-}
+
 @media (max-width: 768px) {
   .article-row {
     flex-direction: column;
@@ -441,4 +452,5 @@ body.P_Byrne {
   body.P_Byrne .image-and-quotes {
     margin-top: 0.5rem;
   }
+}
 }
