@@ -273,7 +273,7 @@ article.dialogue p.accreditation {
 /* Keep Atwood 3 to the left of the paragraph beginning "The intent..." */
 .intent-with-image {
   display: flex;
-  align-items: flex-start;
+  extrgn-items: flex-start;
   gap: 24px;
   margin: 20px 0;
 }
@@ -382,58 +382,6 @@ body.P_Byrne {
     animation: sky-move 150s linear infinite;
     min-height: 100vh;
     filter: brightness(1.1);
-}
-
-/* Custom image size for the-death-of-an-extremist.html */
-.custom-size {
-  max-width: 140%;
-  height: 305px !important;
-  object-fit: cover;
-}
-.custom-size2 {
-  max-width: 130%;
-  height: 200px !important;
-  object-fit: cover;
-}
-
-/* Article image and text side by side */
-.article-row {
-  display: flex;
-  align-items: flex-start;
-  gap: 24px;
-  margin: 20px 0;
-}
-.article-image {
-  width: 600px;
-  flex-shrink: 0;
-}
-.article-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.article-text {
-  width: 100%;
-  margin-left: auto;
-  text-align: right;
-}
-
-@media (max-width: 768px) {
-  /* Undo justified alignment for article-row .article-text on mobile */
-}
-
-@media (min-width: 769px) {
-  /* Undo left alignment for article-row .article-text on desktop */
-}
-
-@media (max-width: 768px) {
-  .article-row {
-    flex-direction: column;
-    align-items: center;
-  }
-  .article-image img {
-    max-width: 80%;
-  }
 }
 
 @media (min-width: 769px) {
