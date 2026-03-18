@@ -355,6 +355,29 @@ article.dialogue p.accreditation {
     margin-bottom: 0.5em;
 }
 
+/* Image rows for multiple images in a row */
+.image-row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.image-row img {
+  max-width: 32%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .image-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-row img {
+    max-width: 90%;
+    margin-bottom: 10px;
+  }
+}
+
 /* Make superscripts in first paragraph of "small-first" article smaller */
 article.small-first > p:first-of-type sup {
     font-size: 1.0em; 
