@@ -294,7 +294,7 @@ article.dialogue p.accreditation {
 .intent-with-image .atwood3-intent-image {
   max-width: 42%;
   margin: 0;
-  transform: translateY(35px);
+  transform: translateY(5px);
 }
 
 .intent-with-image .intent-text {
@@ -329,6 +329,73 @@ article.dialogue p.accreditation {
   max-width: 460px;
   text-align: left;
   margin: 0;
+}
+
+/* ==========================================================
+   IMAGE + TEXT SECTIONS (side by side) copied from about.css
+   The order: image first or text first is controlled simply
+   by the order they appear in the html.
+   ========================================================== */
+.story-row {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem; /*controls gap between picture and text */
+    margin: -1.5rem 0;  /*controls gap between story row sections */
+}
+
+.about-main .article-title + .story-row {
+    margin-top: 0;
+}
+
+/* ================================================================
+THIS WAS COMMENTED OUT BECAUSE IT WAS NOT REQUIRED TO SEQUENCE THE ORDER
+
+.story-row.reverse {
+    flex-direction: row-reverse; /* Reverses order for the second section
+ } 
+
+================================================================== */
+
+
+/* -----------------------------------------------------------------
+   MOBILE OVERRIDE
+   responsive.css sets .story-row.reverse to column, but since about.css
+   is loaded later the plain rule above wins.  Add a dedicated media query
+   here to re-apply stacking on narrow screens and ensure both variants
+   behave the same on phones/tablets.  Use !important to beat the earlier
+   declaration if necessary.
+   ----------------------------------------------------------------- */
+@media (max-width: 768px) {
+    .story-row,
+    .story-row.reverse {
+        flex-direction: column !important;
+    }
+}
+
+.story-text {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Ensures proper alignment of the first paragraph */
+.story-text p {
+    margin-top: 0; /* removes the extra space above the first paragraph in each section */
+}
+
+.story-text p:last-child {
+    margin-bottom: 0;
+}
+
+.story-text p:first-of-type {
+    margin-top: 0;
+}
+
+.author-signature {
+    text-align: right !important;  /* Override the justify */
+    padding-right: 3rem;
+    margin-top: 1rem;  /* Add some space above */
+    font-size: 16px;  /* or 14px, 18px - adjust as needed */
 }
 
 @media (max-width: 768px) {
