@@ -107,6 +107,7 @@ main {
     margin: 0;
   }
 }
+
 /* Byrne article styling */
 article {
     font-family:'Georgia', serif;
@@ -143,6 +144,18 @@ article {
     color: #040a10;
     text-align: center;
     margin-top: -10px;
+    margin-bottom: 1.0rem;
+    line-height: 1.2;
+}
+
+/* Article subtitle */
+.article-subtitle {
+    font-family: 'Georgia', serif; 
+    font-size: 1.65rem;
+    font-weight: bold;
+    color: #123353;
+    text-align: center;
+    margin-top: 10px;
     margin-bottom: 1.0rem;
     line-height: 1.2;
 }
