@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Base href shifts the browser's reference point to the parent folder,
+         so all links in the shared header and footer resolve correctly
+         even though this page lives inside the event-reviews subfolder -->
+    <base href="../">
+    <title>Taking Care of the Past</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="event-reviews.css">
+</head>
+
+<body>
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <h1 class="review-title">Taking Care of the Past</h1>
+        <p class="review-author"><em>By Patrizia Sanguedolce</em></p>
+        <p style="text-align: center;">A Visit to the Restoration Laboratory – Museo “S. Castromediano”, Lecce -  20th March 2026</p>
+        <br>
+        <img src="images-for-event-reviews/mysteries-of-the-lab1.jpg"
+            alt="Photo by Claudia Mazzei"
+            class="review-image">
+        <p class="accreditation">Photo by Claudia Mazzei</p>
+        <p>Not everybody knows that Lecce’s main museum, named after Sigismondo Castromediano, was 
+            originally a Jesuit school called “Collegio Argento”. The building itself, which dates back 
+            to the second half of the 19th century, impresses the visitor for the peculiar contrast between 
+            its ancient façade and the contemporary style of the interior, completely renovated in the 1970s. 
+            As well as its precious collections, the museum hosts a restoration laboratory, which the Berkeley 
+            Circle had the opportunity of visiting, thanks to its director Mary Coppola.</p>
+        
+        <p>The group was led through several rooms and corridors to the big hall where the works of art of the 
+            past are brought back to their original colours and splendour: a place where modern technology 
+            coexists with traditional tools, so much so that rabbit glue is often melted in big pots to be used 
+            instead of thermoplastic glue, which can also be necessary.</p>
+            <br>
+
+        <img src="images-for-event-reviews/mysteries-of-the-lab2.jpg"
+            alt="Photo by Claudia Mazzei"
+            class="review-image">
+        <p class="accreditation">The young Sant'Oronzo, Photo by Claudia Mazzei</p>
+
+        <p>
+        At a glance, we noticed tall statues of saints, big tables with Roman findings and ancient canvases: 
+        all of them were being restored in the lab. Then Mary explained that the statues, which represented 
+        two of Lecce’s patron saints, were made of wood and needed restoration mainly because they had been 
+        attacked by woodworm, while the Roman findings came from the archaeological site of Rudiae and had to 
+        be cleaned from dirt before being assembled like in a sort of puzzle.
+        </p>
+        <br>
+
+        <img src="images-for-event-reviews/mysteries-of-the-lab3.jpg"
+            alt="Photo by Claudia Mazzei"
+            class="review-image">
+        <p class="accreditation">Photo by Claudia Mazzei</p>
+
+        <p>
+        A beautiful oil painting by Pasquale Grassi coming from a church in Martignano depicted “Il sacrificio 
+        di San Pantaleone”, (Saint Pantaleone’s sacrifice) he being the patron saint of the village. 
+        After being cleaned from layers of grey dirt with special solvents, the painting finally showed its 
+        original vivid colours on an uneven, almost cracked (craquelure) surface, the very sign of its authenticity.
+        </p>
+        <br>
+
+        <img src="images-for-event-reviews/mysteries-of-the-lab4.jpg"
+            alt="Photo by Claudia Mazzei"
+            class="review-image">
+        <p class="accreditation">Photo by Claudia Mazzei</p>
+
+        <p>Mary made it clear that philological restoration is a conservative approach that aims to preserve the 
+            authenticity of the work of art: that is why it rejects historical fakes, making the added interventions 
+            clearly recognizable. The rigatino, for example, is a special technique used by restorers to cover 
+            damaged areas in paintings with very fine vertical parallel lines so that they are easily distinguishable 
+            from the original painting, but still blend with it in the distance.</p>
+        <br>
+        
+        <img src="images-for-event-reviews/mysteries-of-the-lab5.jpg"
+            alt="Photo by Claudia Mazzei"
+            class="review-image">
+        <p class="accreditation">Photo by Claudia Mazzei</p>
+
+        <p>
+        The final part of the visit was dedicated to fourteen papier-mâché Stations of the Cross, which had just 
+        undergone restoration. They were made by Raffaele Caretta, a famous <em>maestro cartapestaio</em> 
+        (papier mâché master) who operated in Lecce between the end of the 19th century and the first half of the 
+        20th. Only six of the stations were signed by the master, which means that the others were probably made 
+        in his <em>bottega</em> (workshop) by his pupils.
+        </p>
+
+        <p>
+        The restored Stations will soon return to the chapel of the “Collegio Argento” (i.e. in the museum) 
+        to be admired in their original bright colours. 
+        The “care workshop” has completed its task and the works of art can be given back to the community.
+        </p>
+
+        <p>
+        Many thanks to Mary for disclosing the secrets of her lab and, above all, for the work she does every 
+        day to preserve our archaeological and artistic heritage!
+        </p>
+
+    </main> <!-- Close main -->
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
