@@ -67,18 +67,21 @@ main {
 }
 
 /* Next Event Badge */
-.next-event .event-details::before {
+.next-event .event-title-section::before {
     content: 'NEXT EVENT';
-    position: absolute;
-    top: 36px;
-    right: 8px;
+    display: block;
     background-color: #2a046f;
     color: white;
     padding: 4px 12px;
     font-weight: 700;
     font-size: 0.85rem;
     border-radius: 4px;
-    z-index: 1;
+    margin-bottom: 8px;
+    text-align: center;
+    /* LEFT align */
+    width: fit-content;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 /* Left column - Event details */
@@ -291,6 +294,7 @@ main {
     margin-bottom: 8px;
     align-self: flex-start;
 }
+
 /* Responsive design for tablets, mobile, and extra small screens */
 
 /* Tablets (≤992px) */
@@ -336,6 +340,14 @@ main {
         order: -1;
     }
 
+    .event-title-section {
+    order: 0;
+    }
+
+    .event-details {
+    order: 1;
+    }
+
     .programme-title {
         font-size: 1.8em;
         margin-top: -25px;
@@ -354,10 +366,18 @@ main {
     .event-time {
         font-size: 0.95em;
     }
-
+    
     .booking-link {
-        max-width: 100%;
-        padding: 12px 20px;
+        display: inline-block;
+        width: auto;
+        max-width: none;
+        padding: 6px 18px;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 8px;
+        text-align: left;
+        align-self: flex-start;
     }
 
     .event-card.past-event .event-image {
