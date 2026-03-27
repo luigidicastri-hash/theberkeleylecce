@@ -493,3 +493,14 @@ body.P_Byrne {
   }
 }
 }
+/* Define footnotes font size for laptops and mobiles*/
+.footnotes {
+  font-size: 0.9em;
+}
+
+/* For mobile devices (≤480px) */
+@media screen and (max-width: 480px) {
+  .footnotes {
+    font-size: 0.8em; /* or any size you prefer for mobile */
+  }
+}
