@@ -8,104 +8,12 @@
 /* Main content box for Byrne pages */
 main {
     max-width: 1100px;      /* narrower for better readability */
-  margin: 3px auto 10px auto;     /* centers and keeps a small visible top gap */
+    margin: 3px auto 10px auto;     /* centers and keeps a small visible top gap */
     background: rgb(185, 237, 237);
     padding: 5px 15px 15px 15px;  /* top, right, bottom, left - more comfortable inner spacing */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     flex: 1;
-}
-
-@media (max-width: 768px) {
-  body.P_Byrne main {
-    margin: 3px auto 15px auto;
-  }
-}
-
-@media (max-width: 600px) {
-  body.P_Byrne main {
-    margin: 3px 18px 18px 18px;
-  }
-
-  body.P_Byrne article {
-    font-size: 17px;
-    padding: 12px 18px 20px 18px;
-  }
-
-  body.P_Byrne .article-title {
-    font-size: 1.35rem;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  body.P_Byrne article > img {
-    margin: 12px auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  body.P_Byrne .image-and-quotes img {
-    margin: 6px auto 2px auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  body.P_Byrne .image-and-quotes {
-    gap: 0.35rem;
-  }
-
-  body.P_Byrne .image-and-quotes .quotes {
-    margin-top: 0;
-  }
-
-  body.P_Byrne .image-and-quotes .article-quote {
-    font-size: 0.95rem;
-    line-height: 1.35;
-    margin: 0;
-  }
-}
-
-@media (max-width: 480px) {
-  body.P_Byrne main {
-    margin: 3px auto 10px auto;
-  }
-
-  body.P_Byrne article {
-    font-size: 16px;
-    padding: 10px 14px 16px 14px;
-  }
-
-  body.P_Byrne .article-title {
-    font-size: 1.2rem;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  body.P_Byrne article > img {
-    margin: 10px auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  body.P_Byrne .image-and-quotes img {
-    margin: 4px auto 1px auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  body.P_Byrne .image-and-quotes {
-    gap: 0.25rem;
-  }
-
-  body.P_Byrne .image-and-quotes .quotes {
-    margin-top: 0;
-  }
-
-  body.P_Byrne .image-and-quotes .article-quote {
-    font-size: 0.85rem;
-    line-height: 1.3;
-    margin: 0;
-  }
 }
 
 /* Byrne article styling */
@@ -205,8 +113,8 @@ body.P_Byrne .articles-grid {
   gap: 15px;
   padding: 12px;
   background-color: #92d298;
-  border: 2px solid #3c3b3b;
-  margin: -1px; /* Prevents double borders */
+  outline: 2px solid #3c3b3b;
+  margin: 0; /* Safer for Safari */
   box-sizing: border-box;
 }
 .article-card-image {
@@ -286,7 +194,7 @@ article.dialogue p.accreditation {
 /* Keep Atwood 3 to the left of the paragraph beginning "The intent..." */
 .intent-with-image {
   display: flex;
-  extrgn-items: flex-start;
+  align-items: flex-start;
   gap: 24px;
   margin: 20px 0;
 }
@@ -347,31 +255,6 @@ article.dialogue p.accreditation {
     margin-top: 0;
 }
 
-/* ================================================================
-THIS WAS COMMENTED OUT BECAUSE IT WAS NOT REQUIRED TO SEQUENCE THE ORDER
-
-.story-row.reverse {
-    flex-direction: row-reverse; /* Reverses order for the second section
- } 
-
-================================================================== */
-
-
-/* -----------------------------------------------------------------
-   MOBILE OVERRIDE
-   responsive.css sets .story-row.reverse to column, but since about.css
-   is loaded later the plain rule above wins.  Add a dedicated media query
-   here to re-apply stacking on narrow screens and ensure both variants
-   behave the same on phones/tablets.  Use !important to beat the earlier
-   declaration if necessary.
-   ----------------------------------------------------------------- */
-@media (max-width: 768px) {
-    .story-row,
-    .story-row.reverse {
-        flex-direction: column !important;
-    }
-}
-
 .story-text {
     flex: 1;
     font-size: 18px;
@@ -398,34 +281,6 @@ THIS WAS COMMENTED OUT BECAUSE IT WAS NOT REQUIRED TO SEQUENCE THE ORDER
     font-size: 16px;  /* or 14px, 18px - adjust as needed */
 }
 
-@media (max-width: 768px) {
-  .intent-with-image {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .intent-with-image .atwood3-intent-image {
-    max-width: 80%;
-    transform: none;
-  }
-
-  .intent-with-image .intent-paragraph {
-    max-width: 100%;
-  }
-
-  .intent-with-image .intent-text {
-    max-width: 100%;
-    /* Removed empty media query blocks */
-
-  .poem-with-image .atwood4-poem-image {
-    max-width: 80%;
-  }
-
-  .poem-with-image .atwood-poem {
-    max-width: 100%;
-  }
-}
-
 /* Dedication */
 .dedication {
     text-align: center;
@@ -445,17 +300,6 @@ THIS WAS COMMENTED OUT BECAUSE IT WAS NOT REQUIRED TO SEQUENCE THE ORDER
 .image-row img {
   max-width: 32%;
   height: auto;
-}
-
-@media (max-width: 600px) {
-  .image-row {
-    flex-direction: column;
-    align-items: center;
-  }
-  .image-row img {
-    max-width: 90%;
-    margin-bottom: 10px;
-  }
 }
 
 /* Make superscripts in first paragraph of "small-first" article smaller */
@@ -478,29 +322,173 @@ article sup {
 
 /* --- ADD ANIMATED SKY TO ARTICLES PAGE --- */
 body.P_Byrne {
+    position: relative;
+}
+
+body.P_Byrne::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url('images/sky-background.jpg');
     background-size: cover;
     background-repeat: repeat-y;
     background-position: center 0%;
     animation: sky-move 150s linear infinite;
-    min-height: 100vh;
     filter: brightness(1.1);
+    z-index: -1;
+}
+
+/* Default footnotes font size for all screens */
+.footnotes {
+  font-size: 0.9em;
+}
+
+/* ================================================================
+   MEDIA OVERRIDES — ordered largest to smallest breakpoint
+================================================================== */
+
+@media (max-width: 768px) {
+  body.P_Byrne main {
+    margin: 3px auto 15px auto;
+  }
+
+  .story-row,
+  .story-row.reverse {
+    flex-direction: column !important;
+  }
+
+  .intent-with-image {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intent-with-image .atwood3-intent-image {
+    max-width: 80%;
+    transform: none;
+  }
+
+  .intent-with-image .intent-paragraph {
+    max-width: 100%;
+  }
+
+  .intent-with-image .intent-text {
+    max-width: 100%;
+  }
+
+  .poem-with-image .atwood4-poem-image {
+    max-width: 80%;
+  }
+
+  .poem-with-image .atwood-poem {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  body.P_Byrne main {
+    margin: 3px 18px 18px 18px;
+  }
+
+  body.P_Byrne article {
+    font-size: 17px;
+    padding: 12px 18px 20px 18px;
+  }
+
+  body.P_Byrne .article-title {
+    font-size: 1.35rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  body.P_Byrne article > img {
+    margin: 12px auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body.P_Byrne .image-and-quotes img {
+    margin: 6px auto 2px auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body.P_Byrne .image-and-quotes {
+    gap: 0.35rem;
+  }
+
+  body.P_Byrne .image-and-quotes .quotes {
+    margin-top: 0;
+  }
+
+  body.P_Byrne .image-and-quotes .article-quote {
+    font-size: 0.95rem;
+    line-height: 1.35;
+    margin: 0;
+  }
+
+  .image-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-row img {
+    max-width: 90%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body.P_Byrne main {
+    margin: 3px auto 10px auto;
+  }
+
+  body.P_Byrne article {
+    font-size: 16px;
+    padding: 10px 14px 16px 14px;
+  }
+
+  body.P_Byrne .article-title {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  body.P_Byrne article > img {
+    margin: 10px auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body.P_Byrne .image-and-quotes img {
+    margin: 4px auto 1px auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body.P_Byrne .image-and-quotes {
+    gap: 0.25rem;
+  }
+
+  body.P_Byrne .image-and-quotes .quotes {
+    margin-top: 0;
+  }
+
+  body.P_Byrne .image-and-quotes .article-quote {
+    font-size: 0.85rem;
+    line-height: 1.3;
+    margin: 0;
+  }
+
+  .footnotes {
+    font-size: 0.8em;
+  }
 }
 
 @media (min-width: 769px) {
   body.P_Byrne .image-and-quotes {
     margin-top: 0.5rem;
-  }
-}
-}
-/* Define footnotes font size for laptops and mobiles*/
-.footnotes {
-  font-size: 0.9em;
-}
-
-/* For mobile devices (≤480px) */
-@media screen and (max-width: 480px) {
-  .footnotes {
-    font-size: 0.8em; /* or any size you prefer for mobile */
   }
 }
