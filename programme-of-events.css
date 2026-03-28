@@ -279,26 +279,14 @@ main {
     align-self: flex-start;
 }
 
-/* Responsive design for tablets, mobile, and extra small screens */
-
-@media (max-width: 768px) {
-    main {
-        margin: 3px auto 15px auto;
-    }
+/* Default footnotes font size for all screens */
+.footnotes {
+    font-size: 0.9em;
 }
 
-@media (max-width: 600px) {
-    main {
-        margin: 3px 18px 18px 18px;
-    }
-}
-
-@media (max-width: 480px) {
-    main {
-        margin: 3px auto 10px auto;
-    }
-}
-
+/* ================================================================
+   MEDIA OVERRIDES — ordered largest to smallest breakpoint
+================================================================== */
 /* Tablets (≤992px) */
 @media screen and (max-width: 992px) {
     .event-card {
@@ -322,9 +310,10 @@ main {
     }
 }
 
-/* Mobile (≤768px) */
+/* (≤768px) */
 @media screen and (max-width: 768px) {
     main {
+        margin: 3px auto 15px auto;
         padding: 30px 15px;
     }
 
@@ -343,11 +332,11 @@ main {
     }
 
     .event-title-section {
-    order: 0;
+        order: 0;
     }
 
     .event-details {
-    order: 1;
+        order: 1;
     }
 
     .programme-title {
@@ -368,7 +357,7 @@ main {
     .event-time {
         font-size: 0.95em;
     }
-    
+
     .booking-link {
         display: inline-block;
         width: auto;
@@ -386,6 +375,7 @@ main {
         overflow: visible;
         height: auto;
     }
+
     .event-card.past-event .event-title-section::before {
         display: none;
     }
@@ -404,8 +394,19 @@ main {
     }
 }
 
-/* Extra small screens (≤480px) */
+/* (≤600px) */
+@media screen and (max-width: 600px) {
+    main {
+        margin: 3px 18px 18px 18px;
+    }
+}
+
+/* (≤480px) */
 @media screen and (max-width: 480px) {
+    main {
+        margin: 3px auto 10px auto;
+    }
+
     .programme-title {
         font-size: 1.5em;
         margin-top: -25px;
@@ -420,7 +421,6 @@ main {
         padding: 15px;
     }
 
-    /* Stack location and review links vertically */
     .event-location {
         display: flex;
         flex-direction: column;
@@ -428,21 +428,12 @@ main {
         gap: 5px;
     }
 
-    /* Ensure review link aligns nicely in stacked layout */
     .event-location .read-review-link {
         display: inline-block;
         margin-left: 0;
     }
-}
 
-/* Define footnotes font size for laptops and mobiles*/
-.footnotes {
-  font-size: 0.9em;
-}
-
-/* For mobile devices (≤480px) */
-@media screen and (max-width: 480px) {
-  .footnotes {
-    font-size: 0.8em; /* or any size you prefer for mobile */
-  }
+    .footnotes {
+        font-size: 0.8em;
+    }
 }
