@@ -215,18 +215,17 @@ main {
 /* Right column - Event image */
 .event-image {
     width: 175px;
-    height: 100%;
-    flex-shrink: 0;
-    padding-left: 15px;
-    /*max-height: 200px;  /* adjust this value to taste */
+    height: 175px;  /* tried 175px instead of 100% to fix Safari bug */
+    flex-shrink: 0;       
+    padding-left: 15px;    
     overflow: hidden;
-    align-self: center;  /* add this */
+    align-self: center;  
 }
 
 .event-image img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 100%;  
+    object-fit: cover; /* crops the image to fill the box neatly */
     display: block;
     border-radius: 2px;
     transition: transform 0.3s ease;
