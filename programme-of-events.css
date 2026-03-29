@@ -106,8 +106,8 @@ main {
 /* Map link styling */
 .location-map-link {
     display: inline-block;
-    font-size: 0.9rem;
-    font-weight: 600;
+    font-size: 1rem;     /* map link font size */
+    font-weight: 700;   /* map link weight */
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -123,17 +123,17 @@ main {
 /* Review link styling */
 .read-review-link {
     display: inline-block;
-    font-size: 0.9rem;          /* match map link size */
-    font-weight: 600;            /* match map link weight */
+    font-size: 1rem;
+    font-weight: 800;
     margin: 0;
     padding: 0;
-    line-height: 1.6;           /* same vertical alignment */
+    line-height: 1.6;
     text-decoration: none;
-    color: #e96209;            /* orange for review link */
+    color: #c85000;
 }
-
 .read-review-link:hover {
     text-decoration: underline;
+    color: #a04000;          /* darker orange on hover */
 }
 
 .booking-link {
@@ -158,18 +158,6 @@ main {
     background-color: #1c3f57;
 }
 
-/* Link to review if it exists */
-/* Read review link for past events */
-.read-review-link {
-    color: #e96209;          /* orange color */
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 0.9rem;       /* same as .location-map-link */
-}
-.read-review-link:hover {
-    text-decoration: underline;
-    color: #a04000;          /* darker orange on hover */
-}
 /* Middle column - Event title and speaker */
 .event-title-section {
     display: flex;
@@ -215,7 +203,7 @@ main {
 /* Right column - Event image */
 .event-image {
     width: 175px;
-    height: 175px;  /* tried 175px instead of 100% to fix Safari bug */
+    height: 175px;  /* 175px instead of 100% to fix Safari bug */
     flex-shrink: 0;       
     padding-left: 15px;    
     overflow: hidden;
@@ -245,18 +233,20 @@ main {
     text-transform: uppercase;       /* PAST EVENTS */
 }
 
-/* Hide booking links on past events */
+/* Hide booking link and map link on past events */
 .event-card.past-event .booking-link {
     display: none;
 }
-
+.event-card.past-event .location-map-link {
+    display: none;
+}
 .event-details .event-location {
     margin-bottom: 0;
 }
 
 .event-card.past-event {
      z-index: 0;          /* to prevent overlay on MACs */
-    opacity: 0.7;
+    opacity: 0.8;       /* controls depth of colour on past events */
     background: #a8c5cc;
 }
 
@@ -275,6 +265,10 @@ main {
     font-size: 0.85rem;
     border-radius: 4px;
     margin-bottom: 8px;
+    align-self: flex-start;
+}
+
+.event-card.past-event .event-details {
     align-self: flex-start;
 }
 
