@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Circolo Berkeley</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS -->  
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body class="honorary-page">
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+    <main class="about-main">
+        <h1 class="subpage-heading">Honorary Life Members</h1>
+        <p>The following people have been awarded Honorary Life Membership to Circolo Berkeley 
+            in respect of the outstanding contributions they have each made.</p>
+        <h2>Honorary Life Members</h2>
+        <ul class="committee-list"> <!-- Used committee list format for ease -->
+            <li><strong>Hilda Caffrey</strong>
+            
+            <li><strong>Peter Bryne</strong>
+                
+            <li><strong>Paul Arthur</strong>
+        </ul>
+    </main> <!-- Close main -->
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script src="menu-toggle.js"></script>
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                initHamburgerMenu();  // Initialize hamburger menu after header loads
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

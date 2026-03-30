@@ -111,6 +111,10 @@ main p {
     background-color: #b5f5c4; /* Light green */
 }
 
+.honorary-page .about-main {
+    background-color: #f5d6de;
+}
+
 /* =================================================
    IMAGE + TEXT SECTIONS (side by side)
    ================================================= */
