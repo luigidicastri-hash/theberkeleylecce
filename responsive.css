@@ -149,6 +149,29 @@
     }
 }
 
+/* Home layout responsive behaviour */
+@media (max-width: 768px) {
+    .home-layout {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        gap: 20px;
+    }
+
+    .home-small {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .home-side-image img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
 /* =========================================
    GENERAL ARTICLE RESPONSIVENESS
    Applies to all main and article elements
@@ -479,5 +502,19 @@
 
     body.P_Byrne .article-image img {
         object-position: 50% 30% !important;
+    }
+}
+/* Welcome page formatting to stack images */
+@media (max-width: 768px) {
+    .home-layout {
+        flex-direction: column;
+    }
+
+    .home-side-image img {
+        width: 100%;
+    }
+
+    .home-grid {
+        grid-template-columns: 1fr;
     }
 }

@@ -15,7 +15,7 @@
   html, body {
     height: 100%;
 }
- 
+
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -30,7 +30,6 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* filter: brightness(1.0);   Adjust between 1.0 - 1.5 */   
 }
 
 @keyframes sky-move {
@@ -291,7 +290,7 @@ nav .has-dropdown .dropdown a:hover {
    MAIN CONTENT AREA
    ========================================= */
 main {
-    max-width: 1100px;   /* gives a more spacious layout */
+    max-width: 600px;   /* 1100px gives a more spacious layout */
     margin: 10px auto;    /* 10px top/bottom spacing, auto centers horizontally */
     background: #a9e6f7; /*BASE BACKGROUND FOR ALL PAGES EXCEPT ARTICLES*/
     padding: 10px 30px 30px 30px;  /* top, right, bottom, left */
@@ -300,6 +299,53 @@ main {
     flex: 1;  /* Makes main grow to push footer down */
     outline: 2px solid red;
 }
+
+/* === Welcome screen layout for text and pictures ===*/
+.home-layout {
+    align-self: center;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 1px auto;
+    width: 1100px;
+    max-width: 100%;
+    padding: 0 10px;
+    /*outline: 3px solid magenta;*/
+}
+
+.home-small {
+    width: 600px;
+    flex: 0 0 600px;
+    /*flex: 1;*/
+    min-width: 600px;
+    background: #a9e6f7;
+    border: 2px solid red;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.home-side-image img {
+    width: 235px;
+    height: auto;
+    border-radius: 2px;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    padding: 0 10px;
+}
+
+.home-grid img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+/* === End of Welcome Screen Layout === */
 
 /* === Article Page Styles - for use on Byrne articles === */
 

@@ -234,8 +234,13 @@ main {
 }
 
 /* Hide booking link and map link on past events */
-.event-card.past-event .booking-link {
+/*.event-card.past-event .booking-link {*/
+    .event-card .booking-link {
     display: none;
+}
+/* Show booking link only for the next event */
+.event-card.next-event .booking-link {
+    display: inline-block;
 }
 .event-card.past-event .location-map-link {
     display: none;

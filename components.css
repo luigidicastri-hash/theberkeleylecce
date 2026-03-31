@@ -10,9 +10,9 @@
     /*background-color: #FFD700;*/ /* Darker Yellow background */
     background-color: #a9e6f7; /* background */
     border: 2px solid #DC143C; /* border */
-    max-width: 600px; /* Adjust size as needed */
+    max-width: 1000px; /* Adjust size as needed */
     margin: 0 auto;  /* remove external top/bottom gap around hero */
-    padding: 3px 20px; /* Space inside the box. The first number controls top and bottom space.*/
+    padding: 3px 0px; /* Space inside the box. The first number controls top and bottom space.*/
                             /*The second number controls left and right space.*/
     text-align: center;
     border-radius: 8px; /* Optional: slight rounding of corners */
