@@ -257,8 +257,8 @@ article.dialogue p.accreditation {
 
 .story-text {
     flex: 1;
-    font-size: 18px;
-    line-height: 1.5;
+    /* font-size: 18px; */
+   /* line-height: 1.5; */
 }
 
 /* Ensures proper alignment of the first paragraph */
