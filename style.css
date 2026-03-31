@@ -316,12 +316,15 @@ main {
 .home-small {
     width: 600px;
     flex: 0 0 600px;
-    /*flex: 1;*/
     min-width: 600px;
     background: #a9e6f7;
     border: 2px solid red;
     border-radius: 8px;
     padding: 10px;
+    /*text-align: center; */
+}
+.home-small > *:last-child {
+    margin-bottom: 0;
 }
 
 .home-side-image img {

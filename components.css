@@ -10,7 +10,9 @@
     /*background-color: #FFD700;*/ /* Darker Yellow background */
     background-color: #a9e6f7; /* background */
     border: 2px solid #DC143C; /* border */
+    width: 100%;
     max-width: 1000px; /* Adjust size as needed */
+    box-sizing: border-box;
     margin: 0 auto;  /* remove external top/bottom gap around hero */
     padding: 3px 0px; /* Space inside the box. The first number controls top and bottom space.*/
                             /*The second number controls left and right space.*/
@@ -39,7 +41,7 @@
 /* Mobile-only hero tuning (desktop remains unchanged) */
 @media (max-width: 600px) {
     .hero-banner {
-        width: 90%; /* Banner Width */
+        width: 100%; /* Banner Width */
         max-width: none;
         margin: 0 auto;
         padding: 3px 10px;
@@ -59,7 +61,7 @@
 
 @media (max-width: 480px) {
     .hero-banner {
-        width: 90%;
+        width: 100%;
         max-width: none;
         margin: 0 auto;
         padding: 2px 8px;

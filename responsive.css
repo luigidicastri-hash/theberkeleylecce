@@ -508,13 +508,38 @@
 @media (max-width: 768px) {
     .home-layout {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .home-small {
+        width: 100%;
+        min-width: unset;
+        flex: none;
+        order: -1;  /* ← moves text to the top */
+    }
+
+    .home-side-image {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
     }
 
     .home-side-image img {
-        width: 100%;
+        width: 45%;
     }
 
     .home-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-side-image img {
+        width: 90%;
+    }
+    .home-small {
+        order: -1;
     }
 }
