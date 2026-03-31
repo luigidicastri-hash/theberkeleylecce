@@ -293,14 +293,15 @@ nav .has-dropdown .dropdown a:hover {
 main {
     max-width: 1100px;   /* gives a more spacious layout */
     margin: 10px auto;    /* 10px top/bottom spacing, auto centers horizontally */
-    background: rgb(185, 237, 237); /*BASE BACKGROUND FOR ALL PAGES EXCEPT ARTICLES*/
+    background: #a9e6f7; /*BASE BACKGROUND FOR ALL PAGES EXCEPT ARTICLES*/
     padding: 10px 30px 30px 30px;  /* top, right, bottom, left */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     flex: 1;  /* Makes main grow to push footer down */
+    outline: 2px solid red;
 }
 
-/* === Article Page Styles === */
+/* === Article Page Styles - for use on Byrne articles === */
 
 /* General article styles */
 article {
@@ -314,6 +315,7 @@ article {
     background-color: rgb(171, 175, 203); /* Article page background colour */
     padding: 10px 30px 30px 30px;        /* top, right, bottom, left */
     box-shadow: 0 0 10px rgba(0, 0, .0, 0.1); /* Subtle shadow for depth */
+    outline: 2px solid blue;
 }
 
 /* Style for images inside articles */
@@ -323,10 +325,7 @@ article img {
     display: block;  /* Makes it behave like a block element */
     margin: 20px auto;  /* Centers image and adds space above and below */
 }
-
-main { outline: 2px solid red; }
-article { outline: 2px solid blue; }
-
+ 
 /* =========================================
    ACCREDITATION (image/photo credits)
    ========================================= */
