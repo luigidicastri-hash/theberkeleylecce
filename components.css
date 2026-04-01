@@ -1,11 +1,12 @@
-/* =========================================
-   COMPONENTS.CSS
-   Specific styling for banners, boxes, grids, and layout components
-   ========================================= */
+/* ===================================================
+   COMPONENTS.CSS - only used for index.html
+   Homepage hero banner and related home layout styles
+   Kept separate to reduce size of site-wide style.css 
+   =================================================== */
 
-/* =========================================
+/* ===================================================
    HERO BANNER
-   ========================================= */
+   =================================================== */
 .hero-banner {
     /*background-color: #FFD700;*/ /* Darker Yellow background */
     background-color: #a9e6f7; /* background */

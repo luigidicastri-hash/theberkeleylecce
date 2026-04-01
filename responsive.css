@@ -26,27 +26,26 @@
    - Handles responsive video embeds for proper scaling.
    
    Notes:
-   - Media query breakpoints: 768px (tablet), 600px (phones),
+   - Media query breakpoints: 1024px (tablet), 600px (phones),
      and 480px (small phones).
    - Changes apply to all pages and all articles, including
      specialized sections like Byrne articles.
    - No site-specific or page-specific selectors are used
      for general responsiveness, ensuring consistency. */
 
-
 /* =========================================
-   TABLET AND BELOW (768px)
+   TABLET AND BELOW (1024px)
    ========================================= */
 
 /* Carousel dots positioning for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .carousel-dots {
         bottom: 10px;
     }
 }
 
 /* Story row - stack vertically on mobile */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .story-row,
     .story-row.reverse {
         flex-direction: column;
@@ -54,7 +53,7 @@
 }
 
 /* General responsive adjustments for tablets */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     header {
         padding-top: 86px;
         padding-left: 12px;
@@ -70,7 +69,7 @@
 
     /* ========================================= 
        HAMBURGER MENU - MOBILE RESPONSIVE
-       Display hamburger button at 768px breakpoint and below
+       Display hamburger button at 1024px breakpoint and below
        ========================================= */
     
     /* Show hamburger menu button on tablets and mobile */
@@ -131,7 +130,7 @@
 }
 
 /* Image and quotes section - stack on tablets */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .image-and-quotes {
         flex-direction: column;  
         align-items: center;     
@@ -149,35 +148,12 @@
     }
 }
 
-/* Home layout responsive behaviour */
-@media (max-width: 768px) {
-    .home-layout {
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-        gap: 20px;
-    }
-
-    .home-small {
-        width: 100%;
-        min-width: 0;
-    }
-
-    .home-side-image img {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
-        margin: 0 auto;
-        display: block;
-    }
-}
-
 /* =========================================
    GENERAL ARTICLE RESPONSIVENESS
    Applies to all main and article elements
    ========================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .hero-banner {
         margin: 0 auto;
     }
@@ -204,7 +180,6 @@
         margin-bottom: 1rem;
     }
 }
-
 
 /* =========================================
    PHONES (600px and below)
@@ -292,7 +267,6 @@
         padding: 12px;
     }
 }
-
 
 /* =========================================
    MOBILE PHONES (480px and below)
@@ -402,8 +376,8 @@
    P-BYRNE ARTICLES – FULL RESPONSIVE FIX
    ========================================= */
 
-/* ----- Tablet: ≤768px ----- */
-@media (max-width: 768px) {
+/* ----- Tablet: ≤1024px ----- */
+@media (max-width: 1024px) {
 
     /* Articles grid becomes single column */
     body.P_Byrne .articles-grid {
@@ -505,17 +479,28 @@
     }
 }
 /* Welcome page formatting to stack images */
-@media (max-width: 768px) {
+/* Welcome page formatting to stack images */
+@media (max-width: 1024px) {
     .home-layout {
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        gap: 20px;
+    }
+
+    .home-centre {
+        width: 100%;
+        max-width: 100%;
+        flex: unset;
+        order: -1;
     }
 
     .home-small {
         width: 100%;
         min-width: unset;
         flex: none;
-        order: -1;  /* ← moves text to the top */
     }
 
     .home-side-image {
@@ -528,6 +513,10 @@
 
     .home-side-image img {
         width: 45%;
+        flex: 0 0 45%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
     }
 
     .home-grid {
@@ -538,8 +527,6 @@
 @media (max-width: 480px) {
     .home-side-image img {
         width: 90%;
-    }
-    .home-small {
-        order: -1;
+        flex: 0 0 90%;
     }
 }
