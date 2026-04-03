@@ -14,7 +14,7 @@
     width: 100%;
     max-width: 600px; /* Adjust size as needed */
     box-sizing: border-box;
-    margin: 0 auto 2px auto; /* top/bottom gap around hero */
+    margin: 0px auto 4px auto; /* top/bottom gap around hero */
     padding: 3px 0px; /* Space inside the box. The first number controls top and bottom space.*/
                             /*The second number controls left and right space.*/
     text-align: center;
