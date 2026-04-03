@@ -14,7 +14,7 @@
     width: 100%;
     max-width: 600px; /* Adjust size as needed */
     box-sizing: border-box;
-    margin: 0 auto;  /* remove external top/bottom gap around hero */
+    margin: 0 auto 2px auto; /* top/bottom gap around hero */
     padding: 3px 0px; /* Space inside the box. The first number controls top and bottom space.*/
                             /*The second number controls left and right space.*/
     text-align: center;
@@ -34,7 +34,7 @@
 }
 
 .home-main {
-        margin-top: 0; /* no gap between banner and main content */
+        margin-top: 0px; /* no gap between banner and main content */
 }
 .blue-background {
     background-color: rgb(174, 208, 217) !important;  /* Light blue background for main content and articles */
