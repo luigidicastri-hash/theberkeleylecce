@@ -368,7 +368,8 @@
 .video-container iframe {
     display: block;
     margin: 0 auto;
-    max-width: 100%;
+    width: 100%;
+    max-width: 700px;
     height: auto;
 }
 img {
