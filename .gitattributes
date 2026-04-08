@@ -1,3 +1,0 @@
-*.mp4 filter=lfs diff=lfs merge=lfs -text
-videos/melpignano.mp4 filter=lfs diff=lfs merge=lfs -text
-videos/nicky.mp4 filter=lfs diff=lfs merge=lfs -text
