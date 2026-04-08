@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Base href shifts the browser's reference point to the parent folder,
+         so all links in the shared header and footer resolve correctly
+         even though this page lives inside the event-reviews subfolder -->
+    <base href="../../">
+    <title>TV series: past, present and future</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="stylesheet" href="../event-reviews.css">
+</head>
+
+<body>
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <h1 class="review-title">James Kendall - TV drama: When Cinema Blends with Television – 28/03/2025</h1>
+        <p class="review-author"><em>Patrizia Sanguedolce</em></p>
+        <img src="../images-for-past-events/2025/tv-series2.jpg" alt="James and students" style="width: 600px; height: auto;" class="review-image">
+<!--<div style="margin-bottom: 24px"></div>-->
+
+<p>Gone are the times when watching television was a communal activity in which family members gathered to follow the same programme, exchanging reactions and comments on it. Nowadays, especially for young people, ‘television’ is often a computer or mobile phone screen which is gazed at in solitude. Network TV is being replaced by streaming platforms, which have opened a world of possibilities, allowing viewers to choose from an immense variety of international products, as well as to decide where, when and in which language they want to watch them.
+</p>
+<p>
+The popularity of platforms like Netflix may be a reason behind the wide spread of TV series, but certainly not the only one: television drama has undoubtedly developed since the times of analog TV. An evolution worth investigating.
+</p>
+<p>
+James Kendall, an expert in film and television studies, provided interesting insights into the evolution of TV drama, during a talk he gave to the Circolo Berkeley on 28th March 2025.
+He focused on three case studies, starting from <em>Twin Peaks</em>, the groundbreaking series created by Mark Frost and David Lynch in the 1990s, then exploring <em>24</em>, which uses a real-time format where each episode represents one hour and each season covers 24 consecutive hours, to finish with a glimpse of <em>Adolescence</em>, a crime mini-series released on Netflix on 13th March 2025, which is already winning critical acclaim.
+</p>
+<p>According to Kendall, stylistic innovations in TV drama are inspired by cinematic techniques, such as visual storytelling, multiple narratives, immersive storytelling, tracking shot, etc. Since <em>Twin Peaks</em>, which represented a watershed in the history of television, the quality of TV drama has constantly increased, thanks to a great attention to detail and competent use of music and lighting. By making each frame revealing, the various authors have managed to ensure audience engagement, which is an essential component of the genre.
+</p>
+<p>An interesting contribution to the talk was offered by two students from Liceo Scientifico “C. De Giorgi”, Clara Arnesano e Carola Chiarello, who presented their point of view as young people. According to what they said, teenagers’ viewing can be either multitasking or more immersive, depending on the kind of experience they want to have, and the kind of device they use (small or big screen). They may watch TV series as pure entertainment, but also as a common interest to develop social bonds, or as a way of discovering different cultures. When choosing what to watch, they can be influenced by social media or friends’ suggestions. Clara and Carola acknowledged that TV series have an impact on teenagers’ lives because they influence not only fashion trends, but also the way young people speak, and may even change their perception of the world.</p>
+<p>As a former teacher of English, I can add that the habit of watching American or British TV series in their original language has improved the new generations of students’ level of proficiency in the English language. This is certainly the case of Clara and Carola, who greatly impressed the audience with their fluency and competence.</p>
+
+        
+</main> <!-- Close main -->
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

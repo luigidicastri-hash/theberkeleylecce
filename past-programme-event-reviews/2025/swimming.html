@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Base href shifts the browser's reference point to the parent folder,
+         so all links in the shared header and footer resolve correctly
+         even though this page lives inside the event-reviews subfolder -->
+    <base href="../../">
+    <title>Swimming for your life</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="stylesheet" href="../event-reviews.css">
+</head>
+
+<body>
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <h1 class="review-title">Lesley Ray – Swimming For Your Life – 21/11/2025 </h1>
+        <p class="review-author"><em>By Nicolette S. James</em></p>
+        <img src="../images-for-past-events/2025/swimming2.jpg" alt="Photo of group" style="width: 600px; height: auto;" class="review-image">
+        <p class="accreditation">Photo by David Katan</p>
+        
+    <p>In her very interesting talk Lesley explained that, although she had swum since childhood, the impulse to take part in very challenging swims and competitions around the world sprang from a period of an all time low in her life.
+    </p>
+    <p>Two very different serious health problems drove her to find a distracting activity that would also put her on a path to better health. She found a group of other swimmers who did challenging swims mainly for charity, and this group gave her support, encouragement and companionship.
+    </p>
+    <p>Thus Lesley has swum in an unusual competition involving the prisoners of the island of Gorgona, (all responsible for very serious crimes) north of Sardinia, another crossing the Hellespont, where she admits that her headstrong character led her briefly astray, and several others worldwide.
+    </p>
+    <p>She assured us that, however worried she is before tackling a difficult swim, when it comes to the crunch…. she just puts her head down and swims!
+    </p>
+    
+</main> <!-- Close main -->
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

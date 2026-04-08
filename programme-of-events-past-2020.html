@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2020 &ndash; Circolo Berkeley Programme of Events</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="past-programme-of-events.css">
+</head>
+<body>
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+<main> 
+    <h1 class="programme-title">Programme 2020</h1>
+
+<div class="events-container">
+
+    <!-- Event: Nicky James: Gallipoli and Sofia Stevens -->
+    <div class="event-card">
+        <div class="event-details"> 
+            <p class="event-date">May 6th, 2020</p>
+            <p class="event-location">Online meeting</p>
+            <!--<a href="past-programme-event-reviews/2025/swimming.html" class="read-review-link">Read review →</a>-->
+        </div>
+        <div class="event-title-section">
+            <h2>Gallipoli and Sofia Stevens</h2>
+            <h4><em>An English poet and her family in Terra d'Otranto</em></h4>
+            <p class="event-speaker-name">Nicolette S. James</p>
+            <p>Sussex-bred teacher, author and long-term resident of Lecce.</p>
+        </div>
+            <div class="event-video">
+            <video controls poster="images-for-past-events/2020/nicky-thumbnail.jpg">
+            <source src="videos/nicky.mp4" type="video/mp4">
+            </video>
+            </div>  
+
+<!-- Close the Events Container and Main-->
+</div>
+</main>
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div> 
+
+<!-- ===========================================
+     JAVASCRIPT TO LOAD GLOBAL HEADER AND FOOTER
+     ===========================================-->
+<script src="menu-toggle.js"></script>
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                initHamburgerMenu();  // Initialize hamburger menu after header loads
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Base href shifts the browser's reference point to the parent folder,
+         so all links in the shared header and footer resolve correctly
+         even though this page lives inside the event-reviews subfolder -->
+    <base href="../../">
+    <title>Our Celebrity Neighbor</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="stylesheet" href="../event-reviews.css">
+</head>
+
+<body>
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <h1 class="review-title">Sophie Grigson – Our Celebrity Neighbor – 28/01/2025 </h1>
+        <p class="review-author"><em>By Janice Marie Beccaria</em></p>
+        <img src="../images-for-past-events/2025/grigson2.jpg" alt="Photo of group" style="width: 600px; height: auto;" class="review-image">
+        <!--<p class="accreditation">Photo by David Katan</p>-->
+        
+    <p>The talk with Sophie Grigson, English cookery writer and celebrity chef, attracted a good number of people in Lecce on Friday the 24th of January. Food is definitely one of those things that connects people from every corner of the globe.
+</p>
+<p>
+When Sophie Grigson came across a story about a little town called Candela in the north of Puglia that was paying people to move there, she decided she was going to head to the south of Italy. This famous food writer now lives in Ceglie Messapica, which also makes Ms. Grigson our neighbor.
+</p>
+<p>
+Nicky James interviewed Ms. Grigson, and, in turn, the chef interviewed the audience. This was one of the highlights of the evening. The public was not only interested in learning how it came about that Sophie Grigson moved to Ceglie Messapica, but also how this well-known celebrity felt about her neighbors’ reactions to her cooking and her experiments with local cuisine. Sophie is a confident, relaxed cook and uses neighbors’ comments and critiques to improve her dishes and expand her mastery of Apulian specialities. Though Sophie did mention that even though her neighbor frequently calls her down to sample her dishes, when Sophie made guacamole for a special occasion, it wasn’t greeted with enthusiasm!
+</p>
+<p>
+The fact that this celebrity chef got her degree in Mathematics surprised many people, but Sophie explained that cooking is based on measurements and quantities, so it is actually not so strange that she chose this field. Writing cookbooks also means being skilled at providing precise clear details and instructions and her math background has served Ms. Grigson well. Sophie stressed the challenges cookery writers face because of the range of kitchen appliances and utensils as well as the variety of climates and availability of ingredients, plus the level of expertise of the cooks attempting the recipes.
+</p>
+<p>
+Since we are practically neighbors, we are looking forward to welcoming Sophie Grigson again at the Circolo Berkeley, also because we hope to have the chance to provide her with insider tips on where to find good bread in our area!
+</p> 
+    
+</main> <!-- Close main -->
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

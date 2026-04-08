@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023 &ndash; Circolo Berkeley Programme of Events</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="past-programme-of-events.css">
+</head>
+<body>
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+<main> 
+    <h1 class="programme-title">Programme 2023</h1>
+
+<div class="events-container">
+
+    <!-- Event: Swimming for your life -->
+    <div class="event-card">
+        <div class="event-details">
+            <div style="margin-bottom: 4px"></div>
+            <p class="event-date">November 21st, 2025</p>
+            <br>
+            <p class="event-location">Mediateca, University of Salento<br>
+            <br>
+            <a href="past-programme-event-reviews/2025/swimming.html" class="read-review-link">Read review →</a>
+        </div>
+        <div class="event-title-section">
+            <h2>Swimming For Your Life</h2>
+            <p class="event-speaker-name">Lesley Ray</p>
+         <!-- <p class="event-speaker-title">Professor of Medieval Archaeology at the University of Salento</p>  -->
+            <p>An inspiring English teacher at Unisalento and a very talented swimmer who has splashed her way to success taking part in endless swimming competitions all around the world</p>
+        </div>
+        <div class="event-image">
+            <img src="images-past-events/2025/swimming1.jpg" alt="Swimmer in the sea">
+        </div>
+    
+</div>
+<!-- Close the Events Container -->
+
+    </main>
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div> 
+
+<!-- ===========================================
+     JAVASCRIPT TO LOAD GLOBAL HEADER AND FOOTER
+     ===========================================-->
+<script src="menu-toggle.js"></script>
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                initHamburgerMenu();  // Initialize hamburger menu after header loads
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+</script>
+</body>
+</html>

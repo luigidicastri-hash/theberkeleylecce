@@ -223,6 +223,12 @@ nav a:hover {
     color: #000;                 
 }
 
+nav .dropdown-label:hover {
+    background-color: #9acbcf;
+    color: #000;
+    cursor: pointer;
+}
+
 /* Dropdown styling */
 nav .has-dropdown {
     position: relative;
@@ -257,6 +263,11 @@ nav .has-dropdown .dropdown a {
 nav .has-dropdown .dropdown a:hover {   
     background-color: #9acbcf;  
     color: #000;
+}
+
+nav .dropdown-label {
+    padding: 10px 20px;
+    margin: 0 10px;
 }
 
 /* =========================================

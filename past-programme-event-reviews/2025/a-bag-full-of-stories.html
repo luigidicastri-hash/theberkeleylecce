@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Base href shifts the browser's reference point to the parent folder,
+         so all links in the shared header and footer resolve correctly
+         even though this page lives inside the event-reviews subfolder -->
+    <base href="../../">
+    <title>A bag full of stories</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="stylesheet" href="../event-reviews.css">
+</head>
+
+<body>
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <h1 class="review-title">Paola Pomarico – A bag full of stories – 29/10/2025</h1>
+        <p class="review-author"><em>Patrizia Sanguedolce</em></p>
+        <img src="../images-for-past-events/2025/a-bag-full-of-stories2.jpg" alt="Photo of Berkeley meeting" style="width: 600px; height: auto;" class="review-image">
+        <p class="accreditation">Photo by Claudia Mazzei</p>
+        
+    <p>Before listening to Paola Pomarico’s talk, on 29th October 2025, we probably thought everything that needed to be said about Salento’s traditional cuisine had already been said, but this was not the case. Paola went straight to the historical roots of our typical food, tracing its origins in Roman, Greek and even Messapian times. Did you know that the <em>rape ‘nfucate</em> we usually eat on St. Martin’s day (as well as on other occasions) were already popular in Roman times? Or that fave e cicorie were highly appreciated by the Salentine Greeks? And that the Messapians used to eat <em>tarallini and friselle?</em>
+</p>
+<p>
+By the way, the latter are still eaten in Crete as traditional food, which shows how the very essence of culinary tradition escapes any definition or label. Every human being is the product of multiple influences, and this is all the more true when we speak of Salento, a land between two seas, which in the course of history was inhabited by several peoples, who interacted and contaminated creating a big melting pot of cultures.
+</p>
+<p>
+This is one the main themes of Paola’s book, <em>A Dinner Tale</em>. Another main theme is the emotional value of food, seen as something which comforts us and gives us a sense of belonging. The Italian version of the book has a completely different title: <em>La ‘ncartata</em>, the doggy bag in Salentine dialect. However, according to the author, <em>la ‘ncartata</em> is a more romantic version of its English equivalent since it is based on the pleasure of sharing food with those we love, so that they will remember us when they go home. In line with its title, the Italian book is symbolically wrapped up in a beautiful tea-towel: an explicit reference to the traditional Salentine habit of taking away the leftovers of a convivial dinner.
+</p>
+<p>
+Paola and her best friend Maria Costi, who supported her in the presentation, really charmed us with their brilliant storytelling. We look forward to listening to more dinner tales!
+</p>
+    
+</main> <!-- Close main -->
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Base href shifts the browser's reference point to the parent folder,
+         so all links in the shared header and footer resolve correctly
+         even though this page lives inside the event-reviews subfolder -->
+    <base href="../../">
+    <title>Early Summer Special</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="stylesheet" href="../event-reviews.css">
+</head>
+
+<body>
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <h1 class="review-title">Melpignano and the beat of the tambourine – 31/05/2025</h1>
+        <p class="review-author"><em>Patrizia Sanguedolce</em></p>
+        <img src="../images-for-past-events/2025/early-summer-special2.jpg" alt="Photo of group outside church" style="width: 600px; height: auto;" class="review-image">
+        <p class="accreditation">Photo by Claudia Mazzei</p>
+        
+    <p>Melpignano is perhaps better known for ‘La Notte della Taranta’, a big folk music festival which, since 1998, has been attracting thousands of people (hundreds of thousands in the latest years) to this small town in the heart of the Grecìa salentina. Therefore, it wasn’t by chance that we started our tour just there, in the lawn in front of the ex convento degli Agostiniani, where the ‘concertone’ is held every summer at the end of August.
+</p>
+<p>
+And there we gathered last Saturday (31st May 2025), in the dazzling light of a Mediterranean afternoon in late spring, to discover the less well-known gems of Melpignano, following the steps of our experienced guide, Salvatore, and of his English-speaking assistants, Monica and Siân.
+</p>
+<div style="margin-bottom: 24px"></div>
+<img src="../images-for-past-events/2025/early-summer-special3.jpg" alt="Melpignano scene" style="width: 600px; height: auto;" class="review-image">
+        <p class="accreditation">Photo by Claudia Mazzei</p>
+<p>
+After admiring the baroque façade of the annexed Chiesa del Carmine - designed by Giuseppe Zimbalo, the famous architect of Santa Croce in Lecce - we strolled through the streets of Melpignano looking at small and big hidden treasures, like the Renaissance-style Palazzo Marchesale - with its beautiful inner garden, fountain and frescoed ceiling - and St. George’s square - enclosed by its namesake Church,  the clock tower and a succession of porches, formerly used for commercial purposes.
+</p>
+<div style="margin-bottom: 24px"></div>
+<img src="../images-for-past-events/2025/early-summer-special4.jpg" alt="Melpignano scene" style="width: 600px; height: auto;" class="review-image">
+        <p class="accreditation">Photo by photo by Patrizia Sanguedolce</p>
+<p>
+The blazing sun was setting when we reached the last stage of our tour, a small museum of drums and tambourines coming from different parts of the world, where Mariella and Letizia - Salvatore’s wife and daughter - were waiting to welcome us.
+</p>
+
+            <div class="event-video" style="text-align:center;"">
+            <video controls poster="images-for-past-events/2025/early-summer-special-thumbnail.jpg">
+            <source src="videos/melpignano.mp4" type="video/mp4">
+            </video>
+            </div>  
+
+<div style="margin-bottom: 24px"></div>
+<p>
+The whole family entertained us with pizzica, tarantella and traditional songs in different Apulian dialects, including Griko, the language of the Grecìa salentina which is now spoken only by a limited number of old people. Mariella’s voice, with the rhythmic beat of the tambourine and the chords of Letizia’s and Salvatore’s guitars, accompanied us throughout a delicious dinner - entirely based on local produce – wonderfully cooked by our host.
+</p> 
+<p>It was a deep, starry, quiet night when we left the small museum, but the tambourine was still beating in our ears as we felt the experience we had just lived was light years away from the madding crowds of the ‘concertone’.</p>
+    
+</main> <!-- Close main -->
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

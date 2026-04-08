@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Base href shifts the browser's reference point to the parent folder,
+         so all links in the shared header and footer resolve correctly
+         even though this page lives inside the event-reviews subfolder -->
+    <base href="../../">
+    <title>London gin comes to Salento</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="stylesheet" href="../event-reviews.css">
+</head>
+
+<body>
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <h1 class="review-title">Handy tips for your local tipple - whether it be gin or amaro – 28/02/2025</h1>
+        <p class="review-author"><em>Sarah Bridget Scott</em></p>
+        <img src="../images-for-past-events/2025/london-gin2.jpg" alt="Inside the distillery" style="width: 600px; height: auto;" class="review-image">
+<div style="margin-bottom: 24px"></div>
+<p>On the last day of February a group of Berkeley members were lucky enough to get a tour and taste of a small Salentine Gin distillery in the heart of Carmiano. The owners, Valeria and Gabriele, gave us a warm welcome and had entertainment in the form of a dartboard while we waited for stragglers to arrive. Then we were led behind the scenes - which was literally just behind the counter - where we were introduced to their state-of-the-art machinery in the form of a superb shining copper pot-still made by the famous Tuscan pot-still maker Frilli (you see, one short but enlightening tour and I can try and sound like an expert!).
+</p>
+<p>
+The talk was fascinating, so if you are interested in the art of distilling I suggest you pay them a visit (since I was unaware at the time I would be writing this up I didn’t take notes; however, I definitely left much wiser about all kinds of things regarding the production of high-level gin and amaro). 
+</p>
+<p>
+Onto what, for me, was the highlight, the gin and amaro-tasting. We were provided with abundant snacks to line our stomachs and then embarked on the tasting part of the tour. We started with the different gins - I am afraid I lost count (again I should have been taking notes, particularly as to which I liked best, but they were all very nice), possibly five types of gin and three amari. We were introduced to each and were able to discern the different botanical ingredients and savour the different notes and flavours. It was a truly delightful evening and we left, of course, in high spirits!
+</p>
+<div style="margin-bottom: 24px"></div>
+<img src="../images-for-past-events/2025/london-gin3.jpg" alt="Bottles of Amaro - lots!" style="width: 600px; height: auto;" class="review-image">
+        
+</main> <!-- Close main -->
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

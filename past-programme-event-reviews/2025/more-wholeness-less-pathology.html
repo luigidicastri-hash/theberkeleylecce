@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Base href shifts the browser's reference point to the parent folder,
+         so all links in the shared header and footer resolve correctly
+         even though this page lives inside the event-reviews subfolder -->
+    <base href="../../">
+    <title>More Wholeness Less Pathology</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="stylesheet" href="../event-reviews.css">
+</head>
+
+<body>
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <h1 class="review-title"> Katrina Johnston – More Wholeness Less Pathology: why Passionate Inquiry Therapy is a Quiet Revolution in the Field of Mental Health – 26/09/2025 </h1>
+        <p class="review-author"><em>By Nicolette S. James</em></p>
+            
+    <p>Katrina began by saying that she is not very at home with public speaking, then asked us to close our eyes and be silent, listening to our breathing for a while. We also put away our phones as being without technology is important.</p>
+
+<p>The theory of Compassionate Inquiry was developed by Gabor Maté, a Hungarian G.P., naturalized Canadian, and he worked in downtown Vancouver often with drug addicts.</p>
+
+<p>The speaker raised many questions, for example is addiction a disease? Why is there such pain? And mentioned the ACES – adverse childhood experiences which lead to trauma. Some of these include the loss of a primary care giver, sexual abuse, violence, bullying, living with adults with alcohol or drug addictions.</p>
+
+<p>Children who have undergone such experiences have a need to be seen and heard, Katrina  emphasized that it is not the trauma in itself that is the problem, but reactions to it. Children are not traumatized by what happens but because there isn’t someone to help them deal with it.</p>
+
+<p>Later she talked about Stephen Porges and the Polyvagal theory, and also mentioned Richard Schwartz and his work on Internal Family systems.
+
+<p>She underlined that healing is a spiral staircase with no top floor. The goal is to return to who we are.</p>
+    
+</main> <!-- Close main -->
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

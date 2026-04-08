@@ -1,0 +1,448 @@
+/* programme-of-events.css */
+
+/* Main container */
+main {
+    max-width: 1000px;
+    margin: 3px auto 10px auto;
+    padding: 40px 20px;
+    background: rgb(185, 237, 237);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Programme title */
+.programme-title {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: -35px;
+    margin-bottom: 10px;
+    color: #0b0000;
+}
+
+/* Events container */
+.events-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Individual event card (horizontal row) WHOLE ROW ALL 3 COLUMNS */
+.event-card {
+    display: grid;
+    grid-template-columns: 200px 2.0fr .75fr; /*controls the width of the three columns*/
+    gap: 15px;
+    align-items: stretch;
+    padding: 1px;
+    background: #78c6e0;
+    border: 2px solid #1a1919;
+    border-radius: 8px;
+    margin: 0px; /* Prevents double borders */
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1; /* to stop MAC overlaying */
+}
+
+.event-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Next Event Badge */
+.next-event .event-title-section::before {
+    content: 'NEXT EVENT';
+    display: block;
+    background-color: #2a046f;
+    color: white;
+    padding: 4px 12px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    text-align: center;
+    /* LEFT align */
+    width: fit-content;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Left column - Event details */
+.event-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    border-right: 1px solid #1a1919;
+    padding-right: 15px;
+    padding-left: 10px; 
+    position: relative;  
+}
+
+.event-date {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0b0000;
+    margin: 8px 0 0px 0;  /*order: top, right, bottom, left*/
+    font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+}
+
+.event-time {
+    font-size: 1.0rem;
+    color: #0a0303;
+    margin: 3px 0;
+}
+
+/* Event location container */
+.event-location {
+    display: inline-flex;       /* keeps text and links on the same line */
+    align-items: center;        /* vertically aligns links and text */
+    flex-wrap: wrap;            /* allows wrapping on small screens */
+    gap: 10px;                  /* spacing between text and links */
+    font-size: .95rem;
+    color: #0b0a0a;             /* general text color */
+    line-height: 1.5;
+}
+
+/* Map link styling */
+.location-map-link {
+    display: inline-block;
+    font-size: 1rem;     /* map link font size */
+    font-weight: 700;   /* map link weight */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-decoration: none;
+    color: #2a046f;             /* keeps map link blue */
+}
+
+.location-map-link:hover {
+    text-decoration: underline;
+    color: #1a0356;
+}
+
+/* Review link styling */
+.read-review-link {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-decoration: none;
+    color: #c85000;
+}
+.read-review-link:hover {
+    text-decoration: underline;
+    color: #a04000;          /* darker orange on hover */
+}
+
+.booking-link {
+    display: inline-block;
+    padding: 6px 15px;
+    background-color: #282727;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: 0;
+    transition: background-color 0.3s ease;
+    margin-top: -18px;
+    text-align: center;
+    max-width: 140px;
+    margin-left: auto; /* pushes the button to the right */
+    margin-right: -8px;
+    margin-bottom: 4px;
+}
+
+.booking-link:hover {
+    background-color: #1c3f57;
+}
+
+/* Middle column - Event title and speaker */
+.event-title-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    padding-top: 0px;  /* adjust this value to taste */
+    border-right: 1px solid #1a1919;
+    padding-right: 15px;
+}
+
+.event-title-section h2 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin: 4px 0 3px 0;  /*order: top, right, bottom, left*/
+    color: #000000;
+    line-height: 1.5;
+    font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+}
+
+.event-note {
+    font-size: 1.0rem;
+    font-weight: 500;
+    color: #200356;
+    margin: 3px 0;
+    font-style: italic;
+}
+
+.event-speaker-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2a046f;
+    margin: 6px 0 3px 0;  /*order: top, right, bottom, left*/
+    line-height: 1.2;
+}
+
+.event-speaker-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2a046f;
+    margin: 6px 0 3px 0;  /*order: top, right, bottom, left*/
+    line-height: 1.5;
+}
+/* Right column - Event image */
+.event-image {
+    width: 185px;
+    height: 175px;  /* 175px instead of 100% to fix Safari bug */
+    flex-shrink: 0;       
+    padding-left: 5px;    
+    overflow: hidden;
+    align-self: center;  
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;  
+    object-fit: cover; /* crops the image to fill the box neatly */
+    display: block;
+    border-radius: 2px;
+    transition: transform 0.3s ease;
+}
+.event-video {
+    width: 100%;
+    max-width: 800px;
+}
+
+.event-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Past and future events separator bar */
+.event-separator {
+    align-self: flex-start;          /* stops flex from stretching it */
+    display: inline-block;           /* small box */
+    background-color: #ffb726;       
+    color: rgb(16, 15, 15);          
+    padding: 4px 12px;               
+    font-weight: 800;                
+    font-size: 0.85rem;              
+    border-radius: 4px;              
+    margin: 7px 0 8px 0;            /* margin: TOP  RIGHT  BOTTOM  LEFT */
+    text-transform: uppercase;       /* PAST EVENTS */
+}
+
+/* Hide booking link and map link on past events */
+/*.event-card.past-event .booking-link {*/
+    .event-card .booking-link {
+    display: none;
+}
+/* Show booking link only for the next event */
+.event-card.next-event .booking-link {
+    display: inline-block;
+}
+.event-card.past-event .location-map-link {
+    display: none;
+}
+.event-details .event-location {
+    margin-bottom: 0;
+}
+
+.event-card.past-event {
+     z-index: 0;          /* to prevent overlay on MACs */
+    opacity: 0.8;       /* controls depth of colour on past events */
+    background: #a8c5cc;
+}
+
+.event-card.past-event .event-title-section {
+    justify-content: flex-start;
+    padding-top: 10px;
+}
+
+.event-card.past-event .event-title-section::before {
+    content: 'PAST EVENT';
+    display: inline-block;
+    background-color: #ffb726;
+    color: rgb(16, 15, 15);
+    padding: 4px 12px;
+    font-weight: 800;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    align-self: flex-start;
+}
+
+.event-card.past-event .event-details {
+    align-self: flex-start;
+}
+
+/* Default footnotes font size for all screens */
+.footnotes {
+    font-size: 0.9em;
+}
+
+/* ================================================================
+   MEDIA OVERRIDES — ordered largest to smallest breakpoint
+================================================================== */
+/* Tablets (≤992px) */
+@media screen and (max-width: 992px) {
+    .event-card {
+        grid-template-columns: 1fr 1.2fr;
+        gap: 25px;
+        padding: 25px;
+    }
+
+    .event-image {
+        grid-column: 1 / -1;
+        order: -1;
+    }
+
+    .event-title-section h2 {
+        font-size: 1.7em;
+    }
+
+    .programme-title {
+        font-size: 2em;
+        margin-bottom: 40px;
+    }
+}
+
+/* (≤768px) */
+@media screen and (max-width: 768px) {
+    main {
+        margin: 3px auto 15px auto;
+        padding: 30px 15px;
+    }
+
+    .events-container {
+        gap: 30px;
+    }
+
+    .event-card {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .event-image {
+        order: -1;
+    }
+
+    .event-title-section {
+        order: 0;
+    }
+
+    .event-details {
+        order: 1;
+    }
+
+    .programme-title {
+        font-size: 1.8em;
+        margin-top: -25px;
+        margin-bottom: 15px;
+    }
+
+    .event-title-section h2 {
+        font-size: 1.5em;
+    }
+
+    .event-speaker {
+        font-size: 1em;
+    }
+
+    .event-date,
+    .event-time {
+        font-size: 0.95em;
+    }
+
+    .booking-link {
+        display: inline-block;
+        width: auto;
+        max-width: none;
+        padding: 6px 18px;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 8px;
+        text-align: left;
+        align-self: flex-start;
+    }
+
+    .event-card.past-event .event-image {
+        overflow: visible;
+        height: auto;
+    }
+
+    .event-card.past-event .event-title-section::before {
+        display: none;
+    }
+
+    .event-card.past-event .event-image::before {
+        content: 'PAST EVENT';
+        display: block;
+        background-color: #ffb726;
+        color: rgb(16, 15, 15);
+        padding: 4px 12px;
+        font-weight: 800;
+        font-size: 0.85rem;
+        border-radius: 4px;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+}
+
+/* (≤600px) */
+@media screen and (max-width: 600px) {
+    main {
+        margin: 3px 18px 18px 18px;
+    }
+}
+
+/* (≤480px) */
+@media screen and (max-width: 480px) {
+    main {
+        margin: 3px auto 10px auto;
+    }
+
+    .programme-title {
+        font-size: 1.5em;
+        margin-top: -25px;
+        margin-bottom: 5px;
+    }
+
+    .event-title-section h2 {
+        font-size: 1.3em;
+    }
+
+    .event-card {
+        padding: 15px;
+    }
+
+    .event-location {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .event-location .read-review-link {
+        display: inline-block;
+        margin-left: 0;
+    }
+
+    .footnotes {
+        font-size: 0.8em;
+    }
+}
