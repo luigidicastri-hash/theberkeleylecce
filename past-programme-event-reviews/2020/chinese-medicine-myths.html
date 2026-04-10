@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Base href shifts the browser's reference point to the parent folder,
+         so all links in the shared header and footer resolve correctly
+         even though this page lives inside the event-reviews subfolder -->
+    <base href="../../">
+    <title>The 3 Myths of Chinese Medicine - Exposed</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="stylesheet" href="../event-reviews.css">
+</head>
+
+<body>
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <h1 class="review-title">Teressa Canosa – Right Living Chinese Version  – 07/02/2020</h1>
+        <p class="review-author"><em>Peter Byrne</em></p>
+<p>
+Teressa Canosa began by clearing our heads of any lurid ideas we may have gathered about traditional Chinese medicine (TCM). The millennial practice has nothing to do with an ancient goateed Hollywood oriental mixing dubious potions like the witches in Macbeth. Nor did it concern a white-coated figure sharpening a needle big as an icepick in preparation for an acupuncture ordeal.
+</p>
+<p>
+TCM was first and foremost preventative medicine. There were times in the long course of its history that doctors reproached patients for coming to them for care. Had they lived right, they wouldn’t need a doctor. Living right entails a life in balance, extremes reconciled. Good health results when the life force ‘Qi' has achieved harmony between ‘yin’ and ‘yang’, the inseparable and contradictory opposites in us all. Disease and bad health is simply an imbalance in vital forces. It’s a view present in the foundations of Chinese culture.
+</p>
+<p>
+In consequence, TCM aims to maintain equilibrium in us, balance. One of its means is acupuncture. Ms. Canosa pointed out that in treatment no flesh is pierced in pain nor blood shed. The minute needles used are in fact thirty times smaller than the hypodermic employed in an ordinary blood test. Even patients with needle phobia find them tolerable. Some of Ms. Canosa’s patients have been so unbothered as to fall asleep during a procedure.
+</p>
+<p>There are supposedly 350 ‘acupoints’ on the body. These are places where nerves, muscles, and connective tissue can be stimulated. The stimulation increases blood flow and frees the body's natural remedies for pain. The needles enter at different depths of penetration to attain the meridians or pathways through which vital energy (‘Qi’) flows. The manipulation of the needles can bring the energy flow, disrupted by illness, back into proper balance. The meridians or points mirror how the ancient Chinese imagined our bodies replicated the structure of the universe. 
+</p>
+<p>Acupuncture remains controversial. Naysayers claim it is simply a placebo and that there is no scientific proof meridians actually exist. However, it has proven successful in treating back pains, sciatica, migraine, nausea, dental pain, high and low blood pressure, peptic ulcers, Tourette syndrome and more. Ms. Canosa reported from her own practice many cases of suffering relieved. Experts readily concur that acupuncture can deal with pain but are doubtful about its efficacy in treating disease in general.
+</p>
+<p>
+We were also introduced to moxibustion, which involves burning mugwort (the herb Artemisia) close to the skin in order to warm the meridian points. This permits the blood and vital energy to flow more smoothly. It is one of the herbal treatments that are complementary therapies to acupuncture. The ingredients used by TCM are not always exotic but can be those familiar to our cooks, such as cinnamon, ginger, mushrooms, licorice, or orange peel. In mentioning herbs, Ms. Canosa added that right, balanced living, which would have pleased the ancient doctors of TCM, was not unknown to our grandparents. They of necessity consumed the products of the seasons as the yearly cycle revolved and so followed the similar physiological cycle that their bodies were undergoing.    
+</p>
+</main> <!-- Close main -->
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

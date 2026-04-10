@@ -200,34 +200,72 @@ main {
     margin: 6px 0 3px 0;  /*order: top, right, bottom, left*/
     line-height: 1.5;
 }
-/* Right column - Event image */
+
+/* Right column - Event image container */
 .event-image {
     width: 185px;
-    height: 175px;  /* 175px instead of 100% to fix Safari bug */
-    flex-shrink: 0;       
-    padding-left: 5px;    
+    height: 175px;  /* Safari fix */
+    flex-shrink: 0;
+    padding-left: 5px;
     overflow: hidden;
-    align-self: center;  
+    align-self: center;
 }
 
+/* Static image styling (non-video events) */
 .event-image img {
-    width: 100%;
-    height: 100%;  
-    object-fit: cover; /* crops the image to fill the box neatly */
-    display: block;
-    border-radius: 2px;
-    transition: transform 0.3s ease;
-}
-.event-video {
-    width: 100%;
-    max-width: 800px;
-}
-
-.event-video video {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+    border-radius: 2px;
+    transition: transform 0.3s ease;
+}
+
+/* Video thumbnail wrapper */
+.video-thumb {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Thumbnail image */
+.video-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* YouTube iframe after click */
+.video-thumb iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Optional play button overlay */
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.play-button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid white;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
 }
 
 /* Past and future events separator bar */

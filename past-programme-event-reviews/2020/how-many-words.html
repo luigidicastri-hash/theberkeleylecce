@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Base href shifts the browser's reference point to the parent folder,
+         so all links in the shared header and footer resolve correctly
+         even though this page lives inside the event-reviews subfolder -->
+    <base href="../../">
+    <title>How Many Words Does a Picture Paint?</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="stylesheet" href="../event-reviews.css">
+</head>
+
+<body>
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <h1 class="review-title">Thomas Katan – How Many Words Does a Picture Paint? – 10/01/2020</h1>
+        <p class="review-author"><em>Peter Byrne</em></p>
+
+<p>Thomas Katan tested for us the capacity of photography to tell a story. He based his inquiry on his series of photos of an Indian building site. In no time we gathered what kind of photographer he was and was not. Although he spoke of aesthetic values, a love of colour, for instance, and his work showed he possessed techniques of composition and framing, his aim was not primarily to make beautiful photos. He wasn’t working in the fine-arts’ tradition whose photographers see their work as an extension of easel painting. He was not of the family of Alfred Stieglitz, Paul Strand or Edward Weston. Neither was he a photographer of action, in the newsreal or sports’ action tradition à la Robert Capa. Nor did he pursue shots of the prized 'decisive moment' in the manner of Henri Cartier-Bresson. He was, moreover, decidedly not a portraitist in the vein of Richard Avedon. In a second more fragmentary series from the American west, he would flirt with a Robert Frank approach, minus fangs and plus landscapes.
+</p>
+<p> 
+What then did his shots about the building site in India have to tell? He focussed on the workers in the context in which buildings went up there. Their undoubted ‘under-privileged’ status was not his first concern. He was no Dorothea Lange or Walker Evans showing us the poor of the Depression. The workers interested him as part of a human collective, a team working at a task like players in a game that was about erecting a building. Thomas was carried away, euphoric, with his discovery of a situation that was in some ways similar to putting up a building in societies he knew, but in other ways completely different. That difference was what he wanted to capture in his shots.
+</p>
+ 
+<p>
+So much was clear and followed naturally. Then Thomas added something. He pointed out how his personal encounter with the workers was only possible because they identified him as a photographer, the fellow possessor of a mobile phone. The lingua franca of technology made him one of them and a kind of intimacy ensued. He was a friend from afar, a blood brother of the camera clan. This pleased but also astonished him. After all, his background could not have been more different than theirs.
+</p>
+ 
+<p>
+Thomas’ next step led us on to more uncertain ground. Were his Indian shots of the building site a story? Now there is nothing more precise and richer in detail than a photograph. Its reproduction of a scene is as close as we can come to reality. However, the photographs only became a story when Thomas commented on them for us, which he did, indicating the details in them that fit into the tale he wished to tell. Without his words, we would have been left with some alluring photos open to endless possible interpretations depending on our own individual fancy and interests. Images may be “the fastest medium to relay information.” It would seem, though, that they can only become a full-fledged narrative with the help of words to nail them down to a single meaning.
+</p>
+ 
+<p>
+“A picture paints a thousand words.” It’s stuffed with reality. But can it on its own or in series tell a story? That’s the question Thomas Katan left us with at the end of a talk that bristled with fresh ideas and youthful enthusiasm.
+</p>
+    
+</main> <!-- Close main -->
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

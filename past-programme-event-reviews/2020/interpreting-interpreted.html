@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Base href shifts the browser's reference point to the parent folder,
+         so all links in the shared header and footer resolve correctly
+         even though this page lives inside the event-reviews subfolder -->
+    <base href="../../">
+    <title>Interpreting Interpreted</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="stylesheet" href="../event-reviews.css">
+</head>
+
+<body>
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <h1 class="review-title">Maria Rosaria Buri – Interpreting Interpreted  – 10/09/2020</h1>
+        <p class="review-author"><em>Peter Byrne</em></p>
+        <img src="images-for-past-events/2020/maria-rosa-buri.jpg" alt="Maria Rosa Buri" style="width: 300px; height: auto;" class="review-image">
+        
+    <p>On the day that Maria Rosaria Buri came to talk about her profession to the Berkeley Circle, the B.B.C news signalled the importance of interpreters on the geopolitical stage. Of the hundreds of Afghan interpreters who had served British troops in Afghanistan, only a limited number were being given residence in the U.K. The rest ran the risk of revenge from the Talibani who were being welcomed to power. From the Taliban point of view, any Afghan who had worked with the British would merit punishment along with their family.
+    </p>
+    <p>
+    The news lent drama to the shadowy figures whose aim is to be invisible when the greats of the world meet endeavouring to exchange words. In the verbal to-and-fro, the profession’s golden rule is that not a syllable of meaning be added or omitted. The interpreter’s goal would seem to be a perfect machine, a human absence, a bilingual dictionary whose pages turned at the speed of light.
+    </p>
+<p>
+Maria Rosaria Buri explained, however, that she and her colleagues were very human indeed although with ears sharper and memories surer than most of us. They were also trained with great care. She herself had attended high school in Lima, Peru and capped her studies at La Sapienza in Rome and at the Scuola Superiore per Interpreti e Traduttori in the same city. Now Professor of Translation Studies at the University of Salento, she reminded us that her preparation would have been incomplete without on the job experience. She felt that she was still on a learning curve.
+</p>
+<p>
+Her career has gone from freelance translating and conference interpreting to the heady heights and constant stress of diplomatic interpreting. This Rolls-Royce and Royal Carriage world manages often to turn the interpreter's invisibility into a negative factor. Interpreters—they are mostly women—can be treated as dispensable hired-help and in Italy, alas, as the demeaning “Signorina della traduzione.” The personalities of the bigwigs doing the talking are what counts here. Nancy Reagan (chummy) or Margaret Thatcher (faint-speaking!) were as different in casual chat to their interpreter as were, each in his way, Bettino Craxi, Giulio Andreotti, Francesco Cossiga and Sandro Pertini (lovingly avuncular). Queen Elizabeth II’s personal asides had a special place in Maria Rosaria’s star-studded memories. She saw the theme of her career in the Queen’s favourite song, Vera Lynn’s hopeful, “We’ll Meet Again.”
+</p>
+<p> 
+In a future meeting, Maria Rosaria Buri could tell us about the world-wide Translators4children community in which she plays a part. These volunteers offer, at no charge, clinical reports in their mother tongue to the carers of children undergoing medical procedures in foreign places. There remains, moreover, a discussion to continue. Does instant interpreting demand, in addition to intense training, a special type of mind? Is perfect bilingualism enough or must the interpreter have the mental gift of quickness that allows goalkeepers in football to make “reaction saves”?
+</p>
+
+</main> <!-- Close main -->
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

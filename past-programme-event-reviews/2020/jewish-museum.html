@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Base href shifts the browser's reference point to the parent folder,
+         so all links in the shared header and footer resolve correctly
+         even though this page lives inside the event-reviews subfolder -->
+    <base href="../../">
+    <title>Descent into Lecce’s Jewish Past </title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="stylesheet" href="../event-reviews.css">
+</head>
+
+<body>
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <h1 class="review-title">Fabrizio Lelli - Descent into Lecce’s Jewish Past – 24/01/2020</h1>
+        <p class="review-author"><em>Peter Byrne</em></p>
+
+        <p>The Berkeley Circle’s visit to the Jewish Museum of Lecce was an evening of discovery. It occurred on the anniversary of the liberation of the Auschwitz concentration camp. That too had been a discovery seventy-five years ago when the world became fully aware of the horror of the Shoah. What we would uncover was a layer of Salento that had been obscured by the centuries of history heaped over it. The very location of the Museum was eloquent. It squatted half-underground in the shadow of Lecce’s most prized Baroque monument, the Basilica of Santa Croce. The church covered over what had come before. The Museum in Palazzo Taurino—known too as Palazzo Personé—stands on the site of a mediaeval synagogue. It was the heart of Lecce’s Jewish quarter before the Jews were expelled from the Kingdom of Naples in 1541. Santa Croce and the Celestini Convent were part of the monumental ensemble that replaced it.</p>
+<p>The director of the Museum, Professor Fabrizio Lelli of the University of Salento, led us through it with the passion and patience of a learned enthusiast. More discoveries were to follow. The Jews of Puglia who had originally come from France and Spain became part of an extensive Mediterranean network that would leave traces as far away as Corfu and Salonica. Lecce had been served by Jewish medical men. Scientists and astronomers were part of the community’s lively contribution to the city’s intellectual life. All this was made clear by the exhibits and panels of information as we moved through a series of enclosed spaces whose ancient stone was itself a lesson in history. There were models of the mediaeval clothes worn, relics found in the restoration, glimpses of the purification pools. We were able to examine everyday and ritual objects of the years described. In the temporary exhibition space were paintings of today in tune with the fifth World Holocaust Forum meeting just now in the hills outside Jerusalem.</p>
+<p>Our most moving discovery was something that had been identified only recently. It was a tiny space set at an angle in the wall outside a doorway. The niche was meant to hold a mezuzà or sheathed parchment bearing words of scripture. It was a sure sign of Jewish occupancy. Jews entering a synagogue or dwelling would touch it with their right hand out of respect for the written words.</p>
+    
+</main> <!-- Close main -->
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

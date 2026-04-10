@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Base href shifts the browser's reference point to the parent folder,
+         so all links in the shared header and footer resolve correctly
+         even though this page lives inside the event-reviews subfolder -->
+    <base href="../../">
+    <title>With a Little Help from our Bristol Friends</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="stylesheet" href="../event-reviews.css">
+</head>
+
+<body>
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <h1 class="review-title">With a Little Help from our Bristol Friends – 09/10/2020</h1>
+        <p class="review-author"><em>Peter Byrne</em></p>
+        
+<p>
+The Berkeley Circle met October 9th at the charming Masseria Coccioli to join in a conversation with two members of the faculty of Western England University, Bristol. Emma Brannlund teaches politics and international relations; Emilio Trizio, philosophy.
+</p>
+<p>
+Emilio considered the idea of Europe, how it had been formulated in the past and how he saw it in the present. Machiavelli, Novalis, Voltaire and others all had their own conception dependent on their mindset and historical moment. However, it was the meaning that the ancient Greeks gave to Europe that has held firm. Emilio, a phenomenologist in the wake of Edmund Husserl, saw Europe and Europeanising as a process begun by the Greeks and still underway. A country like Japan, for instance, could now consider itself as one with Europe. The Greek distinction, a breakthrough of sorts, had been the first to ask rational questions of a disinterested kind, speculative and free of self-interest. The operation of imposing Europe’s ways was not entirely benign and brought with it what Emilio termed an infection or two.
+</p>
+<p>
+Emma led us to a specific point on the globe, tumultuous northern India. She delved into the history of the territory around Kashmir. It was an account of continual struggle for sovereignty amid suffering in which women and children especially bore the weight. This continues to the present day as India and Pakistan, Hindus and Muslims, fight over the prize of Kashmir. It sent us back to Emilio’s remark that Voltaire had defined Europe, in the midst of religious wars, as the land of fanatics. Imperialism was another link between the two speakers’ subjects. It had always been a prime feature of Europe but prospered everywhere as Kashmiris had learned to their dismay.
+</p> 
+<p>
+Emma fixed our attention on the suffering of women and children in warfare. Here too Europe was relevant to Kashmir. European powers had made acceptable in WWII the targeting of non-combatants. Obliteration airstrikes—euphemistically, “saturation” bombing or more homespun, “blanket” or “carpet” bombing—spared no-one. The U.S.A., Europe’s lively firstborn, dropped atom bombs on Asia. Emilio had told us that the Greeks considered Asia “an appearance”. The Americans developed that thought and decided Asians were less real and more  immune to pain than Europeans.
+<p>
+These considerations brought to mind the figure of that arch European, Robinson Crusoe. He introduced European knowhow into a pristine world, transformed an inhabitant into his servant, saddled him with Christianity, and finally departed for the comforts of Europe thanks to the state-of-the-art technology of various ships. Our Berkeley conversation, like the penetration of the globe by Europe,  was a phenomenon and process touching on matters that could be discussed forever.
+</p>
+    
+</main> <!-- Close main -->
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
