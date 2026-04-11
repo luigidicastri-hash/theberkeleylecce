@@ -239,6 +239,11 @@ article.dialogue p.accreditation {
   margin: 0;
 }
 
+/* Allow other poems to overflow on mobiles but maintain spacing as in HTML */
+.poem {
+    font-family: 'Georgia', serif;
+    white-space: pre-line;
+}
 /* ==========================================================
    IMAGE + TEXT SECTIONS (side by side) copied from about.css
    The order: image first or text first is controlled simply
