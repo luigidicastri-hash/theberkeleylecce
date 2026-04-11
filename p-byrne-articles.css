@@ -406,10 +406,6 @@ body.P_Byrne::before {
   display: block;
 }
 
-.poem-with-image {
-  border: 2px solid red;
-}
-
 }
 
 @media (max-width: 600px) {
