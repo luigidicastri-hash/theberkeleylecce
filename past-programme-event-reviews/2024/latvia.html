@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Base href shifts the browser's reference point to the parent folder,
+         so all links in the shared header and footer resolve correctly
+         even though this page lives inside the event-reviews subfolder -->
+    <base href="../../">
+    <title>Latvia Afloat</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="stylesheet" href="../event-reviews.css">
+</head>
+
+<body>
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <h1 class="review-title">Latvia Afloat – 15/03/2024 </h1>
+        <p class="review-author"><em>By Peter Byrne</em></p>
+        <img src="../images-for-past-events/2024/latvia2.jpg" alt="Latvian scene" style="width: 500px; height: auto;" class="review-image">
+        <p class="accreditation">Photo by Krists Luhaers on Unsplash</p>
+
+<p>Could any one of us present the country of our birth to absolute strangers in sixty hurried minutes? Of course we could not. That the country contains less than two million souls like Latvia wouldn’t make the task any more feasible. Kristine Vanaga had her own solution. She would evoke her homeland for the Berkeley Circle in terms of her own heart. She was a child of nature presently adrift in Italy whose citizens’ urban outlook commentators have often remarked upon. Her ardour was for stretches of water, the blue of lakes, the  white foam of rivers or the grey of the sea. They didn’t have to bear any boats or swimmers. Water being there, simply present for the comfort of her mind,  was enough with one condition. Trees, her other passion, had to be in the picture. Again, there was no need for lumberjacks or hunters. Simply feeling the stately presence of the forest nourished Kristine.
+</p>
+<p>We were only mildly surprised then to learn that the Baltic Sea bathes one part of Latvia and the Gulf of Riga another. Latvia, the size of the US state of West Virginia, has 1200 rivers and more than 3000 lakes. Pine, oak and birch forests cover a quarter of the country. (Birch trees also supply a drinkable brew.) In proportion to its size,  only Canada has more trees.
+</p>
+<img src="../images-for-past-events/2024/latvia3.jpg" alt="Berkeley whiteboard" style="width: 500px; height: auto;" class="review-image">
+<div style="margin-bottom: 12px"></div>
+
+<p>Abundant nature is not Kristine’s only affection. She adores the Song and Dance Celebrations that have become a tradition in Latvia. One could almost speak of a return of the repressed. On rare days the curtain comes down on the scene  of a happy solitary sitting in the greenery on a watery shore. An enormous assembly of joyful Latvians take the stage. There are battalions of dancers, bands brass and other, and choirs of every sort. It’s a huge collaborative performance that no Latvian wants to be left out of. Human nature takes over in a carnival of sorts while  picture-postcard, nature of the vegetable and mineral kind, has the day off.
+</p>
+<img src="../images-for-past-events/2024/latvia1.jpg" alt="Latvian scene" style="width: 500px; height: auto;" class="review-image">
+        <p class="accreditation">Photo by Anita Austvika on Unsplash</p>
+<p>Moreover, despite Kristine’s devotion to Mother Nature, the country does not do without a metropolis. The  capital Riga is the largest and most visited city of the Baltic statelets. It’s most Latvian touch is perhaps its Ethnographic Open-Air Museum that <em>“hides unobtrusively behind the pine forest at Lake Jugla.”</em> 
+    Riga’s name, in one explanation, comes from the Latin, <em>‘rigata’</em>, meaning irrigated. The Christian colonisers of those immemorial times said that it signified an <em>‘irrigation of dry pagan souls by Christianity.”</em> That Riga is said to have been founded by a German in 1201 reminds us that Latvia has always been the pawn of the region’s great powers. There was Denmark, Sweden, Russia and now the West in the guise of NATO and the European Union. Latvians have always had foreign breath on their necks both at home and at their  borders.. Ethnic Latvians number only about 63 per cent of the population, which overall is declining. Ethnic minorities include Russians (half a million, 23.7 per cent of the total population), Belarusians, Ukrainians, Poles, Lithuanians and others.
+</p>
+
+<p>Refreshing in Kristine’s talk was her use of her word pagan. It wasn’t the slur bandied about in catechism class. The northern regions of the globe feel closer to Thor and Odin than to our weepy saints. Christmas and Easter are put in the shade by Midsummer Night when daylight extends for 18 hours. The resulting merriment is the highpoint of the year. This should set us thinking as two parts of Abrahamic religion are at each others’ throats in the Middle East and the third, in version Evangelical, rabble rouses across North America. Maybe we should take a hint from merry Kristine Vanaga and  study recipes for paganism and good Latvian rye bread.
+</p>
+
+</main> <!-- Close main -->
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

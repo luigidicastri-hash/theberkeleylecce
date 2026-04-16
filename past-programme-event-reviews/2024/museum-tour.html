@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Base href shifts the browser's reference point to the parent folder,
+         so all links in the shared header and footer resolve correctly
+         even though this page lives inside the event-reviews subfolder -->
+    <base href="../../">
+    <title>Sigismondo’s Smile</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="stylesheet" href="../event-reviews.css">
+</head>
+
+<body>
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <h1 class="review-title">Sigismondo’s Smile – 19/01/2024 </h1>
+        <p class="review-author"><em>By Peter Byrne</em></p>
+        <img src="../images-for-past-events/2024/museum-tour2.jpg" alt="Museum exhibit" style="width: 500px; height: auto;" class="review-image">
+        <p class="accreditation">Photo by P. Sanguedolce</p>
+
+<p>Lecce’s Sigismondo Castromediano Museum had always seemed to be frowning at citizens as they hurried by in their daily bustle. There was something forbidding in its bulk and its suggestion of an impregnable fortress. The two arms of its monumental courtyard did not, under dark skies, appear to be waving us in. It was time that we, the public, and the treasure house were re-introduced with a warmer handshake.
+</p>
+<p></p>No one who could do the job better than the former president of the Berkeley Circle, Mary Coppola. Mary has a double-life. She has long exercised her profession as a restorer of paintings at the Museum. But she is also an adept of natural history. Her stunning <em>Immagini del Salento,</em> Edition Grifo, 2017, combined her photographs with the poetry of her father, the beloved Ferdinando, English translations by her mother, Hilda Caffery.
+</p>
+<img src="../images-for-past-events/2024/museum-tour4.jpg" alt="Museum exhibit" style="width: 500px; height: auto;" class="review-image">
+        <p class="accreditation">Photo by P. Sanguedolce</p>
+
+<p>Following Mary’s lead, even the stone head of Sigismondo Castromediano, 1811-95, stern Liberal hero, managed a smile in return for hers. We were swept through the refurbished and newly designed interior of the building. The makeover clearly embodied the latest ideas of museology. There are attractive spaces meant for community get-togethers. Exhibitions are not boxed in but strewn along a path to be followed. A wide-awake snowy brilliance whites out memories of the dusty cabinet of curiosities of yore. The master concept of the re-design was to echo a circular dome by favouring the circle repeatedly in floor plan and fittings. It was a surprise when we reached the <em>Pinacoteca</em> or picture gallery and finally found ourselves in a rectangular space.
+</p>
+<img src="../images-for-past-events/2024/museum-tour3.jpg" alt="Museum exhibit" style="width: 500px; height: auto;" class="review-image">
+        <p class="accreditation">Photo by P. Sanguedolce</p>
+
+<p>The new arrangement is contemporary in another way. Greeks and Romans are not the only forebears remembered. Attention is called to other groups that shared the territory. Messapian contributions are put into relief. The difference in Attic pottery and that made by local hands is underlined. The influx of Byzantines and their handiwork signalled. It’s not ignored how the Venetians put their stamp on life and landscape. Different peoples have had different styles and agendas. Variety enhances Salento’s treasure hoard.
+</p>
+
+<p>That the Museum was founded in 1868 and its collections cover a period of ten thousand years doesn’t mean it flees the present. As our tour progressed, a drama was being presented in the Auditorium, <strong>Falcone e Borsellino, Storia di un dialogo</strong> by Maria Francesco Mariano.
+</p>
+<p>
+There was only one resolve possible for us on finishing the visit: to return soon and dawdle over the large or small item that we could not forget.
+</p>
+
+<p class="accreditation">Cover photo by P. Sanguedolce</p>
+
+</main> <!-- Close main -->
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

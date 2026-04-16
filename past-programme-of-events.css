@@ -82,7 +82,7 @@ main {
     font-size: 1rem;
     font-weight: 700;
     color: #0b0000;
-    margin: 8px 0 0px 0;  /*order: top, right, bottom, left*/
+    margin: 8px 0 8px 0;  /*order: top, right, bottom, left*/
     font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
 }
 
@@ -101,6 +101,7 @@ main {
     font-size: .95rem;
     color: #0b0a0a;             /* general text color */
     line-height: 1.5;
+    margin: 0 0 8px 0;  /*order: top, right, bottom, left*/
 }
 
 /* Map link styling */
@@ -125,7 +126,7 @@ main {
     display: inline-block;
     font-size: 1rem;
     font-weight: 800;
-    margin: 0;
+    margin: 10px 0 0 0;  /*order: top, right, bottom, left*/
     padding: 0;
     line-height: 1.6;
     text-decoration: none;
@@ -171,7 +172,7 @@ main {
 .event-title-section h2 {
     font-size: 1.4rem;
     font-weight: 800;
-    margin: 4px 0 3px 0;  /*order: top, right, bottom, left*/
+    margin: 4px 0 4px 0;  /*order: top, right, bottom, left*/
     color: #000000;
     line-height: 1.5;
     font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
@@ -189,7 +190,7 @@ main {
     font-size: 1.2rem;
     font-weight: 700;
     color: #2a046f;
-    margin: 6px 0 3px 0;  /*order: top, right, bottom, left*/
+    margin: 4px 0 6px 0;  /*order: top, right, bottom, left*/
     line-height: 1.2;
 }
 

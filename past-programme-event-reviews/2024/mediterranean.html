@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Base href shifts the browser's reference point to the parent folder,
+         so all links in the shared header and footer resolve correctly
+         even though this page lives inside the event-reviews subfolder -->
+    <base href="../../">
+    <title>Zest from the East</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="stylesheet" href="../event-reviews.css">
+</head>
+
+<body>
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <h1 class="review-title">Zest from the East – 01/03/2024 </h1>
+        <p class="review-author"><em>By Peter Byrne</em></p>
+        <img src="../images-for-past-events/2024/mediterranean2.jpg" alt="Senem at screen" style="width: 500px; height: auto;" class="review-image">
+
+<p>Senem Önen Tarantini is a marine biologist and researcher for the European Research Infrastructure Consortium. She is currently attached to the Department of Biological and Environmental Sciences and Technologies at the University of Salento. Born on the Asian side of the Bosphorus, she has come a long way to speak to us about the Mediterranean Sea. Listening, one can’t help but think of the folktale historians find illuminating. The Turks on horseback come out of the immeasurable east and sweep westward in a wave. A people essentially mobile, they take the vast flat land and higher ground in their stride. As they come, they learn the truths of another world. Finally they stop with a shock of delight. They have reached the Middle Sea. The marvel of vast waters unleashes their enthusiasm.
+</p>
+<img src="../images-for-past-events/2024/mediterranean3.jpg" alt="Senem at screen" style="width: 500px; height: auto;" class="review-image">
+<div style="margin-bottom: 12px"></div>
+
+<p>Senem Önen Tarantini will forgive our fancy in giving her a seat in this mighty caravan. But her view of the Mediterranean tempers solicitude with that age-old wonder. (It’s no surprise, by the way, to learn that she’s an avid scuba diver.) However, while suggesting in her person a relentless optimism, she is above all a scientist. After giving us a geological picture of the Middle Sea and glimpses of the mythology that has grown up about it for millennia, she delivered the bad news. As degradation goes, the Mediterranean scores high among seas in the accumulation of marine litter and plastic pollution. It is under assault from land and water by intense urbanisation and  industrialisation, by sewage, tourism, fisheries and shipping.  It is one of the seas of the world with above average marine  concentrations of microplastics, the ubiquitous scourge we have only lately become aware of. An abandoned single-use coffee cup or crumpled shopping bag we can take care to eliminate, but what to do about minuscule particles that now have got into our spleens and mother’s milk?
+</p>
+
+<img src="../images-for-past-events/2024/mediterranean4.jpg" alt="Senem at screen" style="width: 500px; height: auto;" class="review-image">
+<div style="margin-bottom: 12px"></div>
+
+<p>The fact that a maritime spring cleaning would involve Albania, Algeria, Bosnia and Herzegovina, Egypt, Greece, Lebanon, Libya, Montenegro, Morocco, Syria, Tunisia and Turkey leaves us open mouthed in dismay. For though the Romans called it <em>Mare Nostrum</em> and Italian nationalism  rode on that coattail, a less polluted <em>Mare Internum</em> will have to be a cooperative affair. The difficulty of getting together on a humane plan for handling the migrants who take to the sea suggests that will not be easy. No wonder our forebears changed the subject and preferred to talk about Odysseus and the naughty, skirmishing gods.
+</p>
+
+<p>Senem Önen Tarantini had her own way of allaying pessimism. After enumerating various positive steps being taken to disintoxicate the sea, she treated us to a survey of the Mediterranean’s mammals, excluding the shorts or bikini clad. Who could go away glum after viewing a lolling monk seal or a bottlenose dolphin at play?</p>
+
+
+</main> <!-- Close main -->
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

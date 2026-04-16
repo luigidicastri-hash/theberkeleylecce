@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Base href shifts the browser's reference point to the parent folder,
+         so all links in the shared header and footer resolve correctly
+         even though this page lives inside the event-reviews subfolder -->
+    <base href="../../">
+    <title>The Italians creating our Italy</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="stylesheet" href="../event-reviews.css">
+</head>
+
+<body>
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <h1 class="review-title">Richard Lonsdale – The Italians creating our Italy – 22/11/2024</h1>
+        <p class="review-author"><em>Susan Mary Arculus</em></p>
+
+<p>On November 22nd 2024, the Berkeley was delighted to welcome Richard Lonsdale, a computational neuroscientist with a PHd in Plasma Physics. At the end of a long and extremely successful career in his field, he had a complete change of direction and has devoted his time to travelling the length and breadth of Italy, finally producing his very interesting book <em>The Italians creating our Italy</em> following his previous publication <em>Knowing Your Mind</em>, dealing with neuroscience and Artificial Intelligence &ndash; a far cry from his more recent book.
+</p>
+
+        <img src="../images-for-past-events/2024/lonsdale-ravello.jpg" alt="View from Ravello" style="width: 600px; height: auto;" class="review-image">
+        <p class="accreditation">photo by Ben Black on Unsplash</p>
+        
+<p>Richard’s love of Italy seems to have begun on his honeymoon when he became enchanted by Ravello on the Amalfi coast. From those early days, he became fascinated by the backgrounds of those Italians who run businesses for tourists, be they restaurants, bars or shops. He believes that in order to know a country, you must understand its people and his interest is in the backgrounds and stories of those people who devote their lives to welcoming tourists.</p>
+<p>During his talk, he gave examples of different stories he recorded. Perhaps one of the most interesting was of Giovanni and Tatyana who own and run a very successful restaurant in Ferrara. Tatyana was born on the Soviet/Chinese border but left for Bologna in 1998 with her young daughter. She found work as a hotel cleaner and it was there that she met Giovanni, a receptionist. They fell in love but she was forced to leave Italy with her daughter as she had no work visa. Giovanni got himself a passport, flew to Ukraine where Tatyana was living with her family, married her once he had the documents from Italy and flew back to Italy with Tatyana and her daughter. Her daughter Lena is now an aerospace engineer working on the Augusta helicopters and the restaurant, <em>I piaceri di Lucrezia</em>, is very successful.</p>
+<p>Richard visited numerous businesses from Turin to Palermo. He now spends much of his time in Lecce, a city he loves and finds very welcoming. We were all interested to learn about his visits to various establishments here and he spoke in particular about <em>La Cucina di Mamma Elvira, Il Mercante d’Arte</em> and <em>Dall’Antiquario</em>.</p>
+<p>Thank you again Richard for a most interesting evening.</p>
+
+</main> <!-- Close main -->
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

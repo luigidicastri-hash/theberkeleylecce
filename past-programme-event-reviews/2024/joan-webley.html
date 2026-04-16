@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Base href shifts the browser's reference point to the parent folder,
+         so all links in the shared header and footer resolve correctly
+         even though this page lives inside the event-reviews subfolder -->
+    <base href="../../">
+    <title>Jammin’ in Likkle Jamaica</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="stylesheet" href="../event-reviews.css">
+</head>
+
+<body>
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <h1 class="review-title">Joan Webley – Jammin’ in Likkle Jamaica – 25/10/2024 </h1>
+        <p class="review-author"><em>By Nicolette S. James</em></p>
+        <img src="../images-for-past-events/2024/joan-webley2.jpg" alt="Photo of Joan" style="width: 600px; height: auto;" class="review-image">
+        <!--<p class="accreditation">Photo by David Katan</p>-->
+
+<p>In her informative talk about Jamaica, Joan Webley explained how her personal background (as the daughter of two politicians) had influenced her life and her aims.
+</p>
+<p>
+Having worked and studied in several different countries and organisations, she is now married to a “local” Italian and lives and works here.
+</p>
+<p>
+This summer she organized “Jamit” a music festival here in Salento involving reggae music, also with the aim of promoting Jamaica, and trying to work towards solving some of the social problems that dominate Jamaican life – poverty and aggression, especially against women.
+</p>
+<p>
+She is very aware of a lot of similarities between Salento and the island of Jamaica, and at some point in the future would like to organize a Carnival in the Jamaican sense.
+</p>
+    
+</main> <!-- Close main -->
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

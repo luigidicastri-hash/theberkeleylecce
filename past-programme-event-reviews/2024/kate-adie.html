@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Base href shifts the browser's reference point to the parent folder,
+         so all links in the shared header and footer resolve correctly
+         even though this page lives inside the event-reviews subfolder -->
+    <base href="../../">
+    <title>O Tell me the Truth!</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="stylesheet" href="../event-reviews.css">
+</head>
+
+<body>
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <h1 class="review-title">Kate Adie – O Tell me the Truth! – 25/10/2024 </h1>
+        <p class="review-author"><em>By Patrizia Sanguedolce</em></p>
+        <img src="../images-for-past-events/2024/kate-adie1.jpg" alt="Photo of Kate Adie" style="width: 400px; height: auto;" class="review-image">
+
+<p>“Challenges Facing Reporters Today. Still Speaking Truth to Power?”: such an intriguing title was chosen by Kate Adie – former Chief BBC News Correspondent and presently Chancellor of Bournemouth University - for the lecture she delivered at the University of Salento on 16th September last. As members of the Circolo Berkeley, we were invited to attend.
+</p>
+<p>
+Needless to say, most of the speakers involved in the debate focused on truth: from Professor Cristante mentioning Giulio Regeni’s “hunger for truth” - which cost him his life - through the Rector emphasizing the importance of developing a critical mind in order to ‘see’ the truth, to the Italian journalist Alessandro Barbano, who pointed out that when reporters decontextualize facts they are actually betraying the truth.
+</p>
+<p>
+This leads us to our main guest, Kate Adie, who stressed that “journalism is not a novel”: reporters should say what they can see, they shouldn’t speculate or imagine what might happen. Good reporters stick to facts, they don’t add emotions, they don’t take sides.
+</p>
+<p>
+In a world where the truth is constantly being challenged by anyone having access to the Internet, accurate journalism is essential. In a world where the Internet can spread racism, hate speech and violence, what we do need is good journalism. To face these challenges, the reporter’s aim today is, more than ever, to tell the truth.
+</p>
+<p>
+A valuable lesson for the students who filled the conference hall. A lesson given by a woman who “never expected to be a journalist” but ended up reporting crucial facts of our recent history such as terrorism, the Tiananmen square protests, the fall of the Berlin Wall and the Gulf War.
+</p>
+<p>
+A lesson of journalism which, however, leaves us with a few unanswered questions: what is the truth? Does it exist as an independent entity, inherent in what we see as a fact and separate from the person who reports it, or is communication itself a betrayal? But perhaps I’m not sticking to facts.
+</p>
+
+<img src="../images-for-past-events/2024/kate-adie2.jpg" alt="Photo of Kate Adie at lectern" style="width: 400px; height: auto;" class="review-image">
+        <p class="accreditation">Kate Adie at Unisalento (photo by Daniela Rollo)</p>
+
+</main> <!-- Close main -->
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
