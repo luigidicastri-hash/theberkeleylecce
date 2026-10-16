@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Base href shifts the browser's reference point to the parent folder,
+         so all links in the shared header and footer resolve correctly
+         even though this page lives inside the event-reviews subfolder -->
+    <base href="../">
+    <title>An insiders guide to surviving and thriving in China</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="event-reviews.css">
+</head>
+
+<body>
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <h1 class="review-title">Mary Yi Xin - “Ah! China” - One Woman’s Story Through Four Decades of Change</h1>
+        <p class="review-author"><em>Nicky James and Luigi Di Castri</em></p>
+        <img src="images-for-event-reviews/an-insiders-guide-to-China1.jpg"    
+            alt="Photo by Claudia Mazzei"
+            class="review-image">
+        <p class="accreditation">Photo by Claudia Mazzei</p>
+        <p>On Friday, September 25th 2026, Mary gave a talk about her personal experience of growing up in China in the 1980s.</p>
+        <p>She began by explaining how her grandparents’ generation, born before 1949, had been dominated by survival, namely hunger and the need to get food. The lives of her parents’ generation, essentially those born in 1949 and later, were more secure but with limited choices. 
+            They often had large families, while food was scarce and ration coupons were needed to buy basic foods such as meat, and repeated political mobilisation was a normal part of life.</p> 
+   
+        <p>Mary was born in 1984 to a generation for whom, as Mary described it, life was a “fight for choice”. The National College Entrance Examination, Gaokao, had been reintroduced in 1977, and with it came intense pressure to pass this exam and gain entrance to a top university. Mary’s study routine was gruelling; she sacrificed much of her freedom to work from early morning till late at night with a single aim: to achieve the best possible score and gain more choices for her future, which she compared to a “battle”.</p>
+
+        <img src="images-for-event-reviews/an-insiders-guide-to-China2.jpg"
+            alt="Mary Xi"
+            class="review-image">
+        <p class="accreditation">Photo supplied by Mary Yi Xin</p>
+
+        <p>Mary achieved her objective and, in 2003, was admitted to BUPT, Beijing University of Posts and Telecommunications, one of China’s leading universities in information and communications technology. University was also where she first had to make her own choices — from choosing courses to deciding what she wanted to learn and the direction she wanted to take. Her four years at BUPT opened doors for Mary. She got a good first job at China Radio International and, with friends, gained the confidence to “face the world and dream big”. In 2012, she co-founded a tech company called Lingxi which built affordable tools for NGOs (non-profit organisations), helping them manage their data and projects more effectively as China’s charity sector joined the “digital age”.</p>
+     <img src="images-for-event-reviews/an-insiders-guide-to-China3.jpg"
+            alt="LingXi"
+            class="review-image">
+        <p class="accreditation">Photo supplied by Mary Yi Xin</p>
+
+<p>Within a few years Mary reached a point in her life when, though China had given her the opportunity to “spread her wings”, she also started to reflect on what this education and way of life had given her and what it had not. She realised that a lot of her learning had been aimed only at passing exams; she had no real idea of what she liked, nor what she wanted in life.</p>
+<p>She met her Italian husband in the USA. They married in 2018 and at the end of 2019 she came to Italy to spend Christmas with her husband, without expecting to stay permanently. Then Covid changed her plans, and what was meant to be a temporary stay became a completely different chapter of her life in Italy as a wife and mother.</p>
+       
+<p>Mary still visits China with her young daughter, but now sees the country from a distance both literally and metaphorically. She said that some things impress her, but others are harder to ignore. The positives are an affordable and convenient daily life, with excellent and efficient infrastructure, public spaces, parks, museums and libraries, while the negatives are the prevalence of security cameras, which she noticed much more after living abroad, and the pressure that speed and efficiency creates for the people whose work makes it possible. Mary was keen to underline that these were her personal observations and that her own story could offer only one small window into China. With the benefit of retrospect, Mary realised that much of her own childhood had been centred on studying and achieving clearly defined goals, leaving her less time to explore what she personally enjoyed or wanted for herself.</p>
+<img src="images-for-event-reviews/an-insiders-guide-to-China4.jpg"
+            alt="China now"
+            class="review-image">
+            <p class="accreditation">Photo supplied by Mary Yi Xin</p>
+
+<p>Mary ended by inviting the audience to visit China, talk to people, experience the country for themselves — and perhaps come away with their own “Ah, China!”</p>
+
+    </main> <!-- Close main -->
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header
+        fetch('global-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
