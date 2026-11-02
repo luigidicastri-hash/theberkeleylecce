@@ -79,6 +79,17 @@
         margin-top: 0.25rem;
     }
 }
+
+/* For the new Berkeley banner and logo*/
+.home-banner-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    border: 2px solid red;
+    border-radius: 10px;
+}
 /* =========================================
    END OF COMPONENTS.CSS
    ========================================= */ 
