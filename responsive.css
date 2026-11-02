@@ -547,14 +547,3 @@ img {
         flex: 0 0 90%;
     }
 }
-/* Mobile positioning for the brown logo */
-@media (max-width: 1024px) {
-    .logo-right {
-        width: 150px;
-        height: 60px;
-        object-fit: contain;
-        top: 15px;
-        right: 55px;
-        left: auto;
-    }
-}
