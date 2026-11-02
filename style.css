@@ -150,6 +150,15 @@ header h1 {
     z-index: 10;           /* Ensures it sits above the header image */ 
     }
 
+.logo-right {
+    left: auto;
+    right: 20px;
+    width: 200px;
+    height: auto;
+    border-radius: 0;
+    object-fit: contain;
+    }
+
 /* ========================================= 
    NAVIGATION
    ========================================= */
