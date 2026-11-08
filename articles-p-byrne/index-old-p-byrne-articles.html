@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Older Words of Peter Byrne</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="stylesheet" href="../p-byrne-old-articles.css">
+</head>
+
+<body class="P_Byrne_Old">
+    <!-- Header loaded from shared file -->
+    <div id="header-placeholder"></div>
+
+    <main>
+  
+    <h3>An American in Lecce</h3>
+    
+    <p>An interview with Peter Byrne published in <em>The American Mag</em> in January 2020. 
+    <a href="https://theamericanmag.com/an-american-in-lecce/" target="_blank">
+    Click HERE to read the article
+    </a>
+    </p>
+
+    <h3>Swans 2006–2013</h3>
+    <p>Peter wrote 226 articles for the online publication, <em>Swans</em>. Their commentary said this:</p>  
+    <p><em><strong>Peter Byrne</strong>, a writer before all else or maybe nothing but a writer, prefers to speak of himself in the third person, like a character in one of his better stories. He has loved the world too much to spend his life in only one place. Ditto for marriage. He has a daughter in London (with two stunning daughters of her own) and a son often in India (father of a very pretty little girl). Gabriella, his wife of twenty-two years, is a native of Lecce in the slow and sunny end of Italy. The couple has a base camp and home for archives there. Avid readers of unpublished manuscripts are always welcome.</p>
+
+<p>Gabriella has taught Italian in Ethiopia, Canada, Bulgaria, Turkey and now to immigrants, some of them legal, in her splendid Baroque city. Peter has spent his life in and out of universities, but in fact doesn't care a fig or a footnote for them. American, Québecoises, French, Italian, English -- they only served as observation posts for getting to know the locals. He's misplaced his Sorbonne thesis on the 19th century utopians, but has his pen portrait of a Place de Clichy barman in his pocket.
+</p>
+<p>Born in Chicago, Peter's wandering has never lessened his affection for that American city par excellence. He had his anti-American period just after his bout of acne. But he was surprised to discover, as he changed addresses, that there were creeps and non-creeps in roughly equal proportions around the globe. Though curious about history, his own bores him. He was once heard to murmur, "Stuff your index cards and the assumption that the teacher always knows best." The past is passed and he's only concerned about what he'll write tomorrow morning.
+</p>
+<p>In the evening he may look into what the local thespians are up to or bolster the dwindling public at one of the fleapits. Sometimes he stays home and ponders the lives of all those other Peter Byrne's that live in Google-land. He once thought about singling himself out by signing P. Tecumseh Byrne, but discarded the idea when it caused a laughing fit in Gabriella. In the small hours he's prone to wrestle with his principal metaphysical problem: How to outwit the airline officials who insist on charging him excess baggage fees for all the books he brings back from abroad.
+</p>
+<p>His columns, short stories, film and book reviews, and social commentaries can be accessed in the yearly archives:</em></p> 
+
+<p><a href="http://www.swans.com/library/a2006.html#pb" target="_blank">2006,</a> 
+<a href="http://www.swans.com/library/a2007.html#pb" target="_blank">2007,</a> 
+<a href="http://www.swans.com/library/a2008.html#pb" target="_blank">2008,</a> 
+<a href="http://www.swans.com/library/a2009.html#pb" target="_blank">2009,</a> 
+<a href="http://www.swans.com/library/a2010.html#pb" target="_blank">2010,</a> 
+<a href="http://www.swans.com/library/a2011.html#pb" target="_blank">2011,</a> 
+<a href="http://www.swans.com/library/a2012.html#pb" target="_blank">2012,</a> 
+<a href="http://www.swans.com/library/a2013.html#pb" target="_blank">2013.</a>
+</p>
+
+    </main>
+
+    <!-- Footer loaded from shared file -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../menu-toggle.js"></script>
+    <script>
+        // Load header
+        fetch('header-p-byrne-old.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                initHamburgerMenu();
+            });
+
+        // Load GLOBAL footer
+        fetch('../global-footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+
+    </script>
+</body>
+</html>
