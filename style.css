@@ -73,6 +73,7 @@ header {
     /*filter: brightness(1.05);*/                               /* Slightly brightens the header */
     background-color: rgba(0, 0, 0, 0.25);                 /* Semi-transparent black background */
     text-align: center;                                     /* Centers text horizontally */
+    min-height: 140px;                                      /* Forces size of header so retained on Home screen */
     padding: 10px 20px;                                     /* Spacing inside header */
     position: relative;                                     /* Allows absolute positioning of child elements */
     z-index: 5000;                                          /* Ensures header (and dropdown) appears above main content */
@@ -88,6 +89,11 @@ header::before {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4); /* semi-transparent black overlay */
     z-index: 1;
+}
+
+/* Hide the main heading on the Index page only */
+.home-page header h1 {
+     visibility: hidden;
 }
 /* =========================================
    FOOTER
