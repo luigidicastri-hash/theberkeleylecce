@@ -25,14 +25,24 @@ function initHamburgerMenu() {
         nav.classList.toggle('active');        // Shows/hides the menu
     });
 
-    // Close menu when a nav link is clicked (better UX for mobile)
-    const navLinks = nav.querySelectorAll('a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            hamburger.classList.remove('active');
-            nav.classList.remove('active');
-        });
+    // Handle dropdown triggers and navigation links
+const navLinks = nav.querySelectorAll('a');
+navLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+
+        // Toggle About and Past Programmes dropdowns
+        if (link.parentElement.classList.contains('has-dropdown') &&
+            link.getAttribute('href') === '#') {
+            event.preventDefault();
+            link.parentElement.classList.toggle('active');
+            return;
+        }
+
+        // Close menu when a normal navigation link is clicked
+        hamburger.classList.remove('active');
+        nav.classList.remove('active');
     });
+});
 
     // Close menu when clicking outside the header (optional, improves UX)
     document.addEventListener('click', function(event) {

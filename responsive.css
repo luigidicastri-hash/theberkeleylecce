@@ -244,23 +244,27 @@
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    /* Dropdown styling on mobile - ALWAYS VISIBLE (not hover-dependent) */
-    nav .has-dropdown .dropdown {
-        position: static;
-        display: block;  /* Always show dropdown items on mobile */
-        background-color: rgba(0, 0, 0, 0.8);
-    }
+    /* Mobile dropdowns - hidden until activated */
+nav .has-dropdown .dropdown {
+    position: static;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+}
 
-    /* Indent dropdown items to show hierarchy */
-    nav .has-dropdown .dropdown a {
-        padding-left: 40px;
-        font-size: 0.85rem;
-    }
+/* Show dropdown when activated */
+nav .has-dropdown.active .dropdown {
+    display: block;
+}
 
-    /* Disable hover dropdown on mobile (touchscreens don't have hover) */
-    nav .has-dropdown:hover .dropdown {
-        display: block;  /* Always visible, not collapsed on hover */
-    }
+nav .has-dropdown:hover:not(.active) .dropdown {
+    display: none;
+}
+
+/* Indent dropdown items */
+nav .has-dropdown .dropdown a {
+    padding-left: 40px;
+    font-size: 0.85rem;
+}
 
     main {
         margin: 18px;
