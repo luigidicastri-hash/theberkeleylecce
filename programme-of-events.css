@@ -234,11 +234,11 @@ main {
 }
 
 /* Hide booking link and map link on past events */
-/*.event-card.past-event .booking-link {*/
-    .event-card .booking-link {
+    .event-card.past-event .booking-link {
     display: none;
 }
-/* Show booking link only for the next event */
+
+/* Show booking link only for future events */
 .event-card.next-event .booking-link {
     display: inline-block;
 }
